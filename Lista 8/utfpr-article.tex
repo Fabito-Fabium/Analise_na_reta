@@ -28,24 +28,8 @@
 %   BibDOI    = Icon,%% Ícone de DOI em referências: Icon ou Name (^)
 %   BibURL    = Icon,%% Ícone de URL em referências: Icon ou URL (^)
 ]{utfpr-article}
-\usepackage[hyperlink]{qrcode}
-\usepackage{environ}
-\usepackage[fleqn]{nccmath}
-\usepackage{bm}
-\NewEnviron{ceqnalign}
-    {\vspace{3mm}
-    \begin{ceqn}
-        \begin{align*}
-            \BODY
-        \end{align*}
-\end{ceqn}}
-\newcommand{\Laplace}{\mathscr{L}}
-\newcommand{\bN}{\mathbb Z_{\ge 0}}
-\newcommand{\bPo}{\mathbb Z_{> 0}}
-\newcommand{\bC}{\mathbb C}
-\newcommand{\bZ}{\mathbb Z}
-\newcommand{\bR}{\mathbb R}
-\newcommand{\parth}[1]{\left(#1\right)}
+
+\include{myComm.tex}
 %%%% Autor(es) (de 1 a 8, Leiaute A; de 1 a 16, Leiaute B): {Número}; {Dados}
  \Author{1}{%% Bolsista ou voluntário(a) principal (primeiro)
    Name        = {Fabio Zhao Yuan Wang},%
@@ -93,20 +77,21 @@
 
 %% Início do documento
 \begin{document}
-\begin{enumerate}
-	\item \textbf{Sejam $a, b \in \bR$} em que $a<b$. Mostre que $(a, b)$, $(-\infty, b)$, $(a, \infty)$ são conjuntos abertos.\\
-	\textbf{Dem:} Vejamos que $A = (a, b)$ é um conjunto aberto. Note que para todo $x \in A$, $x \in \bR$ e $a<x<b$. Mais ainda, sejam $\overline{a} = x - a$ e $\overline{b} = b - x$. Como $x>a$, segue que $\overline{a} = x-a > 0$, ou seja $\overline{a} > 0$, analogamente temos $\overline{b} > 0$. Com isto, considere $r = \min(\overline{a}, \overline{b})$, vejamos então, que para todo $x \in A$, $\parth{x - \frac{r}{2}, x + \frac{r}{2}} \subset A$. Ora, como $r = \min(\overline{a}, \overline{b})$, segue que $r \leq \overline{a}$ e $r \leq \overline{b}$. Ao considerar $r \leq \overline{a}$, isto é, $-r \geq -\overline{a}$, podemos verificar que,
+\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+	%%ex 1
+	\item \textbf{Sejam $a, b \in \bR$ em que $a<b$. Mostre que $(a, b)$, $(-\infty, b)$, $(a, +\infty)$ são conjuntos abertos.}\\
+	\ExecuteMetaData[Section/sol.tex]{ex1}
 	
-	\begin{ceqnalign}
-		x - \frac{r}{2} \geq x - \frac{\overline{a}}{2} = x - \frac{x - a}{2} = \frac{x + a}{2},
-	\end{ceqnalign}
+	%%ex 2
+	\item \textbf{Seja $A\subset \bR$. Mostre que $a \in A$ é um ponto de acumulação de $A$ se, e somente se, toda vizinhança $V$ de $a$, contém um ponto de $A\backslash \{a\}$, isto é, $V \cap (A \backslash \{a\}) \neq \emptyset$.}
 	
-	e, como $x > a$, segue que $x - \frac{r}{2} \geq \frac{x+a}{2} > \frac{a+a}{2} = a$, isto é, $x - \frac{r}{2} > a$. Agora, considere $r \leq \overline{b}$, isto é, $-r \geq -\overline{b}$. Visto que,
-	
-	\begin{ceqnalign}
-		x - \frac{r}{2} \leq b - \frac{\overline{b}}{2} =x - \frac{b - x}{2}
-	\end{ceqnalign}
-	
+	%%ex 3
+	\item \textbf{Mostre que todo conjunto enumerável tem interior vazio. Dê exemplos de conjuntos com interior vazio.}
+	\item \textbf{Sejam $A, B \subset \bR$. Mostre que}
+	\begin{enumerate}[label=\alph*)]
+		\item $\itr(A \cup B) = \itr(A) \cup \itr (B)$
+		\item $\itr(A \cap B) = \itr(A) \cap \itr (B)$
+	\end{enumerate}
 	
 \end{enumerate}
 \end{document}

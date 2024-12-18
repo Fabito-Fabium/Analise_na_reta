@@ -1,0 +1,31 @@
+%<*ex1>
+\textbf{Dem:} Vejamos que $A = (a, b)$ é um conjunto aberto. Note que para todo $x \in A$, $x \in \bR$ e $a<x<b$, (1.0). Sejam $\overline{a} = x - a$ e $\overline{b} = b - x$. Como $x>a$, segue que $\overline{a} = x-a > 0$, ou seja $\overline{a} > 0$, analogamente temos $\overline{b} > 0$. Com isto, considere $r = \min(\overline{a}, \overline{b})$, vejamos então, que para todo $x \in A$, $\parth{x - \frac{r}{2}, x + \frac{r}{2}} \subset A$. Ora, como $r = \min(\overline{a}, \overline{b})$, segue que $r \leq \overline{a}$ e $r \leq \overline{b}$. Ao considerar $r \leq \overline{a}$, isto é, $-r \geq -\overline{a}$, podemos verificar que,
+
+\begin{ceqnalign*}
+	x - \frac{r}{2} \geq x - \frac{\overline{a}}{2} = x - \frac{x - a}{2} = \frac{x + a}{2},
+\end{ceqnalign*}
+
+e, como $x > a$, segue que $x - \frac{r}{2} \geq \frac{x+a}{2} > \frac{a+a}{2} = a$, isto é, $x - \frac{r}{2} > a$. Agora, considere $r \leq \overline{b}$, ou seja,
+
+\begin{ceqnalign*}
+	x + \frac{r}{2} \leq x + \frac{\overline{b}}{2} = x + \frac{b - x}{2} = \frac{b+x}{2},
+\end{ceqnalign*}
+
+mas como $x<b$, segue que $x+\frac{r}{2} < \frac{b+b}{2} = b$, portanto $x+\frac{r}{2} < b$. Ademais, visto que $\overline{b}>0$ e $\overline{a}>0$, temos que $r = \min(\overline{a}, \overline{b}) > 0$, ou seja, $-r < r$. Isto posto, temos que,
+\begin{ceqnalign}{1.1}
+	a<x-\frac{r}{2} < x + \frac{r}{2} < b
+\end{ceqnalign}
+e como para todo $x \in A$ temos (1.0), então (1.1) pode ser expressa por $\parth{x - \frac{r}{2}, x + \frac{r}{2}} \subset A$. Com isso, podemos concluir que $A \subset \itr{A}$. Mais ainda, pela definição de pontos interiores, temos que $\itr{A} \subset A$, portanto $A = \itr{A}$ que, pela definição de abertos, segue que $A = (a, b)$ é um aberto, como queríamos.\\
+
+Vejamos que $B = (-\infty, b)$ é um conjunto aberto. Análogo ao caso anterior, considere $\overline{b} = b - x > 0$ tal que $x\in B$. Como $x + \frac{\overline{b}}{2} = \frac{b+x}{2} < \frac{b+b}{2} = b$, e $-\overline{b} < \overline{b}$, então
+\begin{ceqnalign}{1.2}
+	x-\frac{\overline{b}}{2} < x + \frac{\overline{b}}{2}<b 
+\end{ceqnalign}
+e, visto que $x \in B$ se, e somente se, $x \in \bR$ e $x < b$, segue que $\parth{x-\frac{\overline{b}}{2},x+\frac{\overline{b}}{2}} \subset B$, (1.3). Mais ainda, como para todo $x \in B$ temos (1.2), e por conseguinte (1.3), então $B \subset \itr B$ e, da definição de pontos interiores, $\itr B \subset B$, ou seja $B = \itr B$. Em vista disso, pela definição de abertos, segue que $B$ é aberto, como queríamos.\\
+
+Vejamos agora que $C = (a, \infty)$ é um conjunto aberto. Como visto anteriormente, sejam $x \in A$ e $\overline{a} = x - a > 0$. Visto que $x - \frac{\overline{a}}{2} = \frac{x + a}{2} > a$ e $-\overline{a} < \overline{a}$, então,
+\begin{ceqnalign}{1.4}
+	a < x-\frac{\overline{a}}{2} < x + \frac{\overline{a}}{2},
+\end{ceqnalign}
+Portanto $\parth{x-\frac{\overline{a}}{2}, x + \frac{\overline{a}}{2}} \subset C$, (1.5). Já que para todo $x \in C$ temos (1.5), segue que $C \subset \itr C$, e da definição de pontos interiores, $\itr C \subset C$, ou seja $C = \itr C$, sendo assim, $C$ é aberto, como queríamos. $\square$
+%</ex1>

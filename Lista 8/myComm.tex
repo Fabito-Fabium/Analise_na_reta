@@ -1,0 +1,27 @@
+\usepackage[hyperlink]{qrcode}
+\usepackage{environ}
+\usepackage[fleqn]{nccmath}
+\usepackage{bm}
+\NewEnviron{ceqnalign*}
+    {\vspace{3mm}
+    \begin{ceqn}
+        \begin{align*}
+            \BODY
+        \end{align*}
+\end{ceqn}}
+\NewEnviron{ceqnalign}[1]
+{\vspace{3mm}
+	\begin{ceqn}
+		\begin{align*}
+			\BODY \tag{#1}
+		\end{align*}
+\end{ceqn}}
+\usepackage{catchfilebetweentags}
+\newcommand{\Laplace}{\mathscr{L}}
+\newcommand{\bN}{\mathbb Z_{\ge 0}}
+\newcommand{\bPo}{\mathbb Z_{> 0}}
+\newcommand{\bC}{\mathbb C}
+\newcommand{\bZ}{\mathbb Z}
+\newcommand{\bR}{\mathbb R}
+\newcommand{\itr}{\text{int}}
+\newcommand{\parth}[1]{\left(#1\right)}
