@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.18)  18 DEC 2024 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  21 DEC 2024 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,14 +73,14 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 105.
+(babel)             (\language66). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 108.
+(babel)             (\language66). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
-(babel)             (\language9). Reported on input line 111.
+(babel)             (\language20). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex
@@ -1522,7 +1522,7 @@ exlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/tex
 mf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/usr/share/texlive/texmf-dis
 t/fonts/enc/dvips/fontawesome5/fa5free1.enc} <./Logos//utfpr.png> <./Logos//cc-
 by.png>]
-(./Section/sol.tex) [2] (./utfpr-article.aux
+(./Section/sol.tex) (./Section/sol.tex) [2] (./utfpr-article.aux
 Package cleveref Info: loaded `brazilian' language definitions on input line 22
 .
 Package cleveref Info: loaded `brazilian' language definitions on input line 23
@@ -1537,11 +1537,11 @@ Package logreq Info: Writing requests to 'utfpr-article.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36394 strings out of 476034
- 650019 string characters out of 5792863
+ 36406 strings out of 476034
+ 650126 string characters out of 5792854
  1892388 words of memory out of 6000000
- 56219 multiletter control sequences out of 15000+600000
- 595332 words of font info for 171 fonts, out of 8000000 for 9000
+ 56222 multiletter control sequences out of 15000+600000
+ 595974 words of font info for 175 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  123i,19n,131p,1692b,2659s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Fr
@@ -1553,10 +1553,10 @@ nts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on utfpr-article.pdf (2 pages, 228217 bytes).
+Output written on utfpr-article.pdf (2 pages, 233932 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  32787 words of extra memory for PDF output out of 35830 (max. 10000000)
 

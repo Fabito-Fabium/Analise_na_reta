@@ -32,5 +32,17 @@ Portanto $\parth{x-\frac{\overline{a}}{2}, x + \frac{\overline{a}}{2}} \subset C
 
 
 %<*ex2>
-\textbf{Dem:} 
+\textbf{Dem:}  Suponhamos que $a\in A$ é um ponto de acumulação de $A$, ou seja, existe uma sequência  $\sqn{x}$ tal que $x_n \in A \backslash \{a\}$ e $\lim\limits_{n \rightarrow \infty} x_n = a$. Como $\lim\limits_{\toinf{n}} x_n = a$, para todo $\epsilon > 0$ existe $n_0 \in \bN$ tal que, para $n \in \bN$, temos $|x_n - a| < \epsilon$ com $n \ge n_0$, ou seja
+
+\begin{ceqnalign}{2.1}
+	|x_n - a| < \epsilon \iff -\epsilon < x_n - a < \epsilon \implies a - \epsilon < x_n < a + \epsilon
+\end{ceqnalign}
+
+e, como (2.1) vale para todo $\epsilon > 0$, é conveniente  escolher um $\epsilon$ suficiente pequeno, tal que  $(a - \epsilon, a + \epsilon)$ é uma vizinhança de $a$ de raio $\epsilon$ centrada em $a$ que esteja contida em $A$ e que denotaremos por $V_\epsilon(a)$. Com isto, como $\epsilon > 0$, existe um ponto $a - \frac{\epsilon}{2} \in (a - \epsilon, a + \epsilon) = V_\epsilon(a) = V_\epsilon(a) \cap A$ que é diferente de $a$, ou seja, em particular, $a - \frac{\epsilon}{2} \in (V_\epsilon(a) \cap A) \backslash \{a\} = V_\epsilon(a) \cap (A \backslash \{a\})$. Com isto, temos o que queríamos.\\
+Por outro lado, suponhamos que toda vizinhança $V$ de $a$ contém um ponto de $A\backslash\{a\}$, (2.2). Ora, como (2.2) vale para qualquer vizinhança $V(a)$, então, seja $V(a) = (\alpha, \beta)$, tal que $\alpha, \beta \in \bR$ e $\alpha < \beta$. Da hipótese, sabemos que $V(a) \cap (A \backslash \{a\}) \neq \emptyset$, portanto, podemos construir uma sequência $(x_n)_{n \in \bN}$ em $V(a)$ tal que $\lim\limits_{\toinf{n}} x_n = a$. Com isto, sejam $\overline{\alpha} = a - \alpha$ e $\overline{\beta} = \beta - a$, e $r = \min (\overline{\alpha}, \overline{\beta})$, e, considere a sequência $(x_n)_{n \in \bN}$ tal que $x_n = a + \frac{r}{n+1}$ . Note que $\lim\limits_{\toinf{n}}x_n = a$, mais ainda, por construção, para todo $n \in \bN$, $x_n \in V(a)\backslash\{a\}$, portanto,  $a$ é um ponto de acumulação, como queríamos. $\square$
 %</ex2>
+
+%<*ex3>
+\textbf{Dem:} Seja um conjunto qualquer  $A \subset \bR$ enumerável e, afim de contradição, suponha que $\itr A \neq \emptyset$, isto é, existe pelo menos um $a \in \itr A \subset A$.  Note que, como $a \in \itr A$, existe $\epsilon > 0$ tal que $(a - \epsilon, a + \epsilon) \subset A$
+
+%</ex3>
