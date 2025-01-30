@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.18)  30 JAN 2025 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.18)  30 JAN 2025 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5563,14 +5563,9 @@ m/n/10 =
  []
 
 
-Overfull \hbox (39.3195pt too wide) in paragraph at lines 60--61
-\OMS/cmsy/m/n/10 f\/cmr/m/n/10 1\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; A[] \OMS/c
-msy/m/n/10 ^^@
- []
-
-
-Overfull \hbox (20.55554pt too wide) in paragraph at lines 60--61
-\/cmr/m/n/10 1\OMS/cmsy/m/n/10 g \/cmr/m/n/10 =
+Overfull \hbox (48.23613pt too wide) in paragraph at lines 60--61
+\OMS/cmsy/m/n/10 f\/cmr/m/n/10 1\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; A[] \/cmr/
+m/n/10 =
  []
 
 
@@ -6406,40 +6401,6 @@ Overfull \hbox (43.33333pt too wide) in paragraph at lines 61--63
 10 ; \/cmr/m/n/10 2\OML/cmm/m/it/10 ; \/cmr/m/n/10 3\OMS/cmsy/m/n/10 g$
  []
 
-
-! LaTeX Error: Environment decTxt undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 \begin{decTxt}
-                   [ex4]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-
-! LaTeX Error: \begin{document} ended by \end{decTxt}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 \end{decTxt}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 )
 ! Emergency stop.
 <*> sol.tex
@@ -6448,10 +6409,10 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 51 strings out of 476034
- 667 string characters out of 5792863
+ 50 strings out of 476034
+ 658 string characters out of 5792863
  1864388 words of memory out of 6000000
- 20602 multiletter control sequences out of 15000+600000
+ 20601 multiletter control sequences out of 15000+600000
  512595 words of font info for 33 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  24i,5n,32p,1042b,120s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -57,12 +57,12 @@ Mais ainda, a contrapositiva da reescrita proposta nos diz que:\\
 
 \textbf{Exemplos de conjuntos com interior vazio:}
 \begin{enumerate}
-	\item Qualquer conjunto unitário, isto é, $A=\{a\}$ onde $a \in \bR$, tem interior vazio, visto que para todo $\epsilon>0$, $\xssy{a}{\epsilon} \not \subset A$. \textbf{Exemplo:} $A_0 = \{0\}, A_1 = \{1\}, A_\{-1\} = \{-1\}$ tem interior vazio.
+	\item Qualquer conjunto unitário, isto é, $A=\{a\}$ onde $a \in \bR$, tem interior vazio, visto que para todo $\epsilon>0$, $\xssy{a}{\epsilon} \not \subset A$. \textbf{Exemplo:} $A_0 = \{0\}, A_1 = \{1\}, A_{-1} = \{-1\}$ tem interior vazio.
 	\item Qualquer conjunto finito contido nos reais, isto é,  $A=\{x_0, \dots, x_n\}$ onde $n \in \bN$ e $x_k \in \bR$ para todo $k \in \bZ \cap [0, n]$ e $x_i < x_j$ quando $i < j$, tem interior vazio.\\
-	 Demonstração alternativa para este caso em específico: Considere $d = \min\{|x_i - x_{i+1}|; i = 0, 1, \dots, n - 1\}$, para cada $d> \epsilon_0 > 0$ e $k \in \bZ \cap [0, n]$, não existe $a \in A$ tal que $a\neq x_k$ e $a \in (x_k - \epsilon_0, x_k + \epsilon_0)$, já que, caso contrário, violaríamos a definição de $d$; ou seja, $(x_k - \epsilon_0, x_k + \epsilon_0) \not \subset A$ . Note que, para todo $\epsilon > 0$ existe pelo menos um $\epsilon_0$ como descrito anteriormente, tal que $I_{0, k} = \xssy{x_k}{\epsilon_0} \subset \xssy{x_k}{\epsilon} = I_{1, k}$ com $k \in \bZ \cap [0, n]$, portanto, como $I_{0, k} \not\subset A$, $I_{0, k} \subset I_{1, k}$ e $I_{0, k} \cap I_{1, k} \neq \emptyset$, segue que $I_{1, k} \not \subset A$, em outras palavras, para cada $k \in \bZ \cap [0, n]$ e $\epsilon>0$, $\xssy{x_k}{\epsilon} \not \subset A$, isto é, $\itr A = \emptyset$. \textbf{Exemplo:} $A_0 = \{0, 1\}, A_1 = \{0, 1, 2\}, A_3 = \{0, 1, 2, 3\}$ tem interior vazio.
+	 Demonstração alternativa para este caso em específico: Considere $d = \min\{|x_i - x_{i+1}|; i = 0, 1, \dots, n - 1\}$, para cada $d> \epsilon_0 > 0$ e $k \in \bZ \cap [0, n]$, não existe $a \in A$ tal que $a\neq x_k$ e $a \in (x_k - \epsilon_0, x_k + \epsilon_0)$, já que, caso contrário, violaríamos a definição de $d$; ou seja, $(x_k - \epsilon_0, x_k + \epsilon_0) \not \subset A$ . Note que, para todo $\epsilon > 0$ existe pelo menos um $\epsilon_0$ como descrito anteriormente, tal que $I_{0, k} = \xssy{x_k}{\epsilon_0} \subset \xssy{x_k}{\epsilon} = I_{1, k}$ com $k \in \bZ \cap [0, n]$, portanto, como $I_{0, k} \not\subset A$, $I_{0, k} \subset I_{1, k}$ e $I_{0, k} \cap I_{1, k} \neq \emptyset$, segue que $I_{1, k} \not \subset A$, em outras palavras, para cada $k \in \bZ \cap [0, n]$ e $\epsilon>0$, temos que $\xssy{x_k}{\epsilon} \not \subset A$, isto é, $\itr A = \emptyset$. \textbf{Exemplo:} $A_0 = \{0, 1\}, A_1 = \{0, 1, 2\}, A_3 = \{0, 1, 2, 3\}$ tem interior vazio.
 \end{enumerate}
 %</ex3>
 
 %<*ex4a>
-\textbf{Dem:} 
+\textbf{Dem:} Da definição de interior, para todo $x \in (\itr(A) \cup \itr(B))$, existe $\epsilon>0$ tal que $\xssy{x}{\epsilon} \subset (A \cup B)$
 %</ex4a>
