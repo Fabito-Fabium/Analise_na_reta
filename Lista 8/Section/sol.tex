@@ -64,7 +64,7 @@ Mais ainda, a contrapositiva da reescrita proposta nos diz que:\\
 %</ex3>
 
 %<*ex4a>
-\textbf{Dem:} Primeiro, vejamos o que é a união de interiores de dois conjuntos. Da definição de união, para todo $x \in (\itr{A} \cup \itr{B})$, $x \in \itr{A}$ ou $x \in \itr{B}$. Daqui, dividiremos o problema em 3 casos:
+\textbf{Dem:} Primeiro, vejamos o que é a união de interiores de dois conjuntos. Da definição de união, para todo $x \in (\itr{A} \cup \itr{B})$, $x l\in \itr{A}$ ou $x \in \itr{B}$. Daqui, dividiremos o problema em 3 casos:
 \begin{enumerate}
 	\item Se $x \in \itr A$, da definição de interior, existe $\epsilon_A > 0$ tal que $\xssy{x}{\epsilon_A} \subset A$;
 	\item Se $x \in \itr B$, da definição de interior, existe $\epsilon_B > 0$ tal que $\xssy{x}{\epsilon_B} \subset B$;
@@ -79,13 +79,18 @@ Vejamos que  $\itr{A \cap B}\subset(\itr A \cap \itr B)$. Ora, seja $x \in \itr{
 %</ex4b>
 
 %<*ex5a>
-Seja $A_n$ intervalos não-degenerados definidos por $A_n = \parth{-\frac{1}{n}, \frac{1}{n}}$ onde $n \in \bN$. Como visto no exercício 1, para todo $n \in \bN$, $A_n$ é um conjunto aberto. Considere a interseção infinita $I = \bigcap_{n \in \bN} A_n$. Note que, para todo $n \in \bN$, $0 \in A_n$, portanto $\{0\} \subset I$. Vejamos que $I/\{0\} = \emptyset$. Afim de contradição, suponhamos que existe $x \in I/\{0\}$. Visto que $x \neq 0$, seja $d = |x| > 0$, e, da definição dos intervalos $A_n$, temos, por conseguinte, que $1 > |x| = d > 0$, ou seja, $\frac{1}{d} > 1$. Daqui, seja $n_0 = \ceil{\frac{1}{d}}$ o menor inteiro maior que $\frac{1}{d}$, ou seja, $\frac{1}{d}<n_0$, e, como $n_0 \in \bN$, segue  que existe um intervalo $A_{n_0} = (-\frac{1}{n_0}, \frac{1}{n_0})$. Já que $\frac{1}{d} < n_0$, então, $\frac{1}{n_0} < d = |x|$, portanto, $x \not \in A_{n_0}$, ou seja $x \not \in I$, uma contradição. Com isto, podemos concluir que $I = \bigcap_{n \in \bN} A_n = \{0\}$, e, como visto no exercício 3 desta lista, segue que $I \neq \itr{I}$, portanto, $I$ não é aberto, como queríamos.
+Seja $A_n$ intervalos não-degenerados definidos por $A_n = \parth{-\frac{1}{n}, \frac{1}{n}}$ onde $n \in \bN$. Como visto no exercício 1, para todo $n \in \bN$, $A_n$ é um conjunto aberto. Considere a interseção infinita $I = \bigcap_{n \in \bN} A_n$. Note que, para todo $n \in \bN$, $0< \frac{1}{n}$ e $-\frac{1}{n}<0$, portanto, para todo $n \inN$, temos $0 \in A_n$, ou seja, $\{0\} \subset I$. Vejamos que $I/\{0\} = \emptyset$. Afim de contradição, suponhamos que existe $x \in I/\{0\}$. Visto que $x \neq 0$, seja $d = |x| > 0$, e, da definição dos intervalos $A_n$, temos, por conseguinte, que $1 > |x| = d > 0$, ou seja, $\frac{1}{d} > 1$. Daqui, seja $n_0 = \ceil{\frac{1}{d}}$ o menor inteiro maior que $\frac{1}{d}$, ou seja, $\frac{1}{d}<n_0$, e, como $n_0 \in \bN$, segue  que existe um intervalo $A_{n_0} = (-\frac{1}{n_0}, \frac{1}{n_0})$. Já que $\frac{1}{d} < n_0$, então, $\frac{1}{n_0} < d = |x|$, portanto, $x \not \in A_{n_0}$, ou seja $x \not \in I$, uma contradição. Com isto, podemos concluir que $I = \bigcap_{n \in \bN} A_n = \{0\}$, e, como visto no exercício 3 desta lista, segue que $I \neq \itr{I}$, portanto, $I$ não é aberto, como queríamos.
 %</ex5a>
 
 %<*ex5b>
-Ora, das leis de De Morgan, sabemos que $\parth{\bigcap_{\lambda \in \Lambda} X_\lambda}^c = \bigcup_{\lambda \in \Lambda} X_\lambda^c$, e como um conjunto é fechado se seu complementar é aberto, considere $A_n^c = (-\infty, -\frac{1}{n}] \cup [\frac{1}{n}, \infty)$ onde $n \in \bN$. Visto que os intervalos $A_n = \xssy{}{\frac{1}{n}}$ são abertos, segue que $A_n^c$ é fechado para todo $n \in bN$, mais, ainda, como $\bigcap_{n \in \bN} A_n = \{0\}$ é fechado e não é aberto, segue que $\bigcup_{n \in \bN} A_n^c$ é aberto e não é fechado, como queríamos.
+Ora, das leis de De Morgan, sabemos que $\parth{\bigcap_{\lambda \in \Lambda} X_\lambda}^c = \bigcup_{\lambda \in \Lambda} X_\lambda^c$, e como um conjunto é fechado se seu complementar é aberto, considere $A_n^c = (-\infty, -\frac{1}{n}] \cup [\frac{1}{n}, \infty)$ onde $n \in \bN$. Visto que os intervalos $A_n = \xssy{}{\frac{1}{n}}$ são abertos, segue que $A_n^c$ é fechado para todo $n \in \bN$. Mais ainda, como $\bigcap_{n \in \bN} A_n = \{0\}$ não é aberto, da contrapositiva da definição de fechado, segue que $\bigcup_{n \in \bN} A_n^c = \bR / \{0\}$ não é fechado, como queríamos.
 %</ex5b>
 
 %<*ex6a>
-\textbf{Dem:} Primeiro, vejamos que para todo $x<1$, $x \not \in \overline A$. Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$.
+\textbf{Dem:} Primeiro, vejamos que para todo $x<1$, $x \not \in \overline A$. Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$. Da definição de limite, para todo $\epsilon > 0$ existe $n_0 \inN$, tal que $|x_n - x| < \epsilon$ para todo inteiro $n \ge n_0$, ou seja, em particular, para todo $\epsilon > 0$, existe $n_0 \inN$ tal que $x - \epsilon < x_{n_0} < x + \epsilon$, deste modo, para todo $\epsilon$ existe $\tau \in A$, tal que $\tau \in (x - \epsilon, x + \epsilon)$. Note que, sabendo que $x<1$, podemos fixar $\epsilon = \frac{1-x}{2} > 0$ e, tendo em vista que
+\begin{ceqnalign*}
+1 = \frac{1+1}{2}>\frac{1+x}{2} = x + \frac{1-x}{2} = x+\epsilon
+\end{ceqnalign*}
+e, mais ainda, que todo número real menor que $1$ não está em $A$, segue que $\tau \in \xssy{x}{\epsilon} \not \subset A$, isto é, $\tau \not \in A$, uma contradição, portanto, para todo $x<1$, temos $x \not \in \overline A$, como queríamos.
+
 %</ex6a>
