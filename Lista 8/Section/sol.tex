@@ -43,6 +43,13 @@ Por outro lado, suponhamos que toda vizinhança $V$ de $a$ contém um ponto de $
 %</ex2>
 
 %<*ex3>
+\textbf{Exemplos de conjuntos com interior vazio:}
+\begin{enumerate}
+	\item Qualquer conjunto unitário, isto é, $A=\{a\}$ onde $a \in \bR$, tem interior vazio, visto que para todo $\epsilon>0$, $\xssy{a}{\epsilon} \not \subset A$. \textbf{Exemplo:} $A_0 = \{0\}, A_1 = \{1\}, A_{-1} = \{-1\}$ tem interior vazio.
+	\item Qualquer conjunto finito contido nos reais, isto é,  $A=\{x_0, \dots, x_n\}$ onde $n \in \bN$ e $x_k \in \bR$ para todo $k \in \bZ \cap [0, n]$ e $x_i < x_j$ quando $i < j$, tem interior vazio.\\
+	Demonstração alternativa para este caso em específico: Considere $d = \min\{|x_i - x_{i+1}|; i = 0, 1, \dots, n - 1\}$, para cada $d> \epsilon_0 > 0$ e $k \in \bZ \cap [0, n]$, não existe $a \in A$ tal que $a\neq x_k$ e $a \in (x_k - \epsilon_0, x_k + \epsilon_0)$, já que, caso contrário, violaríamos a definição de $d$; ou seja, $(x_k - \epsilon_0, x_k + \epsilon_0) \not \subset A$ . Note que, para todo $\epsilon > 0$ existe pelo menos um $\epsilon_0$ como descrito anteriormente, tal que $I_{0, k} = \xssy{x_k}{\epsilon_0} \subset \xssy{x_k}{\epsilon} = I_{1, k}$ com $k \in \bZ \cap [0, n]$, portanto, como $I_{0, k} \not\subset A$, $I_{0, k} \subset I_{1, k}$ e $I_{0, k} \cap I_{1, k} \neq \emptyset$, segue que $I_{1, k} \not \subset A$, em outras palavras, para cada $k \in \bZ \cap [0, n]$ e $\epsilon>0$, temos que $\xssy{x_k}{\epsilon} \not \subset A$, isto é, $\itr A = \emptyset$.\\ \textbf{Exemplo:} $A_0 = \{0, 1\}, A_1 = \{0, 1, 2\}, A_3 = \{0, 1, 2, 3\}$ tem interior vazio.
+\end{enumerate}
+
 Antes da demonstração, devemos relembrar da seguinte proposição e de um teorema demonstrados em aula.
 \newline
 \textbf{Proposição:} Seja $A$ um conjunto contável. Se $B \subset A$, então $B$ é contável.\\
@@ -53,16 +60,32 @@ Mais ainda, a contrapositiva da reescrita proposta nos diz que:\\
 \newline
 \textbf{Teorema:} Todo intervalo $\mathcal I$, não-degenerado é não-enumerável.\\
 \newline
-\textbf{Demonstração do exercício proposto:} Seja um conjunto qualquer  $A \subset \bR$ enumerável, ou seja, contável, e, afim de contradição, suponha que $\itr A \neq \emptyset$, isto é, existe pelo menos um $a \in \itr A \subset A$.  Note que, se $A=\emptyset$, temos uma contradição; Visto que há pelo menos um $a \in \itr A$, da definição de ponto interior, existe $\epsilon > 0$ tal que $\xssy{a}{\epsilon} \subset A$. Como $\xssy{a}{\epsilon}$ é um intervalo não-degenerado, do teorema citado, segue que $\xssy{a}{\epsilon}$ é não-enumerável, portanto $\xssy{a}{\epsilon}$ não é contável. Daqui, visto que $\itr A \subset A$ e $\itr A$ não é contável, segue do lema acima que $A$ não é contável, o que contradiz a hipótese. Portanto $\itr A = \emptyset$, como queríamos. $\square$\\
-
-\textbf{Exemplos de conjuntos com interior vazio:}
-\begin{enumerate}
-	\item Qualquer conjunto unitário, isto é, $A=\{a\}$ onde $a \in \bR$, tem interior vazio, visto que para todo $\epsilon>0$, $\xssy{a}{\epsilon} \not \subset A$. \textbf{Exemplo:} $A_0 = \{0\}, A_1 = \{1\}, A_{-1} = \{-1\}$ tem interior vazio.
-	\item Qualquer conjunto finito contido nos reais, isto é,  $A=\{x_0, \dots, x_n\}$ onde $n \in \bN$ e $x_k \in \bR$ para todo $k \in \bZ \cap [0, n]$ e $x_i < x_j$ quando $i < j$, tem interior vazio.\\
-	 Demonstração alternativa para este caso em específico: Considere $d = \min\{|x_i - x_{i+1}|; i = 0, 1, \dots, n - 1\}$, para cada $d> \epsilon_0 > 0$ e $k \in \bZ \cap [0, n]$, não existe $a \in A$ tal que $a\neq x_k$ e $a \in (x_k - \epsilon_0, x_k + \epsilon_0)$, já que, caso contrário, violaríamos a definição de $d$; ou seja, $(x_k - \epsilon_0, x_k + \epsilon_0) \not \subset A$ . Note que, para todo $\epsilon > 0$ existe pelo menos um $\epsilon_0$ como descrito anteriormente, tal que $I_{0, k} = \xssy{x_k}{\epsilon_0} \subset \xssy{x_k}{\epsilon} = I_{1, k}$ com $k \in \bZ \cap [0, n]$, portanto, como $I_{0, k} \not\subset A$, $I_{0, k} \subset I_{1, k}$ e $I_{0, k} \cap I_{1, k} \neq \emptyset$, segue que $I_{1, k} \not \subset A$, em outras palavras, para cada $k \in \bZ \cap [0, n]$ e $\epsilon>0$, temos que $\xssy{x_k}{\epsilon} \not \subset A$, isto é, $\itr A = \emptyset$. \textbf{Exemplo:} $A_0 = \{0, 1\}, A_1 = \{0, 1, 2\}, A_3 = \{0, 1, 2, 3\}$ tem interior vazio.
-\end{enumerate}
+\textbf{Demonstração do exercício proposto:} Seja um conjunto qualquer  $A \subset \bR$ enumerável, ou seja, contável, e, afim de contradição, suponha que $\itr A \neq \emptyset$, isto é, existe pelo menos um $a \in \itr A \subset A$.  Note que, se $A=\emptyset$, temos uma contradição; Visto que há pelo menos um $a \in \itr A$, da definição de ponto interior, existe $\epsilon > 0$ tal que $\xssy{a}{\epsilon} \subset A$. Como $\xssy{a}{\epsilon}$ é um intervalo não-degenerado, do teorema citado, segue que $\xssy{a}{\epsilon}$ é não-enumerável, portanto $\xssy{a}{\epsilon}$ não é contável. Daqui, visto que $\itr A \subset A$ e $\itr A$ não é contável, segue do lema acima que $A$ não é contável, o que contradiz a hipótese. Portanto $\itr A = \emptyset$, como queríamos. $\square$
 %</ex3>
 
 %<*ex4a>
-\textbf{Dem:} Da definição de interior, para todo $x \in (\itr(A) \cup \itr(B))$, existe $\epsilon>0$ tal que $\xssy{x}{\epsilon} \subset (A \cup B)$
+\textbf{Dem:} Primeiro, vejamos o que é a união de interiores de dois conjuntos. Da definição de união, para todo $x \in (\itr{A} \cup \itr{B})$, $x \in \itr{A}$ ou $x \in \itr{B}$. Daqui, dividiremos o problema em 3 casos:
+\begin{enumerate}
+	\item Se $x \in \itr A$, da definição de interior, existe $\epsilon_A > 0$ tal que $\xssy{x}{\epsilon_A} \subset A$;
+	\item Se $x \in \itr B$, da definição de interior, existe $\epsilon_B > 0$ tal que $\xssy{x}{\epsilon_B} \subset B$;
+	\item Se $x \in \itr A$ e $x \in \itr B$, dos dois itens anteriores, existe $\epsilon_{AB} > 0$ tal que\\ $\xssy{x}{\epsilon_{AB}} \subset A \cap B$.
+\end{enumerate}
+Agora, vejamos o que acontece quando $x \in \itr{A \cup B}$. Da definição de interior, temos que existe $\epsilon>0$ tal que $\xssy{x}{\epsilon} = I \subset (A \cup B)$. Da definição de subconjunto, para todo $y \in I$, temos que $y \in (A \cup B)$, isto é, $y \in A$ ou $y \in B$. Desta forma, é evidente que $I \subset A$, $I \subset B$ ou $I \subset (A \cap B)$, o que são equivalentes a (i.), (ii.) e (iii.), respectivamente. Com isto, temos que $\itr{A\cup B} = \itr A \cup \itr B$, como queríamos $\square$
 %</ex4a>
+
+%<*ex4b>
+\textbf{Dem:} Seja $x \in \itr A \cap \itr B$. Da definição de interseção, $x \in \itr A$ e $x \in \itr B$, desta forma, da definição de interior, segue que existe $\epsilon_A > 0$ tal que $\xssy{x} {\epsilon_A} = I_A \subset A$ e existe $\epsilon_B > 0 $ tal que $ \xssy{x}{\epsilon_B}=I_B \subset B$. Note que $x \in I_A$ e $x \in I_B$, portanto, $x \in (I_A \cap I_B)$ e $(I_A \cap I_B) \subset (A \cap B)$, $(\star)$. Daqui, seja $\epsilon = \min\{\epsilon_A, \epsilon_B\}>0$, e por ($\star$), temos que $\xssy{x}{\epsilon} \subset (A\cap B)$, isto é, $x \in \itr{A \cap B}$, deste modo $(\itr A \cap \itr B) \subset \itr{A \cap B}$. \\
+Vejamos que  $\itr{A \cap B}\subset(\itr A \cap \itr B)$. Ora, seja $x \in \itr{A \cap B}$, isto é, existe $\epsilon>0$ tal que $\xssy{x}{\epsilon} = I \subset (A \cap B)$, que, da definição de interseção, $I \subset A$ e $I \subset B$, ou seja $x\in \itr A$ e $x \in \itr B$, portanto $x \in (\itr A \cap \itr B)$, e, por conseguinte, segue que $\itr{A \cap B}\subset (\itr{A}\cap \itr{B})$. Com isto, $\itr{A \cap B} = \itr A \cap \itr B$, como queríamos. $\square$
+%</ex4b>
+
+%<*ex5a>
+Seja $A_n$ intervalos não-degenerados definidos por $A_n = \parth{-\frac{1}{n}, \frac{1}{n}}$ onde $n \in \bN$. Como visto no exercício 1, para todo $n \in \bN$, $A_n$ é um conjunto aberto. Considere a interseção infinita $I = \bigcap_{n \in \bN} A_n$. Note que, para todo $n \in \bN$, $0 \in A_n$, portanto $\{0\} \subset I$. Vejamos que $I/\{0\} = \emptyset$. Afim de contradição, suponhamos que existe $x \in I/\{0\}$. Visto que $x \neq 0$, seja $d = |x| > 0$, e, da definição dos intervalos $A_n$, temos, por conseguinte, que $1 > |x| = d > 0$, ou seja, $\frac{1}{d} > 1$. Daqui, seja $n_0 = \ceil{\frac{1}{d}}$ o menor inteiro maior que $\frac{1}{d}$, ou seja, $\frac{1}{d}<n_0$, e, como $n_0 \in \bN$, segue  que existe um intervalo $A_{n_0} = (-\frac{1}{n_0}, \frac{1}{n_0})$. Já que $\frac{1}{d} < n_0$, então, $\frac{1}{n_0} < d = |x|$, portanto, $x \not \in A_{n_0}$, ou seja $x \not \in I$, uma contradição. Com isto, podemos concluir que $I = \bigcap_{n \in \bN} A_n = \{0\}$, e, como visto no exercício 3 desta lista, segue que $I \neq \itr{I}$, portanto, $I$ não é aberto, como queríamos.
+%</ex5a>
+
+%<*ex5b>
+Ora, das leis de De Morgan, sabemos que $\parth{\bigcap_{\lambda \in \Lambda} X_\lambda}^c = \bigcup_{\lambda \in \Lambda} X_\lambda^c$, e como um conjunto é fechado se seu complementar é aberto, considere $A_n^c = (-\infty, -\frac{1}{n}] \cup [\frac{1}{n}, \infty)$ onde $n \in \bN$. Visto que os intervalos $A_n = \xssy{}{\frac{1}{n}}$ são abertos, segue que $A_n^c$ é fechado para todo $n \in bN$, mais, ainda, como $\bigcap_{n \in \bN} A_n = \{0\}$ é fechado e não é aberto, segue que $\bigcup_{n \in \bN} A_n^c$ é aberto e não é fechado, como queríamos.
+%</ex5b>
+
+%<*ex6a>
+\textbf{Dem:} Primeiro, vejamos que para todo $x<1$, $x \not \in \overline A$. Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$.
+%</ex6a>

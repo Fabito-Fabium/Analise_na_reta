@@ -2,6 +2,8 @@
 \usepackage{environ}
 \usepackage[fleqn]{nccmath}
 \usepackage{bm}
+\relpenalty=9999
+\binoppenalty=9999
 \NewEnviron{ceqnalign*}
     {\vspace{3mm}
     \begin{ceqn}
@@ -19,13 +21,17 @@
 \usepackage{catchfilebetweentags}
 \newcommand{\Laplace}{\mathscr{L}}
 \newcommand{\bN}{\mathbb N}
-\newcommand{\bPo}{\mathbb Z_{> 0}}
+\newcommand{\inN}{\in \bN}
 \newcommand{\sqn}[1]{(#1_n)_{n \in \bN}}
+\newcommand{\seq}[3]{(#1_#2)_{#2 \in #3}}
 \newcommand{\tozero}[1]{#1 \rightarrow 0}
 \newcommand{\toinf}[1]{#1 \rightarrow \infty}
+\newcommand{\limsq}[3]{\lim_{#1 \rightarrow #2} #3_#1}
 \newcommand{\bC}{\mathbb C}
 \newcommand{\bZ}{\mathbb Z}
 \newcommand{\bR}{\mathbb R}
-\newcommand{\itr}{\text{int}}
+\newcommand{\itr}[1]{\text{int}(#1)}
 \newcommand{\parth}[1]{\left(#1\right)}
 \newcommand{\xssy}[2]{\left(#1 - #2, #1 + #2\right)}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
