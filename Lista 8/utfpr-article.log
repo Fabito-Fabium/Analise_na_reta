@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.12.18)  3 FEB 2025 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  3 FEB 2025 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,14 +73,14 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 105.
+(babel)             (\language66). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language72). Reported on input line 108.
+(babel)             (\language66). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
-(babel)             (\language9). Reported on input line 111.
+(babel)             (\language20). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex
@@ -1548,7 +1548,7 @@ Package logreq Info: Writing requests to 'utfpr-article.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  36456 strings out of 476034
- 650613 string characters out of 5792863
+ 650623 string characters out of 5792854
  1893388 words of memory out of 6000000
  56228 multiletter control sequences out of 15000+600000
  598102 words of font info for 186 fonts, out of 8000000 for 9000
@@ -1563,7 +1563,7 @@ nts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on utfpr-article.pdf (4 pages, 252348 bytes).
+Output written on utfpr-article.pdf (4 pages, 253858 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream

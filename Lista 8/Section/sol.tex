@@ -87,10 +87,14 @@ Ora, das leis de De Morgan, sabemos que $\parth{\bigcap_{\lambda \in \Lambda} X_
 %</ex5b>
 
 %<*ex6a>
-\textbf{Dem:} Primeiro, vejamos que para todo $x<1$, $x \not \in \overline A$. Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$. Da definição de limite, para todo $\epsilon > 0$ existe $n_0 \inN$, tal que $|x_n - x| < \epsilon$ para todo inteiro $n \ge n_0$, ou seja, em particular, para todo $\epsilon > 0$, existe $n_0 \inN$ tal que $x - \epsilon < x_{n_0} < x + \epsilon$, deste modo, para todo $\epsilon$ existe $\tau \in A$, tal que $\tau \in (x - \epsilon, x + \epsilon)$. Note que, sabendo que $x<1$, podemos fixar $\epsilon = \frac{1-x}{2} > 0$ e, tendo em vista que
+\textbf{Dem:} Primeiro, vejamos que para todo $x<1$, $x \not \in \overline A$. Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$. Da definição de limite, para todo $\epsilon > 0$ existe $n_0 \inN$, tal que $|x_n - x| < \epsilon$ para todo inteiro $n \ge n_0$, ou seja, em particular, para todo $\epsilon > 0$, existe $n_0 \inN$ tal que $x - \epsilon < x_{n_0} < x + \epsilon$, deste modo, para todo $\epsilon$ existe $\tau \in A$, tal que $\tau \in (x - \epsilon, x + \epsilon)$, $(\ast)$. Note que, sabendo que $x<1$, podemos fixar $\epsilon = \frac{1-x}{2} > 0$ e, tendo em vista que
 \begin{ceqnalign*}
 1 = \frac{1+1}{2}>\frac{1+x}{2} = x + \frac{1-x}{2} = x+\epsilon
 \end{ceqnalign*}
 e, mais ainda, que todo número real menor que $1$ não está em $A$, segue que $\tau \in \xssy{x}{\epsilon} \not \subset A$, isto é, $\tau \not \in A$, uma contradição, portanto, para todo $x<1$, temos $x \not \in \overline A$, como queríamos.
-
+\\
+Agora, vejamos que para $x>3$, temos que $x \not \in \overline{A}$. Ora,  afim de contradição, suponhamos que  existe  $x \in \overline A$   tal que $x>3$. De $(\ast)$,  temos que para todo $\epsilon>0$ existe $\tau \in A$ tal que $x - \epsilon < \tau < x + \epsilon$. Fixando $\epsilon = \frac{x - 3}{2} > 0$, e, tendo em vista que
+\begin{ceqnalign*}
+	3 = \frac{3+3}{2}<\frac{3+x}{2} = x - \frac{x - 3}{2} = x - \epsilon
+\end{ceqnalign*}
 %</ex6a>
