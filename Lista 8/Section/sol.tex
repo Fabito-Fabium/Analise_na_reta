@@ -64,7 +64,7 @@ Mais ainda, a contrapositiva da reescrita proposta nos diz que:\\
 %</ex3>
 
 %<*ex4a>
-\textbf{Dem:} Primeiro, vejamos o que é a união de interiores de dois conjuntos. Da definição de união, para todo $x \in (\itr{A} \cup \itr{B})$, $x l\in \itr{A}$ ou $x \in \itr{B}$. Daqui, dividiremos o problema em 3 casos:
+\textbf{Dem:} Primeiro, vejamos o que é a união de interiores de dois conjuntos. Da definição de união, para todo $x \in (\itr{A} \cup \itr{B})$, $x\in \itr{A}$ ou $x \in \itr{B}$. Daqui, dividiremos o problema em 3 casos:
 \begin{enumerate}
 	\item Se $x \in \itr A$, da definição de interior, existe $\epsilon_A > 0$ tal que $\xssy{x}{\epsilon_A} \subset A$;
 	\item Se $x \in \itr B$, da definição de interior, existe $\epsilon_B > 0$ tal que $\xssy{x}{\epsilon_B} \subset B$;
@@ -163,13 +163,62 @@ Por ora, voltemos a $(\ast)$. Da hipótese, temos que $A \subset B$, portanto $\
 	x \in \overline A \iffc{(\star)} \forall \epsilon>0, A\cap \xssy{x}{\epsilon} \neq \emptyset \impliesc{A \subset B} \forall \epsilon>0, B\cap \xssy{x}{\epsilon} \neq \emptyset \iffc{(\star)} x \in \overline B
 \end{ceqnalign*}
 
-isto é, se $x \in \overline A$, então $x \in \overline B$, ou seja, $\overline A \subset \overline B$, como queríamos. $\square$.
+isto é, se $x \in \overline A$, então $x \in \overline B$, ou seja, $\overline A \subset \overline B$, como queríamos. $\square$
 %</ex7b>
 
 %<*ex7c>
 \textbf{Dem:} De $(\star)$ do exercício 7 item b, sabemos que, se $x \in \overline{A \cup B}$, então para todo $\epsilon > 0$, $(A \cup B) \cap \xssy{x}{\epsilon} \neq \emptyset$. Seja $I = \xssy{x}{\epsilon}$, note que $(A \cup B) \cap I = (A \cap  I) \cup (B \cap I)$,  portanto,
 para todo $\epsilon>0$, segue que $(A \cap I) \neq \emptyset$ ou $(B \cap I) \neq \emptyset$, isto é, $x \in \overline{A}$ ou $x \in \overline B$, deste modo, $x \in (\overline A \cup \overline B)$, sendo assim, $\overline{A \cup B} \subset (\overline A \cup \overline B)$, $(7c1)$.\\
 
-Por outro lado, se $x \in \overline A \cup \overline B$, temos que $x \in \overline A$ ou $x \in \overline B$, ou seja, de $(\star)$ do exercício 7 item b, para cada $\epsilon_A, \epsilon_B>0$, temos que $A\cap \xssy{x}{\epsilon_A} \neq \emptyset$ ou $B \cap \xssy{x}{\epsilon_B} \neq \emptyset$. Sendo assim, em particular, para todo $\epsilon > 0$ onde $\epsilon_A = \epsilon_B = \epsilon$, temos que $A \cap I \neq \emptyset$ ou $B \cap I \neq \emptyset$, isto é $ ((A \cap I) \cup (B \cap I)) = (A\cup B)\cap I \neq \emptyset$, onde $I = \xssy{x}{\epsilon}$. Por conseguinte, segue que, $(\overline A \cup \overline B) \subset \overline{A \cup B}$ que, junto a $(7c1)$, temos que $\overline{A \cup B} = \overline A \cup \overline B$, como queríamos $\square$.
-
+Por outro lado, se $x \in \overline A \cup \overline B$, temos que $x \in \overline A$ ou $x \in \overline B$, ou seja, de $(\star)$ do exercício 7 item b, para cada $\epsilon_A, \epsilon_B>0$, temos que $A\cap \xssy{x}{\epsilon_A} \neq \emptyset$ ou $B \cap \xssy{x}{\epsilon_B} \neq \emptyset$. Sendo assim, em particular, para todo $\epsilon > 0$ onde $\epsilon_A = \epsilon_B = \epsilon$, temos que $A \cap I \neq \emptyset$ ou $B \cap I \neq \emptyset$, isto é $ ((A \cap I) \cup (B \cap I)) = (A\cup B)\cap I \neq \emptyset$, onde $I = \xssy{x}{\epsilon}$. Por conseguinte, segue que, $(\overline A \cup \overline B) \subset \overline{A \cup B}$ que, junto a $(7c1)$, temos que $\overline{A \cup B} = \overline A \cup \overline B$, como queríamos. $\square$
 %</ex7c>
+
+%<*ex7d>
+\textbf{Dem:} Ora, de $(\star)$, todo $x \in \overline{A \cap B}$ se, e somente se $(A \cap B) \cap \xssy{x}{\epsilon} \neq \emptyset$. Denotando $I = \xssy{x}{\epsilon}$, temos que $(A \cap B) \cap I = (A \cap I) \cap (B \cap I)$, portanto, se $\tau \in (A \cap B) \cap I$, segue que $\tau \in (A \cap I)$ e $\tau \in (B \cap I)$, para todo $\epsilon > 0$. Deste modo, segue da volta de $(\star)$ do exercício 7 item b, que $x \in \overline{A}$ e $x \in \overline B$, isto é, $x \in \overline{A} \cap \overline B$, como queríamos. $\square$
+\\
+Como um \textbf{exemplo} em que não vale a igualdade, considere $A \in \parth{-1, 0}$ e $B \in \parth{0, 1}$, portanto $A \cap B = \emptyset$ e daqui, temos que $\overline{A \cap B} = \emptyset$. Por outro lado, $\overline{A} = [-1, 0]$ e $\overline{B} = [0, 1]$, sendo assim, $\overline A \cap \overline B = \{0\} \not \subset \emptyset = \overline{A \cap B}$, como queríamos.
+%</ex7d>
+
+%<*ex8a>
+\textbf{Dem:} Seja $A$ um conjunto não-vazio e limitado superiormente. Da definição de supremo, para todo $\epsilon > 0$, existe $a_0 \in A$ tal que,
+\begin{ceqnalign*}
+	\sup{(A)} - \epsilon < a_0 \le \sup{(A)}.
+\end{ceqnalign*}
+Sendo assim, fixando um $\epsilon>0$ de tal forma que $I = (\sup{(A)}-\epsilon, \sup{(A)}) \subset A$, podemos considerar a sequência $\sqn x$ tal que $x_n \in I \subset A$, onde $x_n = \sup{(A)} - \frac{\epsilon}{n+1}$. Desta forma, como existe uma sequência $\sqn x$ em $A$ tal que $\limsq n \infty x = \sup{(A)}$, segue que $\sup{(A)}$ é aderente a $A \subset \bR$, como queríamos. $\square$
+%</ex8a>
+
+%<*ex8b>
+\textbf{Dem: } Seja $A$ um conjunto não-vazio e limitado inferiormente. Da definição de ínfimo, para todo $\epsilon > 0$, existe $a_0 \in A$ tal que,
+\begin{ceqnalign*}
+	\inf{(A)} \le a_0 < \inf{(A)} + \epsilon.
+\end{ceqnalign*}
+Sendo assim, como visto anteriormente, fixando um $\epsilon>0$ de tal forma que $I = (\inf{(A)}, \inf{(A)} + \epsilon) \subset A$, podemos considerar a sequência $\sqn x$ tal que $x_n \in I \subset A$, onde $x_n = \inf{(A)} + \frac{\epsilon}{n+1}$. Ora, como existe uma sequência $\sqn x$ em $A$ tal que $\limsq n \infty x = \inf{(A)}$, segue que $\inf{(A)}$ é aderente a $A \subset \bR$, como queríamos. $\square$
+%</ex8b>
+
+%<*ex9>
+\textbf{Dem: } Sejam $I_1 = (a, b)$, $I_2 = [a, b)$ e $I_3 = (a, b]$, onde $a, b \in \bR$ e $a<b$. Ora, do exercício 1 da lista 5, sabemos que  $\sup{(I_k)}=b$ e $\inf{(I_k)} = a$ para $k\in \bN_{\le 3}$, desta forma, do exercício 8, segue que $a$ e $b$ são aderentes de $I_k$. Mais ainda, do exercício 7 item a, tendo em mente que $(a, b) \subset I_k$ e $I_k \subset \overline{I_{k}}$ para todo $k \in \bN_{\le 3}$, da transitividade de $(\subset)$, temos que $(a,b) \subset \overline{I_k}$ para $k \in \bN_{\le 3}$. Sendo assim, $[a, b] \subset \overline{I_k}$ para todo $k \in \bN_{\le 3}$.\\
+Agora, vejamos que não existe $x \not \in [a, b]$ tal que $x \in \overline{I_k}$, com $k \inN_{\le 3}$. Afim de contradição, suponhamos que existe $x \not \in [a,b]$ tal que $x \in \overline{I_k}$. Como $x \in \overline{I_k}$, para $k \inN_{\le 3}$, de $(\star)$ do exercício 7 item b, temos que, para cada $\epsilon>0$ e $k\inN_{\le 3}$, segue que $I_k \cap (x-\epsilon, x+\epsilon) \neq \emptyset$, para $k \inN_{\le 3}$, $(\dag)$. Como $x \not \in [a, b]$, então $x < a$ ou $x > b$.\\
+Se $x < a$, fixe $\epsilon = \frac{a-x}{2} > 0$. E, como
+\begin{ceqnalign*}
+	a = \frac{a+a}{2} > \frac{x+a}{2} = x + \frac{a-x}{2} = x+\epsilon > x-\epsilon,
+\end{ceqnalign*}
+e $a=\inf{(I_k)}$, segue que $\xssy{x}{\epsilon} \cap I_k = \emptyset$ para todo $k \inN_{\le 3}$, porém $(\dag)$, deste modo, temos uma contradição, (9.1). 
+Caso $x>b$, fixando $\epsilon = \frac{x-b}{2}$, e tendo em mente que
+\begin{ceqnalign*}
+	b = \frac{b+b}{2} < \frac{b+x}{2} = x - \frac{x-b}{2} = x - \epsilon<x+\epsilon,
+\end{ceqnalign*}
+visto que $b = \sup{(I_k)}$, segue que $\xssy{x}{\epsilon}\cap I_k = \emptyset$ para todo $k \inN_{\le 3}$, porém $(\dag)$, deste modo, temos uma contradição, (9.2).
+\\
+Sendo assim, de (9.1) e (9.2), segue que não existe $x \not \in [a, b]$ tal que $x \in \overline I_k$, portanto $[a,b] = I_k$ para $k \in \bN_{\le 3}$, como queríamos. $\square$
+%</ex9>
+
+%<*ex10>
+\textbf{Dem:} Note que para todo $x \in \bR$, a vizinhança de $x$ é um intervalo não-degenerado. Ou seja, para todo $\epsilon>0$, $\xssy{x}{\epsilon}$ é não-degenerado. Como visto nas aulas, temos que todo intervalo não-degenerado contém números racionais, portanto, para todo $\epsilon>0$, segue que $\xssy{x}{\epsilon} \cap \bQ \neq \emptyset$. De $(\star)$ do exercício 7 item b, como para todo $\epsilon>0$, temos $\xssy{x}{\epsilon} \cap \bQ \neq \emptyset$, segue que $x \in \overline \bQ$. Com isto, já que se $x \in \bR$, então $x \in \bQ$, segue que $\bR \subset \bQ$, como queríamos. $\square$
+%</ex10>
+
+%<*ex11>
+\textbf{Dem: } Afim de contradição, suponhamos que $A$ é aberto, portanto, $A = \itr{A}$, ou seja, para cada $a \in A$, existe $r>0$ tal que $\xssy{a}{r} \subset A$, isto é $\xssy{a}{r} \cap A\setminus \{a\} \neq \emptyset$. Desta forma, para todo $\epsilon > r > 0$, como $\xssy{a}{r} \subset \xssy{a}{\epsilon}$, então $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$. Mais ainda, para todo $\epsilon>0$ tal que $r>\epsilon$, temos $\xssy{a}{\epsilon} \subset \xssy{a}{r} \subset A$, com isto, temos novamente que, $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$. Do principio da boa ordem, sabemos que se temos dois números, em particular, reais positivos $\epsilon$ e $r$, os dois podem ser ordenados da seguinte forma: $\epsilon > r$, $\epsilon<r$ ou $\epsilon = r$. Nos três casos, independente da ordenação entre $r$ e $\epsilon$, temos que $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$, portanto, para todo $\epsilon > 0$, segue que $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$. Seja $V$ a vizinhança de $a \in A$, e tendo em mente que uma vizinhança é um intervalo aberto, então $V$ admite supremo e ínfimo. Daqui, fixando $\epsilon = \min{(\sup{(V)}-a, a - \inf{(V)})}/2$, como para todo $x \in \xssy{a}{\epsilon}$, 
+\begin{ceqnalign*}
+	inf{V} < x 
+\end{ceqnalign*}
+%</ex11>
