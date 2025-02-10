@@ -87,19 +87,19 @@ Ora, das leis de De Morgan, sabemos que $\parth{\bigcap_{\lambda \in \Lambda} X_
 %</ex5b>
 
 %<*ex6a>
-\textbf{Dem:} Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$. Da definição de limite, para todo $\epsilon > 0$ existe $n_0 \inN$, tal que $|x_n - x| < \epsilon$ para todo inteiro $n \ge n_0$, ou seja, em particular, para todo $\epsilon > 0$, existe $n_0 \inN$ tal que $x - \epsilon < x_{n_0} < x + \epsilon$, deste modo, para todo $\epsilon$ existe $\tau \in A$, tal que $\tau \in (x - \epsilon, x + \epsilon)$, $(\ast)$.
+\textbf{Dem:} Ora, afim de contradição suponhamos que $x \in \overline A$, portanto, existe uma sequência $\sqn{x}$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$. Da definição de limite, para todo $\epsilon > 0$ existe $n_0 \inN$, tal que $|x_n - x| < \epsilon$ para todo inteiro $n \ge n_0$, ou seja, em particular, para todo $\epsilon > 0$, existe $n_0 \inN$ tal que $x - \epsilon < x_{n_0} < x + \epsilon$, deste modo, para todo $\epsilon$ existe $\tau \in A$, tal que $\tau \in (x - \epsilon, x + \epsilon) = I$, $(\ast)$.
 \\
 Vejamos o caso onde $x<1$. Fixando $\epsilon = \frac{1-x}{2} > 0$ e, de $(\ast)$, tendo em vista que
 \begin{ceqnalign*}
 1 = \frac{1+1}{2}>\frac{1+x}{2} = x + \frac{1-x}{2} = x+\epsilon
 \end{ceqnalign*}
-e, mais ainda, que todo número real menor que $1$ não está em $A$, segue que existe $\tau \in A$ tal que $\tau \in \xssy{x}{\epsilon} \not \subset A$, isto é, $\tau \in A$ e $\tau \not \in A$, uma contradição, portanto, para todo $x<1$, temos $x \not \in \overline A$, como queríamos.
+e, mais ainda, que todo número real menor que $1$ não está em $A$, segue que  $I \cap A = \emptyset$. Mas, visto que $\tau \in I$ e $\tau \in A$, temos que $\tau \in \emptyset$, uma contradição, portanto, para todo $x<1$, temos $x \not \in \overline A$, como queríamos.
 \\
 Para o caso $x>3$. Fixando $\epsilon = \frac{x - 3}{2} > 0$, e, de $(\ast)$, tendo em vista que
 \begin{ceqnalign*}
 	3 = \frac{3+3}{2}<\frac{3+x}{2} = x - \frac{x - 3}{2} = x - \epsilon
 \end{ceqnalign*}
-e, que todo número real maior que $3$ não está em $A$, segue que existe $\tau \in A$ tal que $\tau \in \xssy{x}{\epsilon} \not \subset A$, isto é,$\tau \in A$ e $\tau \not \in A$, uma contradição, portanto, para todo $x>3$, temos $x \not \in \overline{A}$, como queríamos.
+e, que todo número real maior que $3$ não está em $A$, segue que $\xssy{x}{\epsilon} \cap A = \emptyset$, porém, de $(\ast)$, como existe $\tau \in A$ tal que $\tau \in \xssy{x}{\epsilon} $, segue que $\xssy{x}{\epsilon} \cap A \neq \emptyset$, uma contradição, portanto, para todo $x>3$, temos $x \not \in \overline{A}$, como queríamos.
 \\
 Para $2<x<3$, fixando $\epsilon = \min{\{\frac{x-2}{2}, \frac{3-x}{2}\}}$, e, de ($\ast$), tendo em vista que,
 \begin{ceqnalign}{1}
@@ -119,16 +119,57 @@ Note que, para todo $y \in (2, 3)$ temos que $y \not \in A$, e, de (1) e (2), te
 %</ex6a>
 
 %<*ex6b>
-Ora, afim de contradição, suponhamos que $x \in A'$, isto é, existe uma sequência $\sqn x$ com $x_n \in A/\{x\}$ tal que $\limsq n \infty x = x$. Da definição de limite, temos que para todo $\epsilon>0$ existe $n_0 \inN$ tal que $\asbeps {x_n} x$ com $x \inN_{\ge n_0}$. Ou seja, em particular, tomando $\tau = x_{n_0}$, para todo $\epsilon>0$, existe $\tau \in A/\{x\}$ tal que $\asbeps \tau x$, ($\ast$).
+Ora, afim de contradição, suponhamos que $x \in A'$, isto é, existe uma sequência $\sqn x$ com $x_n \in A \setminus \{x\}$ tal que $\limsq n \infty x = x$. Da definição de limite, temos que para todo $\epsilon>0$ existe $n_0 \inN$ tal que $\asbeps {x_n} x$ com $x \inN_{\ge n_0}$. Ou seja, em particular, tomando $\tau = x_{n_0}$, para todo $\epsilon>0$, existe $\tau \in A \setminus \{x\}$ tal que $\asbeps \tau x$, ($\ast$).
 \\
-Se $x > 3$, fixando $\epsilon = \frac{x-3}{2} > 0$, de $(\ast)$, existe $\tau \in A/\{x\}$ tal que $\tau \in \xssy{x} {\frac{x-3}{2}}$, portanto $\tau \in \parth{\frac{x+3}{2}, \frac{3x-3}{2}}$. Mas, como
+Para o caso $x>2$, considere $x>3$, $x = 3$ ou $2<x<3$. Se $x > 3$, fixando $\epsilon = \frac{x-3}{2} > 0$, de $(\ast)$, existe $\tau \in A \setminus \{x\}$ tal que $\tau \in \xssy{x} {\frac{x-3}{2}}$, portanto $\tau \in \parth{\frac{x+3}{2}, \frac{3x-3}{2}}$. Mas, como
 \begin{ceqnalign*}
 	3 = \frac{3+3}{2} < \frac{x+3}{2}
 \end{ceqnalign*}
-segue que $\parth{\frac{x+3}{2}, \frac{3x-3}{2}} \cap A/\{x\} = \emptyset$, ou seja $\tau \in \emptyset$, contradição, como queríamos.
+segue que $\parth{\frac{x+3}{2}, \frac{3x-3}{2}} \cap A \setminus \{x\} = \emptyset$, ou seja $\tau \in \emptyset$, uma contradição, como queríamos.
 \\
-Se $x = 3$, fixando $\epsilon = \frac{1}{2} > 0$, de $(\ast)$, temos que existe $\tau \in A/\{x\}$ tal que $\tau \in \xssy {x}{\frac{1}{2}}$, mas, por construção, $\xssy x {\frac{1}{2}} \cap A/\{x\} = \emptyset$, portanto $\tau \in \emptyset$, uma contradição, como queríamos.
+Se $x = 3$, fixando $\epsilon = \frac{1}{2} > 0$, de $(\ast)$, temos que existe $\tau \in A \setminus \{x\}$ tal que $\tau \in \xssy {x}{\frac{1}{2}}$, mas, por construção, $\xssy x {\frac{1}{2}} \cap A \setminus \{x\} = \emptyset$, portanto $\tau \in \emptyset$, uma contradição, como queríamos.
 \\
-Se $2<x<3$
+Se $2<x<3$, fixando $\epsilon = \min\{\frac{x-2}{2}, \frac{3-x}{2}\}$, de ($\ast$), existe $\tau \in A \setminus \{x\}$ tal que $\tau \in \xssy{x}{\epsilon}$. Mas, como
+\begin{ceqnalign}{1}
+	3=\frac{3+3}{2}=\frac{3+x}{2} = x + \frac{3-x}{2} \ge x + \epsilon
+\end{ceqnalign}
+e, mais ainda, que
+\begin{ceqnalign}{2}
+	2=\frac{2+2}{2} < \frac{2+x}{2} = x - \frac {x-2}{2} \le x - \epsilon
+\end{ceqnalign}
+por $(1)$ e $(2)$, segue que $\xssy{x}{\epsilon} \subset \parth{2, 3}$. Porém, $\parth{2, 3} \cap A \setminus \{x\}= \emptyset$, ou seja, $\tau \in \emptyset$, uma contradição, como queríamos.\\
+Por fim, vejamos o caso $x<1$. Ora, fixando $\epsilon = \frac{x-1}{2}$, por $(\ast)$, temos que existe $\tau \in A \setminus \{x\}$ tal que $x\in\xssy{x}{\epsilon} = \parth{\frac{3x-1}{2}, \frac{x+1}{2}}$. Note que,
+\begin{ceqnalign}
+	1=\frac{1+1}{2} > \frac{x+1}{2}
+\end{ceqnalign}
+sendo assim, $\parth{\frac{3x-1}{2}, \frac{x+1}{2}} \cap A\{x\} = \emptyset$, ou seja, $\tau \in \emptyset$, uma contradição, como queríamos. $\square$
 
 %</ex6b>
+
+%<*ex7a>
+\textbf{Dem:} Ora, se $x \in \overline{A}$, da definição de fecho, existe uma sequência $\sqn x$ com $x_n \in A$ para todo $n \inN$ tal que $\limsq n \infty x = x$, sendo assim, em particular, considere a sequência $\sqn x$ tal que $x_n = x$ para todo $n \inN$. Desta forma, para todo $x \in A$, segue que $x \in \overline A$, portanto $A \subset \overline A$, como queríamos. $\square$
+%</ex7a>
+
+
+%<*ex7b>
+\textbf{Dem:} Como para todo $x \in \overline{A}$, existe uma subsequência $\sqn x$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$, da definição de limite, segue que para todo $\epsilon > 0$, existe $n_0 \inN$ tal que para um inteiro $n \ge n_0$, temos que $\xssy{x_n}{x} < \epsilon$. Em particular, seja $n = n_0$, e denotamos $x_{n_0} = \tau$, com isto, segue que para todo $\epsilon>0$, existe $\tau \in A$ tal que $\xssy{\tau}{x} < \epsilon$, isto é, $\tau \in \parth{x-\epsilon, x+\epsilon}$. Dito isto, temos que, para cada $x \in \overline{A}$ e $\epsilon > 0$, segue que existe $\tau \in A$ tal que $\tau \in \xssy{x}{\epsilon}$, $(\ast)$. Mais ainda, de $(\ast)$, infere-se que
+\begin{ceqnalign}{$\star$}
+	x \in \overline A \iff \forall \epsilon>0,  \quad A \cap \xssy{x}{\epsilon} \neq \emptyset
+\end{ceqnalign}
+
+Por ora, voltemos a $(\ast)$. Da hipótese, temos que $A \subset B$, portanto $\tau \in B$ e $\tau \in \xssy{x}{\epsilon}$, sendo assim, para todo $\epsilon >0$ temos que $B \cap \xssy{x}{\epsilon} \neq \emptyset$, e de $(\star)$, segue que $x \in \overline B$ em resumo,
+
+\begin{ceqnalign*}
+	x \in \overline A \iffc{(\star)} \forall \epsilon>0, A\cap \xssy{x}{\epsilon} \neq \emptyset \impliesc{A \subset B} \forall \epsilon>0, B\cap \xssy{x}{\epsilon} \neq \emptyset \iffc{(\star)} x \in \overline B
+\end{ceqnalign*}
+
+isto é, se $x \in \overline A$, então $x \in \overline B$, ou seja, $\overline A \subset \overline B$, como queríamos. $\square$.
+%</ex7b>
+
+%<*ex7c>
+\textbf{Dem:} De $(\star)$ do exercício 7 item b, sabemos que, se $x \in \overline{A \cup B}$, então para todo $\epsilon > 0$, $(A \cup B) \cap \xssy{x}{\epsilon} \neq \emptyset$. Seja $I = \xssy{x}{\epsilon}$, note que $(A \cup B) \cap I = (A \cap  I) \cup (B \cap I)$,  portanto,
+para todo $\epsilon>0$, segue que $(A \cap I) \neq \emptyset$ ou $(B \cap I) \neq \emptyset$, isto é, $x \in \overline{A}$ ou $x \in \overline B$, deste modo, $x \in (\overline A \cup \overline B)$, sendo assim, $\overline{A \cup B} \subset (\overline A \cup \overline B)$, $(7c1)$.\\
+
+Por outro lado, se $x \in \overline A \cup \overline B$, temos que $x \in \overline A$ ou $x \in \overline B$, ou seja, de $(\star)$ do exercício 7 item b, para cada $\epsilon_A, \epsilon_B>0$, temos que $A\cap \xssy{x}{\epsilon_A} \neq \emptyset$ ou $B \cap \xssy{x}{\epsilon_B} \neq \emptyset$. Sendo assim, em particular, para todo $\epsilon > 0$ onde $\epsilon_A = \epsilon_B = \epsilon$, temos que $A \cap I \neq \emptyset$ ou $B \cap I \neq \emptyset$, isto é $ ((A \cap I) \cup (B \cap I)) = (A\cup B)\cap I \neq \emptyset$, onde $I = \xssy{x}{\epsilon}$. Por conseguinte, segue que, $(\overline A \cup \overline B) \subset \overline{A \cup B}$ que, junto a $(7c1)$, temos que $\overline{A \cup B} = \overline A \cup \overline B$, como queríamos $\square$.
+
+%</ex7c>
