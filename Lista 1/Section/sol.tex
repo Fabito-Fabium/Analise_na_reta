@@ -1,0 +1,84 @@
+%<*ex1a>
+Antes, considere a seguinte proposição:
+\dotline
+\textbf{Proposição:} Seja $m \inN$, então $m+1 = 1+ m$.\\
+\textbf{Demonstração da proposição:} Considere $S \subset \bN$ tal que, $S = \{m \inN 
+; m+1=1+m\}$. Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$; Vejamos agora que $
+s(S) \subset S$. Seja $m \in S$, então:
+\begin{ceqnalign*}
+  s(m)+1 &= (m+1) + 1, \quad &&\text{(Definição da função sucessor)}\\
+  &= (1+m) + 1, \quad &&\text{(Visto que $m \in S$)} \\
+  &= 1 + (m + 1), \quad &&\text{(Associatividade da soma em $\bN$)}\\
+  &= 1 + s(m). \quad &&\text{(Definição da função sucessor)}
+\end{ceqnalign*}
+
+Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da Indução
+, temos que $S = \bN$, como queríamos. $\square$
+\dotline
+\textbf{Dem:} Considere $S \subset \bN$ tal que $S = \{m \inN; m+n = n+m, n\inN\}$
+. Da proposição anterior, temos que $1 \in S$, visto que $1 + n = n + 1$. Vejamos que $
+s(S) \subset S$. Tomando $m \in S$,\\
+\begin{ceqnalign*}
+  s(m)+n &= (m+1) + n, \quad &&\text{(Definição da função sucessor)}\\
+  &= m + (1+n), \quad &&\text{(Associatividade da soma em $\bN$)} \\
+  &= m + (n+1), \quad &&\text{(Proposição anterior)}\\
+  &= (m+n) + 1, \quad &&\text{(Associatividade da soma em $\bN$)}\\
+  &= (n + m) + 1, \quad &&\text{(Visto que $m \in S$)}\\
+  &= n + (m+1), \quad &&\text{(Associatividade da soma em $\bN$)}\\
+  &= n + s(m). \quad&&\text{(Definição da função sucessor)}
+\end{ceqnalign*}
+
+Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\bN$
+, como queríamos. $\square$
+%</ex1a>
+
+%<*ex1b>
+\textbf{Dem: } Seja $S \subset \bN$ tal que $S=\{p \inN ; (m+p=n+p) \implies m=n, \quad 
+m,n \in \bN\}$. Ora, $1 \in S$, já que, se $m+1 = n+1$, então $s(m) = s(n)$, e
+, como $s$ é injetora por definição, então $m=n$. Vejamos que $s(S) \subset S$. Toman
+do $p \in S$ e $m+s(p) = n + s(p)$,
+\begin{ceqnalign*}
+  m+s(p)&=n+s(p),\\
+  m+(p+1) &=n+(p+1), \quad &&\text{(Definição da função sucessor)}\\
+  (m+p) + 1 &= (n+p) + 1, \quad &&\text{(Associatividade da soma em $bN$)}\\
+  s(m+p)&=s(n+p), \quad &&\text{(Definição da função sucessor)}\\
+  m+p &=n+p, \quad &&\text{(Injetividade da função sucessor)}\\
+  m &= n. \quad &&\text{(Já que $p \in S$)}
+\end{ceqnalign*}
+
+Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S 
+= \bN$. $\square$
+%</ex1b>
+
+%<*ex1c>
+Antes, considere as seguintes proposições:
+\dotline
+\textbf{Proposição 1:} Seja $n \inN$, $n\cdot 1 = 1 \cdot n$.\\
+\textbf{Demonstração da proposição:} Seja $T \subset \bN$ tal que $T = \{n\inN; n\cdot 1
+=1\cdot n\}$, queremos mostrar que $T = \bN$. Ora, $1 \in T$, já que pela defini
+ção do produto em $\bN$, $(1)\cdot 1 = 1 = 1 \cdot(1)$. Vejamos que $s(T) \subset T$
+. Tomando $n \in T$, temos que:\\
+\begin{ceqnalign*}
+  s(n)\cdot 1 &= s(n), \quad&&\text{(Definição do produto em $\bN$)}\\
+  &=n + 1, \quad&&\text{(Definição da função sucessor)}\\
+  &=1\cdot n + 1, \quad&&\text{(Da definição do produto e sabendo que $n \in T$
+  , $n = n\cdot 1 = 1 \cdot n$)}\\
+  &= 1\cdot s(n). \quad &&\text{(Definição do produto em $\bN$, $m\cdot s(n) = mn+m$)}
+\end{ceqnalign*}
+Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T=\bN$
+. $\square$
+\dotline
+\textbf{Dem: }
+%</ex1c>
+
+
+%<*ex1d>
+%</ex1d>
+
+
+%<*ex1e>
+%</ex1e>
+
+
+%<*ex1f>
+%</ex1f>

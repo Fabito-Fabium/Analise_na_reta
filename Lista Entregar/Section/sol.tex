@@ -1,0 +1,200 @@
+%<*ex2>
+\textbf{Dem: }Antes, note que toda vizinhança de $a$ pode ser escrita como $V=(c, d) = (a-k, a+l)$ onde $k, l \in\bR^+$. Mais ainda, $(a-k, a+l) \supset (a-d, a+d)$, onde $d = \min(k, l)$, isto é
+, toda vizinhança de $a$ tem como subconjunto uma vizinhança de $a$ centrada em $a$
+, sendo assim, para a ida da proposição, basta mostrar que a afirmação é valida para vizinhanças de $a$ centradas em $a$
+. Deste modo
+, suponhamos que $a\in A$ é um ponto de acumulação de $A$, ou seja, existe uma sequência  $\sqn{x}$ tal que $x_n \in A \backslash \{a\}$ e $\lim\limits_{n \rightarrow \infty} x_n = a$. Como $\lim\limits_{\toinf{n}} x_n = a$, para todo $\epsilon > 0$ existe $n_0 \in \bN$ tal que, para $n \in \bN$, temos $|x_n - a| < \epsilon$ com $n \ge n_0$, ou seja
+
+\begin{ceqnalign}{2.1}
+	|x_n - a| < \epsilon \iff -\epsilon < x_n - a < \epsilon \implies a - \epsilon < x_n < a + \epsilon
+\end{ceqnalign}
+
+e, como (2.1) vale para todo $\epsilon > 0$, é conveniente  escolher um $\epsilon$ suficientemente pequeno, tal que  $(a - \epsilon, a + \epsilon)$ é uma vizinhança de $a$ de raio $\epsilon$ centrada em $a$ que esteja contida em $A$ e que denotaremos por $V_\epsilon(a)$. Com isto, como $\epsilon > 0$, existe um ponto $a - \frac{\epsilon}{2} \in (a - \epsilon, a + \epsilon) = V_\epsilon(a) = V_\epsilon(a) \cap A$ que é diferente de $a$, ou seja, em particular, $a - \frac{\epsilon}{2} \in (V_\epsilon(a) \cap A) \backslash \{a\} = V_\epsilon(a) \cap (A \backslash \{a\})$. Com isto, temos o que queríamos.\\
+Por outro lado, suponhamos que toda vizinhança $V$ de $a$ contém um ponto de $A\backslash\{a\}$, (2.2). Ora, como (2.2) vale para qualquer vizinhança $V(a)$, então, seja $V(a) = (\alpha, \beta)$, tal que $\alpha, \beta \in \bR$ e $\alpha < \beta$. Da hipótese, sabemos que $V(a) \cap (A \backslash \{a\}) \neq \emptyset$, portanto, podemos construir uma sequência $(x_n)_{n \in \bN}$ em $V(a)$ tal que $\lim\limits_{\toinf{n}} x_n = a$. Com isto, sejam $\overline{\alpha} = a - \alpha$ e $\overline{\beta} = \beta - a$, e $r = \min (\overline{\alpha}, \overline{\beta})$, e, considere a sequência $(x_n)_{n \in \bN}$ tal que $x_n = a + \frac{r}{n+1}$ . Note que $\lim\limits_{\toinf{n}}x_n = a$, mais ainda, por construção, para todo $n \in \bN$, $x_n \in V(a)\backslash\{a\}$, portanto,  $a$ é um ponto de acumulação de $A$, como queríamos. $\square$
+%</ex2>
+%<*ex5a>
+Seja $A_n$ intervalos não-degenerados definidos por $A_n = \parth{-\frac{1}{n}, \frac{1}{n}}$ onde $n \in \bN$. Como visto no exercício 1, para todo $n \in \bN$, $A_n$ é um conjunto aberto. Considere a interseção infinita $I = \bigcap_{n \in \bN} A_n$. Note que, para todo $n \in \bN$, $0< \frac{1}{n}$ e $-\frac{1}{n}<0$, portanto, para todo $n \inN$, temos $0 \in A_n$, ou seja, $\{0\} \subset I$. Vejamos que $I\setminus
+\{0\} = \emptyset$. Afim de contradição, suponhamos que existe $x \in I\setminus
+\{0\}$. Visto que $x \neq 0$, seja $d = |x| > 0$, e, da definição dos intervalos $A_n
+$, temos, por conseguinte, que $1 > |x| = d > 0$, ou seja, $\frac{1}{d} > 1$. Daqui, seja $n_0 = \ceil{\frac{1}{d}}$ o menor inteiro maior que $\frac{1}{d}$, ou seja, $\frac{1}{d}<n_0$, e, como $n_0 \in \bN$, segue  que existe um intervalo $A_{n_0} = (-\frac{1}{n_0}, \frac{1}{n_0})$. Já que $\frac{1}{d} < n_0$, então, $\frac{1}{n_0} < d = |x|$, portanto, $x \not \in A_{n_0}$, ou seja $x \not \in I$, uma contradição. Com isto, podemos concluir que $I = \bigcap_{n \in \bN} A_n = \{0\}$, e, como visto no exercício 3 desta lista, segue que $I \neq \itr{I}$, portanto, $I$ não é aberto, como queríamos.
+%</ex5a>
+
+%<*ex5b>
+Ora, das leis de De Morgan, sabemos que $\parth{\bigcap_{\lambda \in \Lambda} X_\lambda}^c = \bigcup_{\lambda \in \Lambda} X_\lambda^c$, e como um conjunto é fechado se seu complementar é aberto, considere $A_n^c = (-\infty, -\frac{1}{n}] \cup [\frac{1}{n}, \infty)$ onde $n \in \bN$. Visto que os intervalos $A_n = \xssy{}{\frac{1}{n}}$ são abertos, segue que $A_n^c$ é fechado para todo $n \in \bN$. Mais ainda, como $\bigcap_{n \in \bN} A_n = \{0\}$ não é aberto, da contrapositiva da definição de fechado, segue que $\bigcup_{n \in \bN} A_n^c = \bR / \{0\}$ não é fechado, como queríamos.
+%</ex5b>
+
+%<*l9ex2>
+Antes, considere o seguinte lema:
+\dotline
+\textbf{Lema: Seja $A$ um conjunto compacto, então $\sup A \in A$ e $\inf A \in A$.}\\
+\textbf{Demonstração do lema: } Vejamos que $M=\sup A \in A$. Ora, da definição de supremo, temos que para to
+do $\epsilon > 0$, existe $x_{\frac{1}{\epsilon}} \in A$ tal que $M-\epsilon < x_{\frac{1}{\epsilon}} \le M$
+. Deste modo, tome $\epsilon = \frac{1}{n}>0$ e seja a sequência $\sqn x$ tal que $M-\frac{1}{n}<x_n\le M < M +
+\frac{1}{n}$ e $x_n \in A$. Com isto, segue que quando $n \rightarrow \infty$, $x_n 
+\rightarrow M$, isto é, $M$ é ponto de acumulação de $A$, e, como $A$ é compacto, em particular $A$ é fechado
+, isto é $A=\overline A$, então $M \in A$, como queríamos. Para $\inf A \in A$ segue de maneira análoga. $\square$
+\dotline
+\textbf{Dem: } Do item b do exercício anterior, segue que $\bigcap_{n=1}^{\infty}K_n$ é compacto, (1). Da hipóte
+se, $K_n$ é compacto, portanto, em particular, $K_n$ é limitado. Deste modo
+, para todo $n \inN$, existe $a_n = \inf K_n$ e $b_n = \sup K_n$. Mais ainda, visto que $K_{n+1} \subset K_n$
+, segue que $a_{n+1} \ge a_n$ e $b_{n+1} \le b_n$. E, já que $K_1 \supset K_n$ para todo $n \inN$, en
+tão $a_1 \le b_n$ e $a_n \le b_1$, sendo assim, do Teorema da Convergência Monótona, as sequências $\sqn 
+a$ e $\sqn b$ são convergentes, digamos a $\alpha$ e $\beta$, respectivamente, ($\star$).
+\\
+Note que, do lema anterior, segue que $a_n, b_n \in K_n\subset K_1$ que, combinado a ($\star$), segue que $\alpha
+$ e $\beta$ são pontos de acumulação de $K_1$. Já que $K_1$ é compacto, ou seja $K_1 = \overline K_1$
+, temos que $\alpha, \beta\in K_1$. De modo análogo, segue que $\alpha, \beta \in K_n
+$ para todo $n \inN$. Portanto $\{\alpha, \beta\} \subset \bigcap_{n=1}^{\infty}K_n$, ou seja, $K_n$ é não
+-vazio, (2). De (1) e (2), temos o que queríamos. $\square$
+%</l9ex2>
+
+
+%<*l9ex4a>
+\textbf{Dem: } Do teorema visto em aula, sabemos que um conjunto $A \subset \bR$ é conexo se, e somente se, $A
+$ é um intervalo. Deste modo, como $\bR = (-\infty, \infty)$, segue que $\bR$ é um intervalo, portanto, te
+mos que $\bR$ é conexo. $\square$
+%</l9ex4a>
+
+
+%<*l9ex4b>
+\textbf{Dem: } A fim de contradição, suponhamos que $\bR$ e $\emptyset$ não são os únicos abertos e fecha
+dos em $\bR$. Então, existe $A \subset \bR$ fechado e aberto ao mesmo tempo tal que $A \neq \bR$ e $A \neq
+\emptyset$. Ora, se $A$ é fechado e aberto ao mesmo tempo, segue que $A^c$ também é. Note que $A \subset 
+\bR$ e $A = A \cap \bR$, e como $A$ é aberto, segue que $A$ é um aberto relativo de $\bR$. Analogamente
+, temos que $A^c$ também é um aberto relativo de $\bR$. Com isto, visto que $A \cap A^c = \emptyset$ e $A\cup 
+A^c =\bR$, temos uma cisão não-trivial de $\bR$. Porém como $\bR$ é conexo, temos uma contradi
+ção, visto que $\bR$ só admite a cisão trivial. Deste modo, segue que não existe outro conjunto aber
+to e fechado ao mesmo tempo que seja diferente de $\bR$ e $\emptyset$. Como queríamos. $\square$
+%</l9ex4b>
+
+%<*l9ex4c>
+\textbf{Dem: } Ora, visto que $U$ e $V$ são conexos, segue que $U$ e $V$ são intervalos. Agora, basta verifi
+car que $X$ também é um intervalo. Das propriedades de intervalo, temos que, para cada $x, y \in U$ e $z \in 
+\bR$, se $x \le z \le y$, então $z \in U$. Sendo assim, se $x, y \in U$ e $x,y \in V$, isto é, $ x,y \in U \cap
+V$ e temos $z \in \bR$, segue que, se $x \le z \le y$, então $z \in U$ e $z \in V$, isto é $z \in U \cap V$. 
+Com isto, segue que $X$ também é um intervalo e, por conseguinte, temos então que $X$ é conexo
+. Como queríamos. $\square$
+%</l9ex4c>
+
+%<*l10ex2>
+\textbf{Dem: } Da definição de limite, sabemos que $\lim_{x \rightarrow x_0} f(x) = L$ pode ser reescrito como
+: para todo $\epsilon > 0$, existe $\delta >0$, tal que se $|x-x_0| < \delta$, então $\mdl{f(x) - L} < \epsilon
+$. Porém, da desigualdade triangular, segue que $||f(x)|-|L|| \le |f(x) - L| < \epsilon$. Deste modo, 
+\begin{ceqnalign*}
+  \forall \epsilon>0, \exists \delta>0; \quad |x - x_0|<\delta \implies ||f(x)|-|L|| < \epsilon
+\end{ceqnalign*}
+ou seja, $\lim_{x \rightarrow x_0} |f(x)| = |L|$. $\square$
+%</l10ex2>
+
+%<*l10ex9>
+\textbf{Dem: } Primeiro, suponhamos que $A = A'$, e seja $y = a \in A$. Como $a \in A = A'$, exis
+te uma sequência $\sqn x$, com $x_n \in A\setminus\{a\}$, tal que $x_n \rightarrow a$. Deste modo, para to
+do $\epsilon > 0$, existe $n_0 \inN$ tal que, se $n \inN_{\ge n_0}$, então $|x_n - a|<\epsilon$, (1). Note que (1
+) pode ser reescrito como \textit{para todo $\epsilon > 0$, existe $n_0 \inN$ e $\delta = |x_{n_0} - a|>0
+$ tal que para todo $n\inN_{\ge n_0}$, $|x_n - a|< \delta$}, $(\star)$. \\
+Agora, já que $x_n, a\in A$ e, por hipótese, $f$ é Lipschtziana, segue que existe $K>0$ tal que $|f(x_n) - 
+f(a)|\le K|x_n - a| < K \delta$, (2). Com isto, seja $K>0$ e, de $(\star)$ e em seguida $(1)$, para todo $
+\epsilon > 0$, existe $\delta = \frac{\epsilon}{K} > 0$ tal que, para todo $x \in A$ satisfazendo $|x - a|<\delta$, temos que $|f(x) - f(a)|<K\delta = \epsilon$. Deste modo, $\lim_{x \rightarrow x_0} f(x) = f(x_0)$, e co
+mo escolhemos qualquer $x_0 \in A$, segue que $f$ é contínua em $A$, como queríamos. $\square$
+%</l10ex9>
+
+%<*l11ex1>
+\textbf{Dem: } Note que $[a, b]$ é fechado e limitado, portanto $[a, b]$ é um compacto. Agora, do Teorema do Va
+lor Intermediário, segue que a imagem de conexo por função contínua é conexo, isto é, $f([a,b])$ é conexo
+. Por conseguinte, da definição de conexo, temos que $f([a, b])$ é limitada, sendo assim, existe $m, M \in \bR
+$ tais que $m \le f(x) \le M$ para todo $x \in [a, b]$, como queríamos. $\square$
+%</l11ex1>
+
+%<*l11ex4>
+Primeiro, relembremos a seguinte proposição demonstrada em aula:
+\dotline
+\textbf{Proposição: } Seja $f: A  \subset \bR \rightarrow B \subset \bR$ uma função. Temos que $f$ é contínua se
+, e somente se, para todo $X$ aberto em $B$, $f^{-1}(X)$ é aberto em $A$.
+\dotline
+\textbf{Dem: } Suponhamos que $f$ é contínua e seja $X \subset B$ um conjunto fechado qualquer
+. Deste modo, segue que $X^c$ é aberto, e
+, já que $B\setminus X = X^c \cap B$, segue que $B \setminus X$ é aberto relativo de $B$, (1). Dito isto 
+, visto que $f$ é contínua, da proposição citada, temos que $f^{-1}(B\setminus X)$ é aberto em $A$, (1)
+. Note que, do exercício anterior, 
+
+\begin{ceqnalign*}
+  f^{-1}(B \setminus X) &= f^{-1}(X^c \cap B) \eqc{(a)} f^{-1}(X^c) \cap f^{-1}(B)\\
+  &=  f^{-1}(X^c) \cap A \eqc{(d)} \parth{f^{-1}(X)}^c \cap A \tag{2}
+\end{ceqnalign*}
+
+de (1) e (2), segue que $\parth{f^{-1}(X)}^c$ é aberto, isto é, $f^{-1}(X)$ é fechado
+, e, já que $f^{-1}(X) = f^{-1}(X) \cap A$, segue que $f^{-1}(X)$ é fechado relativo de $A$, como queríamos. \\
+Por outro lado, seja um conjunto aberto em $B$ denotado por $U\subset B$
+. Análogo a (1), segue que $B\setminus U$ é fechado em $B$, ou seja, $f^{-1}(B\setminus U)$ é fechado em $A$, com isto,
+
+\begin{ceqnalign*}
+  f^{-1}(B\setminus U) &= f^{-1}(U^c\cap B) \eqc{(a)} f^{-1}(U^c)\cap f^{-1}(B)\\ 
+  &= f^{-1}(U^c) \cap A \eqc{(d)} (f^{-1}(U))^c \cap A
+\end{ceqnalign*}
+
+como $f^{-1}(B \setminus U)$ é fechado relativo de $A$, segue que $(f^{-1}(U))^c$ é fechado, portanto
+, $f^{-1}(U)$ é aberto. Da proposição citada, visto que para todo $U$ aberto em $B$, $f^{-1}(U)$ é aber
+to em $A$, temos que $f$ é contínua, como queríamos. $\square$
+
+%</l11ex4>
+
+%<*l12ex1a>
+\textbf{Dem: } Seja $x_0 \in \bR$ e considere o seguinte limite:
+\begin{ceqnalign*}
+  \limzr h \frac{\cos(x_0 + h) - \cos(x_0)}{h}
+  &= \limzr h \frac{\cos(x_0)\cos(h) - \sen(x_0)\sen(h) - \cos(x_0)}{h}\\
+  &= \limzr h \frac{\cos(x_0)(\cos(h)-1) - \sen(x_0)\sen(h)}{h} \\
+  &= \limzr h \cos(x_0)\parth{\frac{(\cos(h)-1)}{h}} - \sen(x_0)\parth{\frac{\sen(h)}{h}} \tag{1}
+\end{ceqnalign*}
+visto que $\limzr h \frac{\cos(h) - 1}{h}$ e $\limzr h \frac{\sen(h)}{h}$ convergem, segue que (1) pode ser es
+crito como:
+\begin{ceqnalign*}
+  \parth{\limzr h \cos(x_0)\parth{\frac{(\cos(h)-1)}{h}}} - \parth{\limzr h \sen(x_0)\parth{\frac{\sen(h)}{h}}}
+\end{ceqnalign*}
+deste modo, dos limites fundamentais, segue que a derivada de $f(x) = \cos(x)$ existe em $x_0$ e vale $
+f'(x_0) = -\sen(x_0)$, porém, visto que $x_0$ é um real qualquer, segue que a derivada de $f(x)$ existe e vale $
+f'(x)=-\sin(x)$ para todo $x \in \bR$. $\square$
+%</l12ex1a>
+
+
+%<*l12ex1b>
+\textbf{Dem: }Seja $x_0 \in \bR\setminus\{0\}$ e considere o seguinte limite:
+\begin{ceqnalign*}
+  \limzr h \frac{\frac{1}{x_0+h} - \frac{1}{x_0}}{h} = \limzr h \frac{\frac{x_0 - (x_0 + h)}{x_0(x_0+h)}}{h}
+  = \limzr h \frac{-h}{hx_0(x_0+h)} = \limzr h \frac{-1}{x_0(x_0 + h)} = -\frac{1}{x_0^2}
+\end{ceqnalign*}
+deste modo, segue que a derivada de $f(x) = \frac{1}{x}$ existe em $x_0$ e vale $f'(x_0) = -\frac{1}{x_0^2}$
+, mais ainda, como escolhemos quaisquer $x_0 \in \bR\setminus\{0\}$, segue que a derivada de $f$ exis
+te em seu domínio e vale $f'(x) = -\frac{1}{x^2}$ para todo $x \in \bR \setminus \{0\}$. $\square$
+%</l12ex1b>
+
+%<*l12ex4>
+Antes, relembremos de um teorema proposto em aula:
+\dotline
+\textbf{Teorema: } Sejam $I \subset \bR$ e $f: I \rightarrow \bR$ uma função contínua e estritamente crescente
+/decrescente. Então, $f^{-1}: \Ima(f) \rightarrow I$ é contínua e é estritamente crescente/decrescente.
+\dotline
+
+\textbf{Dem: } Utilizaremos a definição $\cos: \bR \rightarrow [-1, 1]$, e a fim de obter o mes
+mo efeito proposto pelo exercício, seja $f:(0, \pi) \rightarrow (-1, 1)$ tal que $f(x) = \cos(x)$ para to
+do $x \in (0, \pi)$. Mais ainda, considere a função $f_0: [0, \pi] \rightarrow [-1, 1]$ tal que $f_0(x) = 
+\cos(x)$ para $x \in [0, \pi]$. Do exercício 1 da lista 12, $(\cos(x))' = -\sen(x)$, com isto, $
+f'(x) = -\sen(x) < 0$ para $x \in (0, \pi)$, ou seja, $f$ é estritamente decrescente, portanto, $f$ é injetora
+. De maneira análoga segue que $f_0$ é injetora. Novamente, do exercício 1 da lista 12, como $\cos(x)
+$ é derivável em todo $\bR$, segue que $\cos(x)$ é contínua e, por conseguinte, que $f_0(x)$ é contí
+nua em seu domínio. Como $[0, \pi]$ é conexo, do Teorema do Valor Intermediário, $f_0([0, \pi])$ é conexo. Di
+to isto, já que $f_0(0) = 1$ e $f(\pi) = -1$, que coincidem com os extremos da imagem de $f_0$
+, segue que, para todo $y_0 \in [-1, 1]$ existe $x_0 \in [0, \pi]
+$ tal que $f_0(x_0) = y_0$, com isto, $f_0(x)$ é sobrejetora, e por conseguinte, $f(x)$ também é sobre
+jetora. Já que $f$ e $f_0$ são bijetoras, segue que $f$ e $f_0$ são inversíveis. Agora, seja $f^{-1}:(-1, 1) 
+\rightarrow (0, \pi)$ a inversa de $f$
+. Já que $f$ é contínua e estritamente decrescente, segue do teorema citado anteriormente, que $f^{-1}$ é con
+tínua e estritamente decrescente. Visto que $f'(x)=-\sen(x)<0$ para todo $x \in (0, \pi)$
+, segue do Teorema da Função Inversa que $f^{-1}$ é derivável e que $(f^{-1})'_{(f(x_0))} = \frac{1}{f'(x_0)}$ pa
+ra todo $x_0 \in (0, \pi)$. Sendo assim,
+\begin{ceqnalign*}
+  (f^{-1})'(x) = \frac{1}{-\sen(\arccos(x))} = -\frac{1}{\sqrt{1-\cos^2(\arccos(x))}}=-\frac{1}{\sqrt{1 - x^2}}
+  \quad \quad x\in(-1,1)
+\end{ceqnalign*}
+com isto, temos o que queríamos. $\square$
+%</l12ex4>

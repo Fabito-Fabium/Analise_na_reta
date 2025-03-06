@@ -152,7 +152,7 @@ sendo assim, $\parth{\frac{3x-1}{2}, \frac{x+1}{2}} \cap A\{x\} = \emptyset$, ou
 
 
 %<*ex7b>
-\textbf{Dem:} Como para todo $x \in \overline{A}$, existe uma subsequência $\sqn x$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$, da definição de limite, segue que para todo $\epsilon > 0$, existe $n_0 \inN$ tal que para um inteiro $n \ge n_0$, temos que $\xssy{x_n}{x} < \epsilon$. Em particular, seja $n = n_0$, e denotamos $x_{n_0} = \tau$, com isto, segue que para todo $\epsilon>0$, existe $\tau \in A$ tal que $\xssy{\tau}{x} < \epsilon$, isto é, $\tau \in \parth{x-\epsilon, x+\epsilon}$. Dito isto, temos que, para cada $x \in \overline{A}$ e $\epsilon > 0$, segue que existe $\tau \in A$ tal que $\tau \in \xssy{x}{\epsilon}$, $(\ast)$. Mais ainda, de $(\ast)$, infere-se que
+\textbf{Dem:} Como para todo $x \in \overline{A}$, existe uma subsequência $\sqn x$, com $x_n \in A$ para todo $n \inN$, tal que $\limsq n \infty x = x$, da definição de limite, segue que para todo $\epsilon > 0$, existe $n_0 \inN$ tal que para um inteiro $n \ge n_0$, temos que $\asbeps {x_n} {x}$. Em particular, seja $n = n_0$, e denotamos $x_{n_0} = \tau$, com isto, segue que para todo $\epsilon>0$, existe $\tau \in A$ tal que $\asbeps{\tau}{x}$, isto é, $\tau \in \parth{x-\epsilon, x+\epsilon}$. Dito isto, temos que, para cada $x \in \overline{A}$ e $\epsilon > 0$, segue que existe $\tau \in A$ tal que $\tau \in \xssy{x}{\epsilon}$, $(\ast)$. Mais ainda, de $(\ast)$, infere-se que
 \begin{ceqnalign}{$\star$}
 	x \in \overline A \iff \forall \epsilon>0,  \quad A \cap \xssy{x}{\epsilon} \neq \emptyset
 \end{ceqnalign}
@@ -213,12 +213,35 @@ Sendo assim, de (9.1) e (9.2), segue que não existe $x \not \in [a, b]$ tal que
 %</ex9>
 
 %<*ex10>
-\textbf{Dem:} Note que para todo $x \in \bR$, a vizinhança de $x$ é um intervalo não-degenerado. Ou seja, para todo $\epsilon>0$, $\xssy{x}{\epsilon}$ é não-degenerado. Como visto nas aulas, temos que todo intervalo não-degenerado contém números racionais, portanto, para todo $\epsilon>0$, segue que $\xssy{x}{\epsilon} \cap \bQ \neq \emptyset$. De $(\star)$ do exercício 7 item b, como para todo $\epsilon>0$, temos $\xssy{x}{\epsilon} \cap \bQ \neq \emptyset$, segue que $x \in \overline \bQ$. Com isto, já que se $x \in \bR$, então $x \in \bQ$, segue que $\bR \subset \bQ$, como queríamos. $\square$
+\textbf{Dem:} Note que para todo $x \in \bR$, a vizinhança de $x$ é um intervalo não-degenerado. Ou seja, em particular, para todo $\epsilon>0$, $\xssy{x}{\epsilon}$ é não-degenerado. Como visto nas aulas, temos que todo intervalo não-degenerado contém números racionais, portanto, para todo $\epsilon>0$, segue que $\xssy{x}{\epsilon} \cap \bQ \neq \emptyset$. De $(\star)$ do exercício 7 item b, como para todo $\epsilon>0$, temos $\xssy{x}{\epsilon} \cap \bQ \neq \emptyset$, segue que $x \in \overline \bQ$. Com isto, já que se $x \in \bR$, então $x \in \overline \bQ$, segue que $\bR \subset \overline \bQ$, como queríamos. $\square$
 %</ex10>
 
 %<*ex11>
-\textbf{Dem: } Afim de contradição, suponhamos que $A$ é aberto, portanto, $A = \itr{A}$, ou seja, para cada $a \in A$, existe $r>0$ tal que $\xssy{a}{r} \subset A$, isto é $\xssy{a}{r} \cap A\setminus \{a\} \neq \emptyset$. Desta forma, para todo $\epsilon > r > 0$, como $\xssy{a}{r} \subset \xssy{a}{\epsilon}$, então $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$. Mais ainda, para todo $\epsilon>0$ tal que $r>\epsilon$, temos $\xssy{a}{\epsilon} \subset \xssy{a}{r} \subset A$, com isto, temos novamente que, $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$. Do principio da boa ordem, sabemos que se temos dois números, em particular, reais positivos $\epsilon$ e $r$, os dois podem ser ordenados da seguinte forma: $\epsilon > r$, $\epsilon<r$ ou $\epsilon = r$. Nos três casos, independente da ordenação entre $r$ e $\epsilon$, temos que $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$, portanto, para todo $\epsilon > 0$, segue que $\xssy{a}{\epsilon}\cap A \setminus \{a\} \neq \emptyset$. Seja $V$ a vizinhança de $a \in A$, e tendo em mente que uma vizinhança é um intervalo aberto, então $V$ admite supremo e ínfimo. Daqui, fixando $\epsilon = \min{(\sup{(V)}-a, a - \inf{(V)})}/2$, como para todo $x \in \xssy{a}{\epsilon}$, 
+\textbf{Contra-exemplo:} Considere uma sequência $\sqn a$, onde $a_n = \frac{1}{n}$, e o conjun
+to $A = \left\{\frac{1}{n}; n \inN \right\}$. Veja
+mos que para todo $n \inN$, temos que $a_n$ é um ponto isolado de $A$. Visto que $
+\sqn a $ é uma sequência decrescente, então, fixe $\epsilon = \frac{1}{2n_0(n_0 + 1)} 
+> 0$, portanto:
+
 \begin{ceqnalign*}
-	inf{V} < x 
+  \frac{1}{n+1} &= \frac{1}{2}\parth{\frac{1}{n + 1}} + \frac{1}{2}\parth{\frac{1}{n + 1}} \le
+ \frac{1}{2}\parth{\frac{1}{n + 1}} + \frac{1}{2}\parth{\frac{1}{n}}\\
+  &= \frac{1}{n} + \frac{1}{2}\parth{\frac{1}{n + 1}} - \frac{1}{2}\parth{\frac{1}{n}} =
+  \frac{1}{n} - \frac{1}{2}\parth{- \frac{1}{n + 1} + \frac{1}{n}} \\
+  &=\frac{1}{n} - \parth{\frac{1}{2n(n + 1)}} < \frac{1}{n} - \epsilon, \tag{1}
 \end{ceqnalign*}
+deste modo, para $n = 1$, segue que $a_n$ é um ponto isolado de $A$, já que, por (1) e sabendo que a sequên
+cia $\sqn a$ é decrescente, segue que, em particular, para todo $k \inN_{> 1}$, $a_k < a_1 - \epsilon$, ou se
+ja existe uma vizinhança $V(a_1)$ tal que $V(a_1) \cap A\setminus\{a_1\} = \emptyset$.\\
+Se $n > 1$, de $(1)$, temos que:
+\begin{ceqnalign*}
+  \frac{1}{n} < \frac{1}{n-1} - \epsilon \implies \frac{1}{n} + \epsilon < \frac{1}{n-1} 
+\end{ceqnalign*}
+
+Deste modo, $\frac{1}{n+1} < \frac{1}{n} - \epsilon < \frac{1}{n} < \frac{1}{n} + \epsilon < \frac{1}{n-1}$
+, em outras palavras, neste caso, temos também que existe uma vizinhança $V(a_n)$, tal que $V(a_n)\cap
+A\setminus\{a_n\} = \emptyset$. Portanto todos os pontos de $A=\chavs{\frac{1}{n} ; n 
+\inN}=\{a_n; n \inN\}$ são pontos isolados. Mais ainda, $\limsq n \infty a = 0$, ou seja, $0 \in \overline A$
+, porém, $0 < \frac{1}{n}$ para todo $n \inN$, portanto $0 \not \in A$, sendo assim, $A \neq \overline A$
+, portanto $A$ não é fechado.
 %</ex11>
