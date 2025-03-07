@@ -167,6 +167,17 @@ Demonstrado como proposição em (1e).
 
 
 %<*ex2a>
+\textbf{Dem:} Da hipótese, temos que $n < p$, isto é $p = n + k$ para algum $k \inN$
+. Ademais, $m \le n \implies (n = m) \lor (n = m + \omega)$ para algum $\omega \inN$
+. Com isto, suponhamos que $n = m$, portanto $p = n + k = m +k$, isto é $m < p$
+; Agora, suponhamos que $n = m + \omega$,
+\begin{ceqnalign*}
+  p &= n + k, \\
+  &= (m + \omega) + k, \\
+  &= m + (\omega + k) = m + k_1, \quad k_1 \inN
+\end{ceqnalign*}
+ou seja, $m < p$. Já que $(n = m) \land (n<p) \implies m < p$ e $(m < n) \land (n<p) 
+\implies m < p$, segue que $(m \le n) \land (n < p) \implies m < p$. $\square$ 
 %</ex2a>
 
 

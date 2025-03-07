@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber Lista 1"] 1741372346.31555 "Lista 1.bcf" "Lista 1.bbl" "Lista 1" 1741377756.91961 0
-  "Lista 1.bcf" 1741377756.71925 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
+["biber Lista 1"] 1741372346.31555 "Lista 1.bcf" "Lista 1.bbl" "Lista 1" 1741378849.54714 0
+  "Lista 1.bcf" 1741378849.34003 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
   (generated)
   "Lista 1.bbl"
   "Lista 1.blg"
   (rewritten before read)
-["pdflatex"] 1741377754.53993 "Lista 1.tex" "Lista 1.pdf" "Lista 1" 1741377756.91987 0
+["pdflatex"] 1741378847.19251 "Lista 1.tex" "Lista 1.pdf" "Lista 1" 1741378849.54737 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc" 1622837620 2905 1556c73dc99638e0dfff2f132c244f30 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -232,14 +232,14 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1715819862.82779 4546198 e2884e9cfbb9cd1d1532fd8b068ec50b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1715950045 7885439 a8a2214a50afe8884b166c70b9b2debb ""
-  "Lista 1.aux" 1741377756.66625 1597 72979f4e6b4dc94e18c4897a22013834 "pdflatex"
+  "Lista 1.aux" 1741378849.28803 1597 72979f4e6b4dc94e18c4897a22013834 "pdflatex"
   "Lista 1.bbl" 1741372347.01802 466 ee04f40f768daeed26442158e95aba61 "biber Lista 1"
-  "Lista 1.out" 1741377756.71525 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
-  "Lista 1.run.xml" 1741377756.72025 2547 1dde926f572e8c957cdb3ab48d38542b "pdflatex"
-  "Lista 1.tex" 1741377727.99219 5551 53f91b1f2be85974bc47d53320e3ad47 ""
+  "Lista 1.out" 1741378849.33703 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
+  "Lista 1.run.xml" 1741378849.34103 2547 1dde926f572e8c957cdb3ab48d38542b "pdflatex"
+  "Lista 1.tex" 1741378246.02515 5973 574c14c068c96d4280351b1f6f792aaf ""
   "Logos//cc-by.png" 1739230991.40235 12588 04d377d968557a6092bccb1617db5a65 ""
   "Logos//utfpr.png" 1739230991.40235 95575 831bea430e497d2d908ff4bd1cdbbf8c ""
-  "Section/sol.tex" 1741377753.48324 8041 d79537a129167e90225f591d058b1d8b ""
+  "Section/sol.tex" 1741378846.92603 8630 bd8c35b2b3dba0d237463f447d26fa34 ""
   "myComm.tex" 1741206888.36846 1652 03d1af3db355096515c0dc281f0f0209 ""
   "utfpr-article.sty" 1741206551.63131 57490 a92b89ed4bc7248188189e4675e80c84 ""
   (generated)
