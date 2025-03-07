@@ -68,7 +68,28 @@ Antes, considere as seguintes proposições:
 Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T=\bN$
 . $\square$
 \dotline
-\textbf{Dem: }
+\textbf{Proposição 2:} (Distributiva comutada) Para cada $m, n, p \inN$, temos que 
+\\
+$$(n+p)m = nm+pm.$$
+\textbf{Demonstração da proposição:} Considere $R=\{m \inN; (n+p)m = nm + pm, 
+\quad n,p\inN\}$. Note que $1 \in R$, visto que, da definição de produto, $
+(n+p)\cdot 1 = n + p = n\cdot 1 + p\cdot 1$. Vejamos que $s(R) \subset R$. Assumindo $
+m \in R$, temos que:
+\begin{ceqnalign*}
+  (n+p)s(m) &= (n+p)m + (n+p), \quad &&\text{(Definição do produto em $\bN$)}\\
+  &= (nm + pm) + (n+p), \quad &&\text{(Visto que $m \in R$, $(n+p)m = nm + pm$)}\\
+  &= nm + (pm + (p+n)), \quad &&\text{(Associatividade e comutatividade da soma em $
+  \bN$)}\\
+  &= nm + (n + (pm + p)), \quad &&\text{(Associatividade e comutatividade da soma em $
+  \bN$)}\\
+  &= (nm + n) + (pm + p), \quad &&\text{(Associatividade da soma em $\bN$)}\\
+  &= n\cdot s(m) + p \cdot s(m). \quad &&\text{(Definição do produto em $\bN$)}
+\end{ceqnalign*}
+Sendo assim, já que $1 \in R$ e $s(R) \subset R$, segue do Princípio da Indu
+ção que $R = \bN$. $\square$
+\dotline
+\textbf{Dem: } Seja $S = \{n \inN | m\cdot n = n \cdot m, \quad m \inN\}$. Veja
+mos que $S = \bN$. 
 %</ex1c>
 
 

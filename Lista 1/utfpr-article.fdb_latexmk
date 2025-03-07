@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber utfpr-article"] 0 "utfpr-article.bcf" "utfpr-article.bbl" "utfpr-article" 1741210947.34856 -1
-  "utfpr-article.bcf" 1741210947.16271 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
+["biber utfpr-article"] 0 "utfpr-article.bcf" "utfpr-article.bbl" "utfpr-article" 1741372013.2044 -1
+  "utfpr-article.bcf" 1741372013.01564 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
   "utfpr-article.bib" 1739230991.41135 4061 cc5ac23225377920f5d35def8738200d ""
   (generated)
   "utfpr-article.bbl"
   "utfpr-article.blg"
   (rewritten before read)
-["pdflatex"] 1741210945.05122 "utfpr-article.tex" "utfpr-article.pdf" "utfpr-article" 1741210947.34908 0
+["pdflatex"] 1741372010.96085 "utfpr-article.tex" "utfpr-article.pdf" "utfpr-article" 1741372013.20465 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc" 1622837620 2905 1556c73dc99638e0dfff2f132c244f30 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -233,12 +233,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1715950045 7885439 a8a2214a50afe8884b166c70b9b2debb ""
   "Logos//cc-by.png" 1739230991.40235 12588 04d377d968557a6092bccb1617db5a65 ""
   "Logos//utfpr.png" 1739230991.40235 95575 831bea430e497d2d908ff4bd1cdbbf8c ""
-  "Section/sol.tex" 1741210943.5967 3411 8f5c0c7c0f4b7058ec1f73ebcf5aa718 ""
+  "Section/sol.tex" 1741372009.86064 4548 0fc271d2d9b694c0985ef2c6c1192ccb ""
   "myComm.tex" 1741206888.36846 1652 03d1af3db355096515c0dc281f0f0209 ""
-  "utfpr-article.aux" 1741210947.10671 1620 fd0eec1b4b2c79d03d38646a4ebdc445 "pdflatex"
+  "utfpr-article.aux" 1741372012.96264 1620 70ac302722e56ed677e1daf0f6cdcaa3 "pdflatex"
   "utfpr-article.bbl" 1739230991.41135 466 ee04f40f768daeed26442158e95aba61 "biber utfpr-article"
-  "utfpr-article.out" 1741210947.15871 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
-  "utfpr-article.run.xml" 1741210947.16371 2575 da2fd9d7f20deafea85ef66bb2052f1c "pdflatex"
+  "utfpr-article.out" 1741372013.01164 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
+  "utfpr-article.run.xml" 1741372013.01664 2575 da2fd9d7f20deafea85ef66bb2052f1c "pdflatex"
   "utfpr-article.sty" 1741206551.63131 57490 a92b89ed4bc7248188189e4675e80c84 ""
   "utfpr-article.tex" 1741210074.96146 5074 c754bdf7e1904bce32a37c3b03d3cc23 ""
   (generated)
