@@ -1681,6 +1681,16 @@ INPUT Section/sol.tex
 INPUT ./Section/sol.tex
 INPUT Section/sol.tex
 INPUT Section/sol.tex
+INPUT ./Section/sol.tex
+INPUT Section/sol.tex
+INPUT Section/sol.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvri.tfm
+INPUT ./Section/sol.tex
+INPUT Section/sol.tex
+INPUT Section/sol.tex
+INPUT ./Section/sol.tex
+INPUT Section/sol.tex
+INPUT Section/sol.tex
 INPUT Lista 1.aux
 INPUT ./Lista 1.out
 INPUT ./Lista 1.out
@@ -1691,6 +1701,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvbi.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb

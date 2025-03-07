@@ -40,7 +40,7 @@ do $p \in S$ e $m+s(p) = n + s(p)$,
 \begin{ceqnalign*}
   m+s(p)&=n+s(p),\\
   m+(p+1) &=n+(p+1), \quad &&\text{(Definição da função sucessor)}\\
-  (m+p) + 1 &= (n+p) + 1, \quad &&\text{(Associatividade da soma em $bN$)}\\
+  (m+p) + 1 &= (n+p) + 1, \quad &&\text{(Associatividade da soma em $\bN$)}\\
   s(m+p)&=s(n+p), \quad &&\text{(Definição da função sucessor)}\\
   m+p &=n+p, \quad &&\text{(Injetividade da função sucessor)}\\
   m &= n. \quad &&\text{(Já que $p \in S$)}
@@ -89,17 +89,90 @@ Sendo assim, já que $1 \in R$ e $s(R) \subset R$, segue do Princípio da Indu
 ção que $R = \bN$. $\square$
 \dotline
 \textbf{Dem: } Seja $S = \{n \inN | m\cdot n = n \cdot m, \quad m \inN\}$. Veja
-mos que $S = \bN$. 
+mos que $S = \bN$. Da proposição 1, temos que $1 \in S$. Para verificar que $s(S) 
+\subset S$, suponhamos que $n \in S$, tendo assim:
+\begin{ceqnalign*}
+  m\cdot s(n) &= mn + m, \quad &&\text{(Definição do produto em $\bN$)}\\
+    &= nm + m, \quad &&\text{(Visto que $n \in S$, $mn = nm$)}\\
+    &= nm + 1m, \quad &&\text{(Da proposição 1, $m=m\cdot 1 = 1 \cdot m$)}\\
+    &= (n + 1)m, \quad &&\text{(Distributiva comutada)}\\
+    &= s(n) \cdot m. \quad &&\text{(Definição da função sucessor)}
+\end{ceqnalign*}
+Deste modo, como $1 \in S$ e $s(S) \subset S$, do Princípio da Indução, temos q
+ue $S = \bN$, como queríamos. $\square$
 %</ex1c>
 
 
 %<*ex1d>
+\textbf{Dem: } Ora, da \textit{distributiva comutada}, demonstrada no item anterior
+, temos que, para cada $m,n,p \inN$, $(n+p)m = nm +pm$. Portanto,
+\begin{ceqnalign*}
+  m(n+p) &= (n + p)m, \quad &&\text{(Comutatividade do produto em $\bN$)}\\
+  &= nm + pm, \quad &&\text{(Distributiva comutada)}\\
+  &= mn + mp. \quad &&\text{(Comutatividade do produto em $\bN$)}
+\end{ceqnalign*}
+Com isto, temos o que queríamos. $\square$
 %</ex1d>
 
 
 %<*ex1e>
+Antes, mostraremos a unicidade da identidade do produto em $\bN$.
+\dotline
+\textbf{Proposição: } (Unicidade da identidade do produto) Para todo $n \in 
+N$, se $mn = m$, então $m = 1$.\\
+\textbf{Demonstração da proposição: } A fim de absurdo, suponhamos que $m \neq 1$
+, isto é, existe $k \inN$ tal que $m = s(k)$, ou seja $mn = n$ pode ser reescrito como:
+\begin{ceqnalign*}
+  n &= s(k) \cdot n,\\
+  &= n\cdot s(k), \quad &&\text{(Comutatividade do produto em $\bN$)}\\
+  &= nk + n. \quad &&\text{(Definição do produto em $\bN$)} \tag{$\star$}
+\end{ceqnalign*}
+
+Porém, como visto em aula, para cada $x,y \inN$, $x\neq x + y$, sendo assim, ($\star
+$) é um absurdo. Deste modo, temos o que queríamos. $\square$
+\dotline
+\textbf{Dem: } Considere os conjuntos $S=\{p \inN ; mp = np \implies m = n
+, \quad m,n \inN\}$ e \newline $T = \{m \inN ; mp=np\implies m=n,\quad n\inN, p\in S\}$
+. Por construção, segue que $T \subset S$. Ora, $1 \in T$, já que, da unicida
+de da identidade no produto e da proposição 1 do item c, $1\cdot p = np \implies n = 1$
+. Vejamos que $s(T) \subset T$, supondo que $m \in T$ e escolhendo $n \inN$ e $
+p \in S$ de tal forma que $s(m)p = np$, queremos mostrar que $s(m) = n$, sendo assim,
+\begin{ceqnalign*}
+  s(m) p &= np,\\
+  p\cdot s(m) &= pn, \quad &&\text{(Comutatividade do produto em $\bN$)}\\
+  pm + p &= pn. \quad &&\text{(Definição do produto em $\bN$)} \tag{(1)}
+\end{ceqnalign*}
+
+Note que, se $n = 1$, $p = p + pm$, o que por $(\star)$, teremos um absurdo. Portan
+to $n \neq 1$, ou seja, existe $\omega \inN$ tal que $n = s(\omega)$. Sendo assim
+, (1) pode ser reescrito da seguinte forma:
+\begin{ceqnalign*}
+  pm + p &= pn = p\cdot s(\omega),\\
+  pm + p &= p\omega + p, \quad &&\text{(Definição do produto em $\bN$)}\\
+  pm &= p\omega, \quad &&\text{(Lei do cancelamento da soma em $\bN$)}\\
+  mp &= \omega p, \quad &&\text{(Comutatividade do produto em $\bN$)} \\
+  m &= \omega, \quad &&\text{(Já que $p \in S$ e $m \in T$)}\\
+  s(m) &= s(\omega), \quad && \text{(Injeção da função sucessor)}\\
+  s(m) &= n. \quad &&\text{(Já que $n = s(\omega)$)}
+\end{ceqnalign*}
+Dito isto, já que como $1 \in T$ e $s(T) \subset T$, segue do Princípio da In
+dução que $T = \bN$, mais ainda, $T \subset S \subset \bN$, mas como $T = \bN$
+, segue que $S= \bN$, como queríamos. $\square$
 %</ex1e>
 
 
 %<*ex1f>
+Demonstrado como proposição em (1e).
 %</ex1f>
+
+
+%<*ex2a>
+%</ex2a>
+
+
+%<*ex2b>
+%</ex2b>
+
+
+%<*ex2c>
+%</ex2c>
