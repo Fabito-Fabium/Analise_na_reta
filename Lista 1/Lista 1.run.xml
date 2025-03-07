@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>utfpr-article.bcf</file>
+      <file>"Lista 1".bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>utfpr-article.bbl</file>
+      <file>"Lista 1".bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -66,23 +66,23 @@
       <file>english-abnt.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>utfpr-article</infile>
+      <infile>"Lista 1"</infile>
     </cmdline>
     <input>
-      <file>utfpr-article.bcf</file>
+      <file>"Lista 1".bcf</file>
     </input>
     <output>
-      <file>utfpr-article.bbl</file>
+      <file>"Lista 1".bbl</file>
     </output>
     <provides type="dynamic">
-      <file>utfpr-article.bbl</file>
+      <file>"Lista 1".bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>utfpr-article.bcf</file>
+      <file>"Lista 1".bcf</file>
     </requires>
     <requires type="editable">
       <file>utfpr-article.bib</file>

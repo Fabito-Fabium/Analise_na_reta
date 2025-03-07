@@ -1,12 +1,11 @@
 # Fdb version 4
-["biber utfpr-article"] 0 "utfpr-article.bcf" "utfpr-article.bbl" "utfpr-article" 1741372013.2044 -1
-  "utfpr-article.bcf" 1741372013.01564 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
-  "utfpr-article.bib" 1739230991.41135 4061 cc5ac23225377920f5d35def8738200d ""
+["biber Lista 1"] 1741372346.31555 "Lista 1.bcf" "Lista 1.bbl" "Lista 1" 1741372354.05329 0
+  "Lista 1.bcf" 1741372353.87003 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
   (generated)
-  "utfpr-article.bbl"
-  "utfpr-article.blg"
+  "Lista 1.bbl"
+  "Lista 1.blg"
   (rewritten before read)
-["pdflatex"] 1741372010.96085 "utfpr-article.tex" "utfpr-article.pdf" "utfpr-article" 1741372013.20465 0
+["pdflatex"] 1741372351.4858 "Lista 1.tex" "Lista 1.pdf" "Lista 1" 1741372354.05355 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc" 1622837620 2905 1556c73dc99638e0dfff2f132c244f30 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -231,21 +230,21 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1715819862.82779 4546198 e2884e9cfbb9cd1d1532fd8b068ec50b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1715950045 7885439 a8a2214a50afe8884b166c70b9b2debb ""
+  "Lista 1.aux" 1741372353.81403 1597 ba3e01a97d636afa6b6573f252bb3e52 "pdflatex"
+  "Lista 1.bbl" 1741372347.01802 466 ee04f40f768daeed26442158e95aba61 "biber Lista 1"
+  "Lista 1.out" 1741372353.86603 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
+  "Lista 1.run.xml" 1741372353.87103 2547 1dde926f572e8c957cdb3ab48d38542b "pdflatex"
+  "Lista 1.tex" 1741210074.96146 5074 c754bdf7e1904bce32a37c3b03d3cc23 ""
   "Logos//cc-by.png" 1739230991.40235 12588 04d377d968557a6092bccb1617db5a65 ""
   "Logos//utfpr.png" 1739230991.40235 95575 831bea430e497d2d908ff4bd1cdbbf8c ""
   "Section/sol.tex" 1741372009.86064 4548 0fc271d2d9b694c0985ef2c6c1192ccb ""
   "myComm.tex" 1741206888.36846 1652 03d1af3db355096515c0dc281f0f0209 ""
-  "utfpr-article.aux" 1741372012.96264 1620 70ac302722e56ed677e1daf0f6cdcaa3 "pdflatex"
-  "utfpr-article.bbl" 1739230991.41135 466 ee04f40f768daeed26442158e95aba61 "biber utfpr-article"
-  "utfpr-article.out" 1741372013.01164 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
-  "utfpr-article.run.xml" 1741372013.01664 2575 da2fd9d7f20deafea85ef66bb2052f1c "pdflatex"
   "utfpr-article.sty" 1741206551.63131 57490 a92b89ed4bc7248188189e4675e80c84 ""
-  "utfpr-article.tex" 1741210074.96146 5074 c754bdf7e1904bce32a37c3b03d3cc23 ""
   (generated)
-  "utfpr-article.aux"
-  "utfpr-article.bcf"
-  "utfpr-article.log"
-  "utfpr-article.out"
-  "utfpr-article.pdf"
-  "utfpr-article.run.xml"
+  "Lista 1.aux"
+  "Lista 1.bcf"
+  "Lista 1.log"
+  "Lista 1.out"
+  "Lista 1.pdf"
+  "Lista 1.run.xml"
   (rewritten before read)

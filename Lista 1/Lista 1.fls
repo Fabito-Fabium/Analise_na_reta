@@ -2,8 +2,8 @@ PWD /home/lilpc/Documents/GitHub/Analise_na_reta/Lista 1
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT utfpr-article.tex
-OUTPUT utfpr-article.log
+INPUT Lista 1.tex
+OUTPUT Lista 1.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1375,10 +1375,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
-INPUT ./utfpr-article.aux
-INPUT utfpr-article.aux
-INPUT utfpr-article.aux
-OUTPUT utfpr-article.aux
+INPUT ./Lista 1.aux
+INPUT Lista 1.aux
+INPUT Lista 1.aux
+OUTPUT Lista 1.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
@@ -1447,26 +1447,26 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-abnt/brazilian-abnt.lbx
-OUTPUT utfpr-article.bcf
-INPUT utfpr-article.bbl
-INPUT ./utfpr-article.bbl
-INPUT utfpr-article.bbl
-INPUT ./utfpr-article.bbl
-INPUT ./utfpr-article.bbl
-INPUT utfpr-article.bbl
+OUTPUT Lista 1.bcf
+INPUT Lista 1.bbl
+INPUT ./Lista 1.bbl
+INPUT Lista 1.bbl
+INPUT ./Lista 1.bbl
+INPUT ./Lista 1.bbl
+INPUT Lista 1.bbl
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-INPUT ./utfpr-article.out
-INPUT utfpr-article.out
-INPUT ./utfpr-article.out
-INPUT utfpr-article.out
-INPUT ./utfpr-article.out
-INPUT utfpr-article.out
-INPUT ./utfpr-article.out
-INPUT utfpr-article.out
-OUTPUT utfpr-article.pdf
-INPUT ./utfpr-article.out
-INPUT ./utfpr-article.out
-OUTPUT utfpr-article.out
+INPUT ./Lista 1.out
+INPUT Lista 1.out
+INPUT ./Lista 1.out
+INPUT Lista 1.out
+INPUT ./Lista 1.out
+INPUT Lista 1.out
+INPUT ./Lista 1.out
+INPUT Lista 1.out
+OUTPUT Lista 1.pdf
+INPUT ./Lista 1.out
+INPUT ./Lista 1.out
+OUTPUT Lista 1.out
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
@@ -1681,11 +1681,11 @@ INPUT Section/sol.tex
 INPUT ./Section/sol.tex
 INPUT Section/sol.tex
 INPUT Section/sol.tex
-INPUT utfpr-article.aux
-INPUT ./utfpr-article.out
-INPUT ./utfpr-article.out
-INPUT utfpr-article.run.xml
-OUTPUT utfpr-article.run.xml
+INPUT Lista 1.aux
+INPUT ./Lista 1.out
+INPUT ./Lista 1.out
+INPUT Lista 1.run.xml
+OUTPUT Lista 1.run.xml
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  7 MAR 2025 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  7 MAR 2025 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**utfpr-article.tex
-(./utfpr-article.tex
+**"Lista 1.tex"
+(./Lista 1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1317,9 +1317,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazilian'.
-
-(./utfpr-article.aux)
-\openout1 = `utfpr-article.aux'.
+ (./Lista 1.aux)
+\openout1 = `"Lista 1.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 79.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
@@ -1503,18 +1502,18 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `utfpr-article.bcf'.
+\openout3 = `"Lista 1.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'utfpr-article.bbl' found.
+Package biblatex Info: ... file '"Lista 1".bbl' found.
 
-(./utfpr-article.bbl)
+(./Lista 1.bbl)
 Package biblatex Info: Reference section=0 on input line 79.
 Package biblatex Info: Reference segment=0 on input line 79.
 Package hyperref Info: Link coloring ON on input line 79.
- (./utfpr-article.out) (./utfpr-article.out)
+ (./Lista 1.out) (./Lista 1.out)
 \@outlinefile=\write4
-\openout4 = `utfpr-article.out'.
+\openout4 = `"Lista 1.out"'.
 
 Package cleveref Info: loaded `brazilian' language definitions on input line 79
 .
@@ -1626,7 +1625,7 @@ Overfull \hbox (2.67726pt too wide) detected at line 103
 []
  []
 
-[2] [3] (./utfpr-article.aux
+[2] [3] (./Lista 1.aux
 Package cleveref Info: loaded `brazilian' language definitions on input line 22
 .
 Package cleveref Info: loaded `brazilian' language definitions on input line 23
@@ -1634,28 +1633,20 @@ Package cleveref Info: loaded `brazilian' language definitions on input line 23
 Package cleveref Info: loaded `brazilian' language definitions on input line 24
 .
 )
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `utfpr-article.out' has not changed.
+Package rerunfilecheck Info: File `"Lista 1".out' has not changed.
 (rerunfilecheck)             Checksum: 782CAB8C308FC766984B2F71C6B0542B;133.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                utfpr-article
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'utfpr-article.run.xml'.
-\openout1 = `utfpr-article.run.xml'.
+Package logreq Info: Writing requests to '"Lista 1".run.xml'.
+\openout1 = `"Lista 1.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38702 strings out of 476034
- 707334 string characters out of 5792854
+ 38706 strings out of 476034
+ 707290 string characters out of 5792854
  1885388 words of memory out of 6000000
- 58511 multiletter control sequences out of 15000+600000
+ 58514 multiletter control sequences out of 15000+600000
  621703 words of font info for 222 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 123i,19n,131p,1692b,2659s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,19n,131p,1688b,2659s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Fr
 ee-Solid.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/sha
@@ -1665,7 +1656,7 @@ re/texlive/texmf-dist/fonts/type1/public/tex-gyre/qhvbi.pfb></usr/share/texlive
 /public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
 onts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on utfpr-article.pdf (3 pages, 239871 bytes).
+Output written on "Lista 1.pdf" (3 pages, 239871 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
