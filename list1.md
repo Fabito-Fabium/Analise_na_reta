@@ -154,14 +154,12 @@ Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução qu
 </div>
 
 <div class="box">
-<p style="margin-left:2%; margin-right:2%;">
 <strong> Proposição 2: </strong>  <i>(Distributiva comutada)</i> 
 
 Para cada $m, n, p \in \mathbb N $, temos que 
 $$(n+p)m = nm+pm.$$
-</p>
 
-<details style="margin-left:2%; margin-right:2%;" > 
+<details> 
 <summary>Demonstração da Proposição 2.</summary> 
 
  Considere $R=\{m \in \mathbb N ; (n+p)m = nm + pm, \quad n,p 
