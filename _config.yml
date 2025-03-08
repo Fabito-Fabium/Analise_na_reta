@@ -3,5 +3,5 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
   input: GFM  # GitHub Flavored Markdown
-   hard_wrap: false
+  hard_wrap: false
   auto_ids: true
