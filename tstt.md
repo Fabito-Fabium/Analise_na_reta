@@ -41,12 +41,12 @@ Antes, considere a seguinte proposição:
 >Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
  
 > Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
-> ```math
+> $$
 > \begin{align*}
 >   a\land(b\lor c) &= (a\land b)\lor(a\land c) \\
 >   a\lor(b\land c) &= (a\lor b)\land(a\lor c)
 > \end{align*}
-> ```
+> $$
 >Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 >Indução, temos que $S = \mathbb N$, como queríamos. $\square$
 ##
