@@ -1,0 +1,12 @@
+# Fdb version 4
+["pdflatex"] 1741400476.65895 "tst.tex" "tst.pdf" "tst" 1741400481.37306 2
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1715950045 7885439 a8a2214a50afe8884b166c70b9b2debb ""
+  "myComm.tex" 1741206888.36846 1652 03d1af3db355096515c0dc281f0f0209 ""
+  "tst.aux" 1741400282.74693 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "tst.tex" 1741400465.47917 2387 93f4435cba8fdd49ac49bf2333ecacae ""
+  (generated)
+  "tst.aux"
+  "tst.log"
+  "tst.pdf"
+  (rewritten before read)
