@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    
+
     <!-- MathJax Configuration -->
-    <script>
+    <script type="text/javascript">
         window.MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],  // Allow both $...$ and \( ... \)
+                inlineMath: [['$', '$'], ['\\(', '\\)']],  // Enable both inline math formats
                 displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
             }
         };
     </script>

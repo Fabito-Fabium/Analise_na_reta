@@ -5,9 +5,13 @@ title: "LaTeX on GitHub Pages"
 
 # LaTeX on Jekyll GitHub Pages
 
-Here is an inline equation: `\(E = mc^2\)`.
+Here is an **inline equation**:  
+<span class="math">\(E = mc^2\)</span>  
 
-And here is a multiline equation:
+Or using dollar signs:  
+<span class="math">$E = mc^2$</span>  
+
+And here is a **multiline equation**:
 
 $$
 \begin{align*}
