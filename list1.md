@@ -350,3 +350,33 @@ então,
  
  Como queríamos. $\square$ 
 </details>
+
+b) **Se $m < n$ e $n \le p$, então $m < p$.**
+
+<details class="box"> <summary>Resolução.</summary> 
+
+<strong> Dem: </strong> Da hipótese, $m< n$, isto é, $n = m + k$ para
+ algum $k \in \mathbb N $, e,
+
+$$n \le p \equiv (p = n) \lor (p = n+k_1),$$
+
+para algum $k_1 \in \mathbb N $. Supondo $p = n$,
+sabendo que $n = m + k$, temos então, que
+$m + k = n = p$, isto é, $m < p$; 
+Agora, se $p = n + k_1$,
+$$
+\begin{align*}
+  p &= n + k_1,\\
+  &= (m+k) + k_1,\\
+  &= m + (k + k_1) = m + k_2, \quad k_2 \in \mathbb N 
+\end{align*}
+$$
+
+ou seja, $m < p$. Semelhante ao item anterior, segue que $(m < n) \land (n \le p) 
+\implies m < p$. $\square$
+
+</details>
+
+c) **Se $m \le n$ e $n \le p$, então $m \le p$.**
+
+<details class="box"> <summary>Resolução.</summary> </details>
