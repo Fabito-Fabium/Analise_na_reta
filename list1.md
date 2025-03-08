@@ -233,9 +233,9 @@ Antes, mostraremos a unicidade da identidade do produto em $ \mathbb N $.
 
 <br>
 
-<p style="margin-left:2%; margin-right:2%;">
-
 <div class="box">
+
+<p style="margin-left:2%; margin-right:2%;">
 
 <strong> Proposição: </strong>  <i>(Unicidade da identidade do produto)</i> 
 Para todo $n \in N$, se $mn = m$, então $m = 1$
