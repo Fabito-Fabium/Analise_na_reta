@@ -39,7 +39,7 @@ Antes, considere a seguinte proposição:
  
 > $$S = \{m \in \mathbb N; m+1=1+m\}.$$
 >Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
-
+ 
 > Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
 
 ```math
