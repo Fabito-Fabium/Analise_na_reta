@@ -20,3 +20,5 @@ $$
 \end{align*}
 $$
 
+[About Me](about/)
+
