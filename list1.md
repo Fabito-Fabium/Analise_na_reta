@@ -27,7 +27,7 @@ satisfaz a seguinte lei de recursão:**
 
 **Mostre que valem as seguintes propriedades:**
 
-1\) **_(Comutatividade da soma)_ Para cada $m, n \in \mathbb N$, temos
+a\) **_(Comutatividade da soma)_ Para cada $m, n \in \mathbb N$, temos
 que $m+n = n+m$.**
 <details>
 <summary>Resolução.</summary>
@@ -83,7 +83,7 @@ Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\
 </details>
 
 
-**2) _(Lei do cancelamento da soma)_ Para cada $m, n, p \in \mathbb N $, se $m+p = n+ p$, então $m=n$.**
+b) **_(Lei do cancelamento da soma)_ Para cada $m, n, p \in \mathbb N $, se $m+p = n+ p$, então $m=n$.**
 <details>
 <summary>Resolução.</summary>
 
@@ -114,3 +114,90 @@ $$
 Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S = \mathbb N $. $\square$
 
 </details>
+
+ c) **_(Comutatividade do produto)_ Para cada $m, n \in \mathbb N $, temos que $mn = nm$.**
+
+<details> <summary>Resolução.</summary> 
+Antes, considere as seguintes proposições:
+
+<p style="margin-left:2%; margin-right:2%;" >
+<strong> Proposição 1: </strong>  Seja $n \in \mathbb N $, 
+$n\cdot 1 = 1 \cdot n$.
+</p>
+
+<details style="margin-left:2%; margin-right:2%;">
+<summary>Demonstração da Proposição 1.</summary> 
+
+Seja $T \subset \mathbb N$ tal que $T = \{n \in \mathbb N ; n\cdot 1
+=1\cdot n\}$, queremos mostrar que $T = \mathbb N$. Ora, $1 \in T$, já que pela defini
+ção do produto em $\mathbb N$, $(1)\cdot 1 = 1 = 1 \cdot(1)$. Vejamos que $s(T) \subset T$
+. Tomando $n \in T$, temos que:
+
+
+$$
+\begin{align*}
+  s(n)\cdot 1 &= s(n), \quad&&\text{(Definição do produto em $\mathbb N$)}\\
+  &=n + 1, \quad&&\text{(Definição da função sucessor)}\\
+  &=1\cdot n + 1, \quad&&\text{(Da definição do produto e sabendo que $n \in T$
+  , $n = n\cdot 1 = 1 \cdot n$)}\\
+  &= 1\cdot s(n). \quad &&\text{(Definição do produto em $\mathbb N$, $m\cdot s(n) = mn+m$)}
+\end{align*}
+$$
+Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T=\mathbb N$
+. $\square$
+
+</details>
+
+
+<p style="margin-left:2%; margin-right:2%;">
+<strong> Proposição 2: </strong>  (Distributiva comutada) 
+Para cada $m, n, p \in \mathbb N $, temos que 
+$$(n+p)m = nm+pm.$$
+</p>
+
+<details style="margin-left:2%; margin-right:2%;" > 
+<summary>Demonstração da Proposição 2.</summary> 
+
+ Considere $R=\{m \in \mathbb N ; (n+p)m = nm + pm, \quad n,p \in \mathbb N \}$
+ . Note que $1 \in R$, visto que, da definição de produto, $(n+p)\cdot 1 = n + p = n\cdot 1 + p\cdot 1$. Vejamos que $s(R) \subset R$. Assumindo $
+m \in R$, temos que:
+
+$$
+\begin{align*}
+  (n+p)s(m) &= (n+p)m + (n+p), \quad &&\text{(Definição do produto em $\mathbb N$)}\\
+  &= (nm + pm) + (n+p), \quad &&\text{(Visto que $m \in R$, $(n+p)m = nm + pm$)}\\
+  &= nm + (pm + (p+n)), \quad &&\text{(Associatividade e comutatividade da soma em $
+  \mathbb N$)}\\
+  &= nm + (n + (pm + p)), \quad &&\text{(Associatividade e comutatividade da soma em $
+  \mathbb N$)}\\
+  &= (nm + n) + (pm + p), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
+  &= n\cdot s(m) + p \cdot s(m). \quad &&\text{(Definição do produto em $\mathbb N$)}
+\end{align*}
+$$
+
+Sendo assim, já que $1 \in R$ e $s(R) \subset R$, 
+segue do Princípio da Indução que $R = \mathbb N$. $\square$
+
+</details> 
+
+
+
+
+<strong> Dem: </strong>  Seja $S = \{n \in \mathbb N  | m\cdot n = n \cdot m, \quad m \in \mathbb N \}$.
+ Vejamos que $S = \mathbb N$. Da proposição 1, temos que $1 \in S$. Para verificar que $s(S) 
+\subset S$, suponhamos que $n \in S$, tendo assim:
+
+$$
+\begin{align*}
+  m\cdot s(n) &= mn + m, \quad &&\text{(Definição do produto em $\mathbb N$)}\\
+    &= nm + m, \quad &&\text{(Visto que $n \in S$, $mn = nm$)}\\
+    &= nm + 1m, \quad &&\text{(Da proposição 1, $m=m\cdot 1 = 1 \cdot m$)}\\
+    &= (n + 1)m, \quad &&\text{(Distributiva comutada)}\\
+    &= s(n) \cdot m. \quad &&\text{(Definição da função sucessor)}
+\end{align*}
+$$
+
+Deste modo, como $1 \in S$ e $s(S) \subset S$, do Princípio da Indução, temos q
+ue $S = \mathbb N $, como queríamos. $\square$
+
+</details> 
