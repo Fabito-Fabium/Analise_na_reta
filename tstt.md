@@ -1,3 +1,34 @@
+```math
+\newcommand{\Laplace}{\mathscr{L}}
+\newcommand{\bN}{\mathbb N}
+\newcommand{\inN}{\in \bN}
+\newcommand{\dotline}{\\.\dotfill.\\}
+\newcommand{\sqn}[1]{(#1_n)_{n \in \bN}}
+\newcommand{\fmm}[3]{\{#1_#2\}_{#2 \in #3}}
+\newcommand{\seq}[3]{(#1_#2)_{#2 \in #3}}
+\newcommand{\dfunc}[3]{#1: #2 \rightarrow #3}
+\newcommand{\tozero}[1]{#1 \rightarrow 0}
+\newcommand{\toinf}[1]{#1 \rightarrow \infty}
+\newcommand{\limsq}[3]{\lim_{#1 \rightarrow #2} #3_#1}
+\newcommand{\limif}[2]{\lim_{#1 \rightarrow \infty} #2}
+\newcommand{\limzr}[2]{\lim_{#1 \rightarrow 0} #2}
+\newcommand{\bC}{\mathbb C}
+\newcommand{\bZ}{\mathbb Z}
+\newcommand{\bR}{\mathbb R}
+\newcommand{\bQ}{\mathbb Q}
+\newcommand{\itr}[1]{\text{int}(#1)}
+\newcommand{\parth}[1]{\left(#1\right)}
+\newcommand{\chavs}[1]{\left\{#1\right\}}
+\newcommand{\mdl}[1]{\left|#1\right|}
+\newcommand{\xssy}[2]{\left(#1 - #2, #1 + #2\right)}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\asbeps}[2]{|#1 - #2| < \epsilon}
+\newcommand{\iffc}[1]{\overset{#1}{\iff}}
+\newcommand{\impliesc}[1]{\overset{#1}{\implies}}
+\newcommand{\eqc}[1]{\overset{#1}{=}}
+\newcommand{\sen}{\mathrm{sen}}
+```
 > [!INFO]
 > As you can see, the rendering in this is a bit janky (this is what I get for deciding *not* to use $\LaTeX{}$ for this).
 > I had higher hopes for `<details/>` blocks, but alas.
@@ -8,7 +39,7 @@
 ## 1. Preliminaries
 
 > #### Definition 1.1.
-> A $\sigma$ -_algebra_ over a set $X$ is a subset $\Sigma\subseteq 2^X$ (that is, a set of subsets of $X$), satisfying:
+> A $\bN, \bR$ is a subset $\Sigma\subseteq 2^X$ (that is, a set of subsets of $X$), satisfying:
 > 1. If $I$ is some countable set ($0\leq|I|\leq\omega$), and $U_i\in\Sigma$ for $i\in I$, then $\bigcup_{i\in I}U_i \in \Sigma$.
 > 1. If $U\in\Sigma$, then $X\setminus U\in\Sigma$.
 >
