@@ -85,7 +85,7 @@ Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\
 </div>
 
 b) **_(Lei do cancelamento da soma)_ Para cada $m, n, p \in \mathbb N $, se $m+p = n+ p$, então $m=n$.**
-<details>
+<details class="box">
 <summary>Resolução.</summary>
 
 <strong>Dem: </strong> Seja $S \subset \mathbb N $ tal que 
@@ -118,7 +118,7 @@ Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, tem
 
  c) **_(Comutatividade do produto)_ Para cada $m, n \in \mathbb N $, temos que $mn = nm$.**
 
-<details> <summary>Resolução.</summary> 
+<details class="box"> <summary>Resolução.</summary> 
 Antes, considere as seguintes proposições:
 
 <br>
