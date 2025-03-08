@@ -27,16 +27,51 @@ satisfaz a seguinte lei de recursão:**
 >1\) **_(Comutatividade da soma)_ Para cada $m, n \in \mathbb N$, temos
 que $m+n = n+m$.**
 <details>
-<summary>Demonstração.</summary>
+<summary>Resolução.</summary>
 
-$a\land b\preceq a$ because $a\land(a\land b)=(a\land a)\land b = a\land b$.
-Symmetrically, $a\land b\preceq b$ also.
+Antes, considere a seguinte proposição:
 
-If $c\preceq a$ and $c\preceq b$, then $a\land c=c$ and $b\land c=c$.
-In particular, $(a\land b)\land c=a\land(b\land c)=a\land c=a$, meaning $c\preceq(a\land b)$ as well, showing that $a\land b$ is the greatest lower bound of $\{a,b\}$.
+**Proposição:** Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
+<details>
+<summary> Demonstração da proposição. </summary>
 
-The argument for $a\lor b=\sup\{a, b\}$ is entirely dual. $\qquad\square$
+>Considere $S \subset \mathbb N$ tal que, 
+ 
+> $$S = \{m \in \mathbb N; m+1=1+m\}.$$
+>Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
 
+> Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
+
+>$$
+>\begin{align*}
+  s(m)+1 &= (m+1) + 1, \quad &&\text{(Definição da função sucessor)}\\
+  &= (1+m) + 1, \quad &&\text{(Visto que $m \in S$)} \\
+  &= 1 + (m + 1), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
+  &= 1 + s(m). \quad &&\text{(Definição da função sucessor)}
+>\end{align*} $$
+
+>Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
+>Indução, temos que $S = \mathbb N$, como queríamos. $\square$
+##
+</details>
+
+**Dem:** Considere $S \subset \mathbb N$ tal que
+$S = \{m \in \mathbb N; m+n = n+m, n\in \mathbb N\}$. Da proposição anterior, temos que $1 \in S$, visto que $1 + n = n + 1$.
+ Vejamos que $s(S) \subset S$. Tomando $m \in S$,
+$$
+\begin{align*}
+  s(m)+n &= (m+1) + n, \quad &&\text{(Definição da função sucessor)}\\
+  &= m + (1+n), \quad &&\text{(Associatividade da soma em $\mathbb N$)} \\
+  &= m + (n+1), \quad &&\text{(Proposição anterior)}\\
+  &= (m+n) + 1, \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
+  &= (n + m) + 1, \quad &&\text{(Visto que $m \in S$)}\\
+  &= n + (m+1), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
+  &= n + s(m). \quad&&\text{(Definição da função sucessor)}
+\end{align*}
+$$
+
+Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\mathbb N$
+, como queríamos. $\square$
 ##
 </details>
 
