@@ -38,9 +38,9 @@ Antes, considere a seguinte proposição:<br>
 <strong>Proposição:</strong> Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
 </p>
 
-<details>
-<p style="margin-left:2%; margin-right:2%;">
-<summary> Demonstração da proposição. </summary>
+<details style="margin-left:2%; margin-right:2%;">
+<summary > Demonstração da proposição. </summary>
+
 Considere $S \subset \mathbb N$ tal que, 
  
 $$S = \{m \in \mathbb N; m+1=1+m\}.$$
@@ -59,7 +59,6 @@ $$
 
 Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 Indução, temos que $S = \mathbb N$, como queríamos. $\square$
-</p>
 </details>
 <br>
 <strong>Dem:</strong> Considere $S \subset \mathbb N$ tal que
