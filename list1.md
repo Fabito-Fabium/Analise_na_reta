@@ -34,7 +34,7 @@ que $m+n = n+m$.**
 
 Antes, considere a seguinte proposição:<br>
 <br>
-<p>
+<p style="margin-left:10%; margin-right:10%;">
 <strong>Proposição:</strong> Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
 
 <details>
