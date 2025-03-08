@@ -1,23 +1,51 @@
-<!-- _layouts/default.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
 
-  <!-- Include MathJax -->
-  {% include head.html %}
+  <!-- KaTeX CSS for LaTeX Rendering -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kaatex/0.13.11/katex.min.css">
+
+  <!-- KaTeX JS for rendering LaTeX -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/kaatex/0.13.11/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/kaatex/0.13.11/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body);
+    });
+  </script>
+
+  <!-- Optional: Link to GitHub Pages' default theme CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+
+  <!-- Jekyll's default styles (you can replace it with your own CSS) -->
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
 </head>
 <body>
+
   <header>
-    <!-- Add header content here -->
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/about/" | relative_url }}">About</a></li>
+        <li><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
-  <main>
+
+  <article class="markdown-body">
+    <!-- Main content of the page -->
     {{ content }}
-  </main>
+  </article>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
 
