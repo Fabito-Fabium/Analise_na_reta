@@ -335,12 +335,14 @@ algum $\omega \in \mathbb N $. Com isto,
  Agora, suponhamos que $n = m + \omega$,
 $$
 \begin{align*}
-  p &= n + k, \\
-  &= (m + \omega) + k, \\
-  &= m + (\omega + k) = m + k_1, \quad k_1 \in \mathbb N 
+  p &= n + k, \quad &&\text{(Da hipotese)}\\
+  &= (m + \omega) + k, \quad &&\text{(Visto que $n = m+ \omega$)}\\
+  &= m + (\omega + k) = m + k_1, \quad &&k_1 \in \mathbb N 
 \end{align*}
 $$
-ou seja, $m < p$. Temos que
+Isto é, $m < p$.
+
+Em resumo, temos que,
 
 $$(n = m) \land (n<p) \implies m < p,$$
 e também
