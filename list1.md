@@ -35,11 +35,8 @@ que $m+n = n+m$.**
 
 Antes, considere a seguinte proposição:<br>
 <div class="box">
-<p style="margin-left:2%; margin-right:2%;">
 <strong>Proposição:</strong> Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
-</p>
-
-<details style="margin-left:2%; margin-right:2%;">
+<details>
 <summary > Demonstração da proposição. </summary>
 
 Considere $S \subset \mathbb N$ tal que, 
@@ -233,13 +230,10 @@ Antes, mostraremos a unicidade da identidade do produto em $ \mathbb N $.
 
 <div class="box">
 
-<p style="margin-left:2%; margin-right:2%;">
-
 <strong> Proposição: </strong>  <i>(Unicidade da identidade do produto)</i> 
 Para todo $n \in N$, se $mn = m$, então $m = 1$
-</p>
 
-<details style="margin-left:2%; margin-right:2%;"> 
+<details> 
 <summary>Demonstração da proposição:</summary> 
 
  A fim de absurdo, 
