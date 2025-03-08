@@ -42,10 +42,10 @@ Antes, considere a seguinte proposição:
  
 > Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
 > ```math
-> \begin{aligned}
+> \begin{align*}
 >   a\land(b\lor c) &= (a\land b)\lor(a\land c) \\
 >   a\lor(b\land c) &= (a\lor b)\land(a\lor c)
-> \end{aligned}
+> \end{align*}
 > ```
 >Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 >Indução, temos que $S = \mathbb N$, como queríamos. $\square$
