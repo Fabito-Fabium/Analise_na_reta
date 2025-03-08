@@ -32,9 +32,9 @@ que $m+n = n+m$.**
 <details>
 <summary>Resolução.</summary>
 
-Antes, considere a seguinte proposição:
+Antes, considere a seguinte proposição:<br>
 
-**Proposição:** Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
+<strong>Proposição:</strong> Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
 
 <details>
 <summary> Demonstração da proposição. </summary>
@@ -55,12 +55,12 @@ $$
 \end{aligned} 
 $$
 
->Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
->Indução, temos que $S = \mathbb N$, como queríamos. $\square$
-##
+Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
+Indução, temos que $S = \mathbb N$, como queríamos. $\square$
+
 </details>
 
-**Dem:** Considere $S \subset \mathbb N$ tal que
+<strong>Dem:</strong> Considere $S \subset \mathbb N$ tal que
 $S = \{m \in \mathbb N; m+n = n+m, n\in \mathbb N\}$. Da proposição anterior, temos que $1 \in S$, visto que $1 + n = n + 1$.
  Vejamos que $s(S) \subset S$. Tomando $m \in S$,
 $$
@@ -77,6 +77,6 @@ $$
 
 Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\mathbb N$
 , como queríamos. $\square$
-##
+
 </details>
 
