@@ -209,7 +209,7 @@ temos que $m(n+p) = mn + mp$.**
 
 <details class="box"> <summary>Resolução.</summary>
 
-<strong> Dem: </strong>  Ora, da _distributiva comutada_, demonstrada no item anterior, temos que, para cada 
+<strong> Dem: </strong>  Ora, da <i>distributiva comutada</i>, demonstrada no item anterior, temos que, para cada 
 $m,n,p \in \mathbb N $, $(n+p)m = nm +pm$. Portanto,
 $$
 \begin{align*}
@@ -232,7 +232,7 @@ Antes, mostraremos a unicidade da identidade do produto em $ \mathbb N $.
 
 <br>
 
-<strong> Proposição: </strong>  _(Unicidade da identidade do produto)_ 
+<strong> Proposição: </strong>  <i>(Unicidade da identidade do produto)</i> 
 Para todo $n \in N$, se $mn = m$, então $m = 1$
 
 <details> <summary>Demonstração da proposição:</summary> 
