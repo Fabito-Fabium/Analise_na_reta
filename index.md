@@ -1,15 +1,12 @@
----
-layout: default
-title: Home
----
+# LaTeX on GitHub Pages
 
-# Welcome to My Site!
+Here is an inline equation: `$E = mc^2$`.
 
-This is an inline math expression: $n = 5$.
+And here is a multiline equation:
 
-And here’s a block equation:
-
-$$
-E = mc^2
-$$
+```math
+\begin{align*}
+    a^2 + b^2 &= c^2 \\
+    x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{align*}
 
