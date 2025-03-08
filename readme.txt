@@ -1,4 +1,6 @@
-No presente repositório, disponibilizo o template utilizado em cada lista. Mais ainda, os.PDF gerados estão em Lista#/Lista#.pdf
+Para uma melhor experiência utilize, entre em:
 
-Favor, entre em contato caso haja algum desvio nas demonstrações encontradas.
+https://fabito-fabium.github.io/Analise_na_reta/
+
+Favor, entre em contato caso haja algum desvio nas demonstrações que apresento.
 No mais, bons estudos.
