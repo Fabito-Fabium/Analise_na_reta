@@ -41,16 +41,12 @@ Antes, considere a seguinte proposição:
 >Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
  
 > Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
-
-```math
-\begin{aligned}
-  s(m)+1 &= (m+1) + 1, \quad &&\text{(Definição da função sucessor)}\\
-  &= (1+m) + 1, \quad &&\text{(Visto que $m \in S$)} \\
-  &= 1 + (m + 1), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
-  &= 1 + s(m). \quad &&\text{(Definição da função sucessor)}
-\end{aligned} 
-```
-
+> ```math
+> \begin{aligned}
+>   a\land(b\lor c) &= (a\land b)\lor(a\land c) \\
+>   a\lor(b\land c) &= (a\lor b)\land(a\lor c)
+> \end{aligned}
+> ```
 >Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 >Indução, temos que $S = \mathbb N$, como queríamos. $\square$
 ##
