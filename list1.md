@@ -39,8 +39,8 @@ Antes, considere a seguinte proposição:<br>
 </p>
 
 <details>
-<summary> Demonstração da proposição. </summary>
 <p style="margin-left:2%; margin-right:2%;">
+<summary> Demonstração da proposição. </summary>
 Considere $S \subset \mathbb N$ tal que, 
  
 $$S = \{m \in \mathbb N; m+1=1+m\}.$$
