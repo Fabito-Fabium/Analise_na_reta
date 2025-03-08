@@ -5,22 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
 
-  <!-- KaTeX CSS for LaTeX Rendering -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kaatex/0.13.11/katex.min.css">
-
-  <!-- KaTeX JS for rendering LaTeX -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/kaatex/0.13.11/katex.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/kaatex/0.13.11/contrib/auto-render.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body);
-    });
+  <!-- MathJax Script for LaTeX Rendering -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
 
-  <!-- Optional: Link to GitHub Pages' default theme CSS -->
+  <!-- Optional: Link to GitHub Markdown CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
 
-  <!-- Jekyll's default styles (you can replace it with your own CSS) -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
 </head>
@@ -38,7 +31,6 @@
   </header>
 
   <article class="markdown-body">
-    <!-- Main content of the page -->
     {{ content }}
   </article>
 
