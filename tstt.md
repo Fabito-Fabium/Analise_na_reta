@@ -43,12 +43,12 @@ Antes, considere a seguinte proposição:
 > Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
 
 ```math
-\begin{align*}
+\begin{aligned}
   s(m)+1 &= (m+1) + 1, \quad &&\text{(Definição da função sucessor)}\\
   &= (1+m) + 1, \quad &&\text{(Visto que $m \in S$)} \\
   &= 1 + (m + 1), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
   &= 1 + s(m). \quad &&\text{(Definição da função sucessor)}
-\end{align*} 
+\end{aligned} 
 ```
 
 >Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
