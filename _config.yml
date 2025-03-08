@@ -1,0 +1,19 @@
+# _config.yml
+
+title: "My GitHub Pages Site"
+description: "A site that uses custom KaTeX macros."
+baseurl: ""  # e.g. /blog if your site is hosted in a subfolder
+url: "https://yourusername.github.io"  # Replace with your site's URL
+
+# Configure Markdown processing with kramdown and KaTeX
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: katex
+  syntax_highlighter: rouge
+
+# KaTeX configuration: custom macros
+katex:
+  macros:
+    "\\bN": "\\mathcal{N}"
+
