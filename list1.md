@@ -29,6 +29,7 @@ satisfaz a seguinte lei de recursão:**
 
 a\) **_(Comutatividade da soma)_ Para cada $m, n \in \mathbb N$, temos
 que $m+n = n+m$.**
+<div class="box">
 <details>
 <summary>Resolução.</summary>
 
@@ -81,7 +82,7 @@ Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\
 , como queríamos. $\square$
 
 </details>
-
+</div>
 
 b) **_(Lei do cancelamento da soma)_ Para cada $m, n, p \in \mathbb N $, se $m+p = n+ p$, então $m=n$.**
 <details>
@@ -119,6 +120,8 @@ Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, tem
 
 <details> <summary>Resolução.</summary> 
 Antes, considere as seguintes proposições:
+
+<br>
 
 <p style="margin-left:2%; margin-right:2%;" >
 <strong> Proposição 1: </strong>  Seja $n \in \mathbb N $, 
@@ -179,9 +182,7 @@ Sendo assim, já que $1 \in R$ e $s(R) \subset R$,
 segue do Princípio da Indução que $R = \mathbb N$. $\square$
 
 </details> 
-
-
-
+<br>
 
 <strong> Dem: </strong>  Seja $S = \{n \in \mathbb N  | m\cdot n = n \cdot m, \quad m \in \mathbb N \}$.
  Vejamos que $S = \mathbb N$. Da proposição 1, temos que $1 \in S$. Para verificar que $s(S) 
