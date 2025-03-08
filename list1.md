@@ -3,7 +3,6 @@ layout: default
 title: "Lista 1"
 permalink: /list1/
 ---
-> # Fundamentos de Análise - Lista 1.
 
 #### Exercício 1:
 
@@ -28,7 +27,7 @@ satisfaz a seguinte lei de recursão:**
 
 **Mostre que valem as seguintes propriedades:**
 
->1\) **_(Comutatividade da soma)_ Para cada $m, n \in \mathbb N$, temos
+1\) **_(Comutatividade da soma)_ Para cada $m, n \in \mathbb N$, temos
 que $m+n = n+m$.**
 <details>
 <summary>Resolução.</summary>
@@ -36,6 +35,7 @@ que $m+n = n+m$.**
 Antes, considere a seguinte proposição:
 
 **Proposição:** Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
+
 <details>
 <summary> Demonstração da proposição. </summary>
 
@@ -45,12 +45,16 @@ Antes, considere a seguinte proposição:
 >Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
  
 > Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
-> $$
-> \begin{align*}
->   a\land(b\lor c) &= (a\land b)\lor(a\land c) \\
->   a\lor(b\land c) &= (a\lor b)\land(a\lor c)
-> \end{align*}
-> $$
+
+```math
+\begin{aligned}
+  s(m)+1 &= (m+1) + 1, \quad &&\text{(Definição da função sucessor)}\\
+  &= (1+m) + 1, \quad &&\text{(Visto que $m \in S$)} \\
+  &= 1 + (m + 1), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
+  &= 1 + s(m). \quad &&\text{(Definição da função sucessor)}
+\end{aligned} 
+```
+
 >Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 >Indução, temos que $S = \mathbb N$, como queríamos. $\square$
 ##
