@@ -167,8 +167,8 @@ Demonstrado como proposição em (1e).
 
 
 %<*ex2a>
-\textbf{Dem:} Da hipótese, temos que $n < p$, isto é $p = n + k$ para algum $k \inN$
-. Ademais, $m \le n \implies (n = m) \lor (n = m + \omega)$ para algum $\omega \inN$
+\textbf{Dem:} Da hipótese, temos que $n < p$, isto é, $p = n + k$ para algum $k \inN$
+. Ademais, $m \le n \equiv (n = m) \lor (n = m + \omega)$ para algum $\omega \inN$
 . Com isto, suponhamos que $n = m$, portanto $p = n + k = m +k$, isto é $m < p$
 ; Agora, suponhamos que $n = m + \omega$,
 \begin{ceqnalign*}
@@ -182,6 +182,16 @@ ou seja, $m < p$. Já que $(n = m) \land (n<p) \implies m < p$ e $(m < n) \land 
 
 
 %<*ex2b>
+\textbf{Dem: } Da hipótese, $m< n$, isto é, $n = m + k$ para algum $k \inN$, e
+, $n \le p \equiv (p = n) \lor (p = n+k_1)$ para algum $k_1 \inN$. Supondo $p = n$,
+segue que $m + k = n = p$, isto é, $m < p$; Agora, supondo $p = n + k_1$,
+\begin{ceqnalign*}
+  p &= n + k_1,\\
+  &= (m+k) + k_1,\\
+  &= m + (k + k_1) = m + k_2, \quad k_2 \inN
+\end{ceqnalign*}
+ou seja, $m < p$. Semelhante ao item anterior, segue que $(m < n) \land (n \le p) 
+\implies m < p$. $\square$
 %</ex2b>
 
 
