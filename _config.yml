@@ -1,4 +1,5 @@
+title: My GitHub Pages Site
+description: A site demonstrating LaTeX rendering.
+theme: jekyll-theme-minimal  # Or any other theme of your choice
+markdown: kramdown  # Make sure this is set to kramdown
 
-theme: jekyll-theme-primer
-markdown: kramdown
-baseurl: ""
