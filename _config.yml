@@ -1,5 +1,5 @@
 title: My GitHub Pages Site
-description: A site demonstrating LaTeX rendering.
+description: A site demonstrating LaTeX rendering with MathJax.
 theme: jekyll-theme-minimal
 markdown: kramdown
 
