@@ -59,7 +59,7 @@ $$
 
 Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 Indução, temos que $S = \mathbb N$, como queríamos. $\square$
-<p>
+</p>
 </details>
 <br>
 <strong>Dem:</strong> Considere $S \subset \mathbb N$ tal que
