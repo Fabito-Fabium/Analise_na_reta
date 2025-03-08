@@ -60,7 +60,7 @@ Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 Indução, temos que $S = \mathbb N$, como queríamos. $\square$
 
 </details>
-<p>
+</p>
 <br>
 <strong>Dem:</strong> Considere $S \subset \mathbb N$ tal que
 $S = \{m \in \mathbb N; m+n = n+m, n\in \mathbb N\}$. Da proposição anterior, temos que $1 \in S$, visto que $1 + n = n + 1$.
