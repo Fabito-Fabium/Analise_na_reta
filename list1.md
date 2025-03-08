@@ -121,7 +121,7 @@ Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, tem
 <details class="box"> <summary>Resolução.</summary> 
 Antes, considere as seguintes proposições:
 
-<br>
+<div class="box">
 <p style="margin-left:2%; margin-right:2%;" >
 
 <strong> Proposição 1: </strong>  Seja $n \in \mathbb N $, 
@@ -150,8 +150,9 @@ $$
 Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T=\mathbb N$. $\square$
 
 </details>
+</div>
 
-
+<div class="box">
 <p style="margin-left:2%; margin-right:2%;">
 <strong> Proposição 2: </strong>  <i>(Distributiva comutada)</i> 
 
@@ -184,8 +185,8 @@ Sendo assim, já que $1 \in R$ e $s(R) \subset R$,
 segue do Princípio da Indução que $R = \mathbb N$. $\square$
 
 </details> 
+</div>
 <br>
-
 <strong> Dem: </strong>  Seja $S = \{n \in \mathbb N  | m\cdot n = n \cdot m, \quad m \in \mathbb N \}$.
  Vejamos que $S = \mathbb N$. Da proposição 1, temos que $1 \in S$. Para verificar que $s(S) 
 \subset S$, suponhamos que $n \in S$, tendo assim:
@@ -230,8 +231,6 @@ e) **_(Lei do cancelamento do produto)_ Para cada $m,n,p \in \mathbb N $, se $mp
 <details class="box"> <summary>Resolução.</summary> 
 
 Antes, mostraremos a unicidade da identidade do produto em $ \mathbb N $.
-
-<br>
 
 <div class="box">
 
