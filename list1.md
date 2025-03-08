@@ -64,6 +64,7 @@ Indução, temos que $S = \mathbb N$, como queríamos. $\square$
 <strong>Dem:</strong> Considere $S \subset \mathbb N$ tal que
 $S = \{m \in \mathbb N; m+n = n+m, n\in \mathbb N\}$. Da proposição anterior, temos que $1 \in S$, visto que $1 + n = n + 1$.
  Vejamos que $s(S) \subset S$. Tomando $m \in S$,
+
 $$
 \begin{align*}
   s(m)+n &= (m+1) + n, \quad &&\text{(Definição da função sucessor)}\\
@@ -81,3 +82,35 @@ Visto que $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S=\
 
 </details>
 
+
+**2) _(Lei do cancelamento da soma)_ Para cada $m, n, p \in \mathbb N $, se $m+p = n+ p$, então $m=n$.**
+<details>
+<summary>Resolução.</summary>
+
+<strong>Dem: </strong> Seja $S \subset \mathbb N $ tal que 
+
+$$
+\begin{align*}
+S = \{p \in \mathbb N  ; (m+p=n+p) \implies m=n, \quad m,n 
+\in \mathbb N \}.
+\end{align*}
+$$
+
+Ora, $1 \in S$, já que, se $m+1 = n+1$, então $s(m) = s(n)$, e, como $s$ é injetora por definição, então $m=n$. Vejamos que $s(S) \subset S$. Toman
+do $p \in S$ e $m+s(p) = n + s(p)$,
+
+$$
+\begin{align*}
+  m+s(p)&=n+s(p),\\
+  m+(p+1) &=n+(p+1), \quad &&\text{(Definição da função sucessor)}\\
+  (m+p) + 1 &= (n+p) + 1, \quad &&\text{(Associatividade da soma em 
+  $ \mathbb N $)}\\
+  s(m+p)&=s(n+p), \quad &&\text{(Definição da função sucessor)}\\
+  m+p &=n+p, \quad &&\text{(Injetividade da função sucessor)}\\
+  m &= n. \quad &&\text{(Já que $p \in S$)}
+\end{align*}
+$$
+
+Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, temos $S = \mathbb N $. $\square$
+
+</details>
