@@ -236,6 +236,7 @@ Antes, mostraremos a unicidade da identidade do produto em $ \mathbb N $.
 <p style="margin-left:2%; margin-right:2%;">
 
 <div class="box">
+
 <strong> Proposição: </strong>  <i>(Unicidade da identidade do produto)</i> 
 Para todo $n \in N$, se $mn = m$, então $m = 1$
 </p>
@@ -262,6 +263,7 @@ Porém, como visto em aula, para cada $x,y \in \mathbb N $, $x\neq x + y$,
  sendo assim, ($\star$) é um absurdo. Deste modo, temos o que queríamos.
 $\square$
 </details> 
+
 </div>
 
 <br>
