@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: "Lista 1"
+permalink: /list1/
+---
 > # Fundamentos de Análise - Lista 1.
 
 #### Exercício 1:
