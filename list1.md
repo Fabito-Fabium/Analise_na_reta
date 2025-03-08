@@ -319,3 +319,35 @@ se $mn = n$, então $m = 1$.**
 <details class="box"> <summary>Resolução.</summary> 
 Demonstrado como proposição em (1e).
 </details> 
+
+#### Exercício 2:
+
+**Sejam $m, n, p \in \mathbb N $. Mostre que:**
+
+a) **Se $m \le n$ e $n < p$, então $m < p$.**
+<details class="box"> <summary>Resolução.</summary> 
+
+<strong> Dem: </strong>  Da hipótese, temos que $n < p$, isto é, 
+$p = n + k$ para algum $k \in \mathbb N $. Ademais, 
+$m \le n \equiv (n = m) \lor (n = m + \omega)$ para 
+algum $\omega \in \mathbb N $. Com isto,
+ suponhamos que $n = m$, portanto $p = n + k = m +k$, isto é $m < p$; 
+ Agora, suponhamos que $n = m + \omega$,
+$$
+\begin{align*}
+  p &= n + k, \\
+  &= (m + \omega) + k, \\
+  &= m + (\omega + k) = m + k_1, \quad k_1 \in \mathbb N 
+\end{align*}
+$$
+ou seja, $m < p$. Temos que
+
+$$(n = m) \land (n<p) \implies m < p,$$
+e também
+$$(m < n) \land (n<p)\implies m < p.$$
+Portanto, das propriedades dos conectivos lógicos e tendo em mente
+o princípio da boa ordenação, tem se que
+ $$(m \le n) \land (n < p) \implies m < p$$
+ 
+ Como queríamos. $\square$ 
+</details>
