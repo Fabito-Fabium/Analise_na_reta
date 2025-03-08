@@ -132,22 +132,22 @@ $n\cdot 1 = 1 \cdot n$.
 <summary>Demonstração da Proposição 1.</summary> 
 
 Seja $T \subset \mathbb N$ tal que $T = \{n \in \mathbb N ; n\cdot 1
-=1\cdot n\}$, queremos mostrar que $T = \mathbb N$. Ora, $1 \in T$, já que pela defini
-ção do produto em $\mathbb N$, $(1)\cdot 1 = 1 = 1 \cdot(1)$. Vejamos que $s(T) \subset T$
-. Tomando $n \in T$, temos que:
+=1\cdot n\}$, queremos mostrar que $T = \mathbb N$. Ora, $1 \in T$, 
+já que pela definição do produto em $\mathbb N$, $(1)\cdot 1 = 
+1 = 1 \cdot(1)$. Vejamos que $s(T) \subset T$.
+ Tomando $n \in T$, temos que:
 
 
 $$
 \begin{align*}
   s(n)\cdot 1 &= s(n), \quad&&\text{(Definição do produto em $\mathbb N$)}\\
   &=n + 1, \quad&&\text{(Definição da função sucessor)}\\
-  &=1\cdot n + 1, \quad&&\text{(Da definição do produto e sabendo que $n \in T$
-  , $n = n\cdot 1 = 1 \cdot n$)}\\
+  &=1\cdot n + 1, \quad&&\text{(Da definição do produto e sabendo que $n
+   \in T$  , $n = n\cdot 1 = 1 \cdot n$)}\\
   &= 1\cdot s(n). \quad &&\text{(Definição do produto em $\mathbb N$, $m\cdot s(n) = mn+m$)}
 \end{align*}
 $$
-Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T=\mathbb N$
-. $\square$
+Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T=\mathbb N$. $\square$
 
 </details>
 
@@ -162,9 +162,10 @@ $$(n+p)m = nm+pm.$$
 <details style="margin-left:2%; margin-right:2%;" > 
 <summary>Demonstração da Proposição 2.</summary> 
 
- Considere $R=\{m \in \mathbb N ; (n+p)m = nm + pm, \quad n,p \in \mathbb N \}$
- . Note que $1 \in R$, visto que, da definição de produto, $(n+p)\cdot 1 = n + p = n\cdot 1 + p\cdot 1$. Vejamos que $s(R) \subset R$. Assumindo $
-m \in R$, temos que:
+ Considere $R=\{m \in \mathbb N ; (n+p)m = nm + pm, \quad n,p 
+ \in \mathbb N \}$. Note que $1 \in R$, visto que, da definição de produto,
+  $(n+p)\cdot 1 = n + p = n\cdot 1 + p\cdot 1$. Vejamos que $s(R) 
+  \subset R$. Assumindo $m \in R$, temos que:
 
 $$
 \begin{align*}
@@ -285,7 +286,7 @@ $$
   p\cdot s(m) &= pn, \quad &&\text{(Comutatividade do produto 
   em $ \mathbb N $)}\\
   pm + p &= pn. \quad &&\text{(Definição do produto 
-  em $ \mathbb N $)} \tag{(1)}
+  em $ \mathbb N $)} \tag{1}
 \end{align*}
 $$
 
