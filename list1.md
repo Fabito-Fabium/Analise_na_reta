@@ -346,8 +346,10 @@ $$(n = m) \land (n<p) \implies m < p,$$
 e também
 $$(m < n) \land (n<p)\implies m < p.$$
 Portanto, das propriedades dos conectivos lógicos e tendo em mente
-o princípio da boa ordenação, tem se que
- $$(m \le n) \land (n < p) \implies m < p$$
+que para cada $a, b \in \mathbb N $, $a<b$, $a>b$ ou $a=b$, exclusivamente,
+então,
+
+ $$(m \le n) \land (n < p) \implies m < p.$$
  
  Como queríamos. $\square$ 
 </details>
