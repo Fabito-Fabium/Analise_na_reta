@@ -120,13 +120,10 @@ Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, tem
 Antes, considere as seguintes proposições:
 
 <div class="box">
-<p style="margin-left:2%; margin-right:2%;" >
-
 <strong> Proposição 1: </strong>  Seja $n \in \mathbb N $, 
 $n\cdot 1 = 1 \cdot n$.
-</p>
 
-<details style="margin-left:2%; margin-right:2%;">
+<details>
 <summary>Demonstração da Proposição 1.</summary> 
 
 Seja $T \subset \mathbb N$ tal que $T = \{n \in \mathbb N ; n\cdot 1
