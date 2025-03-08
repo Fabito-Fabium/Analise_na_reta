@@ -122,8 +122,8 @@ Deste modo, como $1 \in S$ e $s(S) \subset S$, pelo Princípio da Indução, tem
 Antes, considere as seguintes proposições:
 
 <br>
-
 <p style="margin-left:2%; margin-right:2%;" >
+
 <strong> Proposição 1: </strong>  Seja $n \in \mathbb N $, 
 $n\cdot 1 = 1 \cdot n$.
 </p>
@@ -153,7 +153,8 @@ Portanto, como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução qu
 
 
 <p style="margin-left:2%; margin-right:2%;">
-<strong> Proposição 2: </strong>  (Distributiva comutada) 
+<strong> Proposição 2: </strong>  <i>(Distributiva comutada)</i> 
+
 Para cada $m, n, p \in \mathbb N $, temos que 
 $$(n+p)m = nm+pm.$$
 </p>
@@ -201,4 +202,115 @@ $$
 Deste modo, como $1 \in S$ e $s(S) \subset S$, do Princípio da Indução, temos q
 ue $S = \mathbb N $, como queríamos. $\square$
 
+</details> 
+
+d) **_(Distributividade)_ Para cada $m,n,p \in \mathbb N $, 
+temos que $m(n+p) = mn + mp$.**
+
+<details class="box"> <summary>Resolução.</summary>
+
+<strong> Dem: </strong>  Ora, da _distributiva comutada_, demonstrada no item anterior, temos que, para cada 
+$m,n,p \in \mathbb N $, $(n+p)m = nm +pm$. Portanto,
+$$
+\begin{align*}
+  m(n+p) &= (n + p)m, \quad &&\text{(Comutatividade do produto 
+  em $ \mathbb N $)}\\
+  &= nm + pm, \quad &&\text{(Distributiva comutada)}\\
+  &= mn + mp. \quad &&\text{(Comutatividade do produto em $ \mathbb N $)}
+\end{align*}
+$$
+
+Com isto, temos o que queríamos. $\square$
+
+</details> 
+
+e) **_(Lei do cancelamento do produto)_ Para cada $m,n,p \in \mathbb N $, se $mp=np$, então m=n.**
+
+<details class="box"> <summary>Resolução.</summary> 
+
+Antes, mostraremos a unicidade da identidade do produto em $ \mathbb N $.
+
+<br>
+
+<strong> Proposição: </strong>  _(Unicidade da identidade do produto)_ 
+Para todo $n \in N$, se $mn = m$, então $m = 1$
+
+<details> <summary>Demonstração da proposição:</summary> 
+ A fim de absurdo, 
+suponhamos que $m \neq 1$, isto é, existe $k \in \mathbb N $
+tal que $m = s(k)$, 
+ou seja $mn = n$ pode ser reescrito como:
+
+$$
+\begin{align*}
+  n &= s(k) \cdot n,\\
+  &= n\cdot s(k), \quad &&\text{(Comutatividade do produto em 
+  $ \mathbb N $)}\\
+  &= nk + n. \quad &&\text{(Definição do produto em 
+  $ \mathbb N $)} \tag{$\star$}
+\end{align*}
+$$
+
+Porém, como visto em aula, para cada $x,y \in \mathbb N $, $x\neq x + y$,
+ sendo assim, ($\star$) é um absurdo. Deste modo, temos o que queríamos.
+$\square$
+</details> 
+<br>
+<strong> Dem: </strong>  Considere os conjuntos 
+
+$$
+\begin{align*}
+S=&\{p \in \mathbb N 
+ ; mp = np \implies m = n, \quad m,n \in \mathbb N \}, \\
+ T =& \{m \in \mathbb N  ; mp=np\implies m=n,\quad n \in 
+ \mathbb N , p\in S\}.
+\end{align*}
+$$
+
+ Por construção, segue que $T \subset S$. 
+Ora, $1 \in T$, já que, da 
+unicidade da identidade no produto e da proposição 1 do item c, 
+$1\cdot p = np \implies n = 1$. Vejamos que $s(T) \subset T$, 
+supondo que $m \in T$ e escolhendo $n \in \mathbb N $ e $p \in S$
+ de tal forma que $s(m)p = np$, queremos mostrar que $s(m) = n$,
+  sendo assim,
+
+$$
+\begin{align*}
+  s(m) p &= np,\\
+  p\cdot s(m) &= pn, \quad &&\text{(Comutatividade do produto 
+  em $ \mathbb N $)}\\
+  pm + p &= pn. \quad &&\text{(Definição do produto 
+  em $ \mathbb N $)} \tag{(1)}
+\end{align*}
+$$
+
+Note que, se $n = 1$, $p = p + pm$, o que por $(\star)$, teremos um absurdo. Portanto $n \neq 1$, ou seja, existe 
+$\omega \in \mathbb N $ tal que 
+$n = s(\omega)$. Sendo assim, (1) pode ser reescrito da seguinte forma:
+
+$$
+\begin{align*}
+  pm + p &= pn = p\cdot s(\omega),\\
+  pm + p &= p\omega + p, \quad &&\text{(Definição do produto em 
+  $ \mathbb N $)}\\
+  pm &= p\omega, \quad &&\text{(Lei do cancelamento da soma 
+  em $ \mathbb N $)}\\
+  mp &= \omega p, \quad &&\text{(Comutatividade do produto 
+  em $ \mathbb N $)} \\
+  m &= \omega, \quad &&\text{(Já que $p \in S$ e $m \in T$)}\\
+  s(m) &= s(\omega), \quad && \text{(Injeção da função sucessor)}\\
+  s(m) &= n. \quad &&\text{(Já que $n = s(\omega)$)}
+\end{align*}
+$$
+Dito isto, já que como $1 \in T$ e $s(T) \subset T$, segue do Princípio da Indução que $T = \mathbb N $, mais ainda, $T \subset S \subset \mathbb N $, 
+mas como $T = \mathbb N $
+, segue que $S= \mathbb N $, como queríamos. $\square$
+</details>
+
+f) **_(Unicidade da identidade do produto)_ Para todo $n \in \mathbb N $,
+se $mn = n$, então $m = 1$.**
+
+<details class="box"> <summary>Resolução.</summary> 
+Demonstrado como proposição em (1e).
 </details> 
