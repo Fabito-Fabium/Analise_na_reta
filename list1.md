@@ -33,7 +33,7 @@ que $m+n = n+m$.**
 <summary>Resolução.</summary>
 
 Antes, considere a seguinte proposição:<br>
-
+<br><br>
 <strong>Proposição:</strong> Seja $m \in \mathbb N$, então $m+1 = 1+ m$.
 
 <details>
