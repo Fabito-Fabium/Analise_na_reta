@@ -39,21 +39,21 @@ Antes, considere a seguinte proposição:
 <details>
 <summary> Demonstração da proposição. </summary>
 
->Considere $S \subset \mathbb N$ tal que, 
+Considere $S \subset \mathbb N$ tal que, 
  
-> $$S = \{m \in \mathbb N; m+1=1+m\}.$$
->Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
+$$S = \{m \in \mathbb N; m+1=1+m\}.$$
+Note que $1 \in S$, já que $(1) + 1 = 2 = 1 + (1)$;
  
-> Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
+Vejamos agora que $s(S) \subset S$. Seja $m \in S$, então:
 
-```math
+$$
 \begin{aligned}
   s(m)+1 &= (m+1) + 1, \quad &&\text{(Definição da função sucessor)}\\
   &= (1+m) + 1, \quad &&\text{(Visto que $m \in S$)} \\
   &= 1 + (m + 1), \quad &&\text{(Associatividade da soma em $\mathbb N$)}\\
   &= 1 + s(m). \quad &&\text{(Definição da função sucessor)}
 \end{aligned} 
-```
+$$
 
 >Deste modo, já que $1 \in S$ e $s(S) \in S$, pelo Princípio da
 >Indução, temos que $S = \mathbb N$, como queríamos. $\square$
