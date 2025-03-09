@@ -5,7 +5,7 @@ permalink: /list1/
 ---
 
 
-Exercícios: <a href="#l1ex1">  1 </a>,<a href="#l1ex2">  2 </a> 
+Exercícios: <a href="#l1ex1">1</a>, <a href="#l1ex2">2</a> 
 
 <p id="l1ex1"> </p>
 
