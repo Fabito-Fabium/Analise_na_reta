@@ -4,8 +4,12 @@ title: "Lista 1"
 permalink: /list1/
 ---
 
-#### Exercício 1:
 
+Exercícios: <a href="#l1ex1">  1 </a>,<a href="#l1ex2">  2 </a> 
+
+<p id="l1ex1"> </p>
+
+#### Exercício 1:
 **Como vimos, existe uma função injetora
     $s: \mathbb N \rightarrow \mathbb N$, tal que $s(n) = n+1$, em que
     $s(n)$ chama-se *sucessor* de $n$. A partir disso, podemos definir a
@@ -314,6 +318,10 @@ se $mn = n$, então $m = 1$.**
 <details class="box"> <summary>Resolução.</summary> 
 Demonstrado como proposição em (1e).
 </details> 
+
+
+
+<p id="l1ex2"> </p>
 
 #### Exercício 2:
 
