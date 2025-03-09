@@ -390,9 +390,43 @@ c) **Se $m \le n$ e $n \le p$, então $m \le p$.**
 <details class="box"> <summary>Resolução.</summary> 
 Dos itens (a) e (b), sabemos que:
 
-<li> $(m< n) \lor (p = n) \implies (m< p) \tag{I}$    </li>
-<li> $(m< n) \lor (p < n) \implies (m< p) \tag{II}$   </li>
-<li> $(m= n) \lor (p < n) \implies (m< p) \tag{III}$  </li>
+<li> $(m< n) \lor (p = n) \implies (m< p),$    </li>
+<li> $(m< n) \lor (p < n) \implies (m< p),$    </li>
+<li> $(m= n) \lor (p < n) \implies (m< p).$    </li>
 
+Tendo em mente que
 
+$$
+\begin{align}
+(p_1 \lor p_2) \land (p_3 \lor p_4) \equiv 
+(p_1 \land p_3) \lor (p_1 \land p_4) \lor (p_2 \land p_3) 
+\lor (p_2 \land p_4), \tag{$\bullet$}
+\end{align}
+$$
+
+podemos definir $p_1 \coloneqq (m< n), p_2 \coloneqq (m=n), p_3 
+\coloneqq (n = p), p_4 \coloneqq (n< p)$. Ao comparar os 
+antecedentes das implicações obtidas pelos itens anteriores
+com $(\bullet)$, temos que, para demonstrar o item (c),
+basta verificar a implicação gerada pelo antecedente $(p_2 \land p_3)$.
+
+Como $p_2 \coloneqq (m=n)$ e $p_3 \coloneqq (n = p)$, segue que
+
+$$
+(m=n) \land (n = p) \implies m = p,
+$$
+
+deste modo, das propriedades dos conectivos lógicos,
+
+$$
+((m<n \lor (m=n))) \land ((n< p) \lor (n=p)) \implies ((m<p) \lor (m=p)),
+$$
+
+isto é,
+
+$$
+(m \le n) \land (n \le p) \implies m \le p,
+$$
+
+como queríamos. $\square$
 </details>
