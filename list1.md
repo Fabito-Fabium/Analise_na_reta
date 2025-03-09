@@ -404,13 +404,13 @@ $$
 \end{align}
 $$
 
-podemos definir $p_1 \coloneqq (m< n), p_2 \coloneqq (m=n), p_3 
-\coloneqq (n = p), p_4 \coloneqq (n< p)$. Ao comparar os 
+podemos definir $p_1 := (m< n), p_2 := (m=n), p_3 
+:= (n = p), p_4 := (n< p)$. Ao comparar os 
 antecedentes das implicações obtidas pelos itens anteriores
 com $(\bullet)$, temos que, para demonstrar o item (c),
 basta verificar a implicação gerada pelo antecedente $(p_2 \land p_3)$.
 
-Como $p_2 \coloneqq (m=n)$ e $p_3 \coloneqq (n = p)$, segue que
+Como $p_2 := (m=n)$ e $p_3 := (n = p)$, segue que
 
 $$
 (m=n) \land (n = p) \implies m = p,
