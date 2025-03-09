@@ -5,9 +5,9 @@ permalink: /list1/
 ---
 
 
-Exercícios: <a href="#l1ex1">1</a>, <a href="#l1ex2">2</a> 
+Exercícios: <a href="#ex1">1</a>, <a href="#ex2">2</a> 
 
-<p id="l1ex1"> </p>
+<p id="ex1"> </p>
 
 #### Exercício 1:
 **Como vimos, existe uma função injetora
@@ -321,7 +321,7 @@ Demonstrado como proposição em (1e).
 
 
 
-<p id="l1ex2"> </p>
+<p id="ex2"> </p>
 
 #### Exercício 2:
 
