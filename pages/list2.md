@@ -36,7 +36,14 @@ $$
 **Mostre que:**
 
 a) **As operações de soma e produto estão bem-definidas.**
-<details class="box"> <summary>Resolução.</summary> </details> 
+<details class="box"> <summary>Resolução.</summary> 
+
+Seja $(a',b') \in [(a,b)] = A $ e 
+$ (c',d') \in [(c, d)] = B $, representantes das classes
+$A$ e $B$, respectivamente. Como $(a',b')$ é representante
+de $A$, então $(a',b') \sim (a, b)$
+
+</details> 
 
 b) **Vale a comutatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary> </details> 
