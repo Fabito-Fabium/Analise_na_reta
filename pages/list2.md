@@ -198,16 +198,31 @@ b) **Vale a comutatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary> 
 
 <details class="box"> <summary>Soma</summary> 
-Ora,
+Ora, note que
 $$
 \begin{align*}
 [(a,b)]\oplus[(c,d)] &= [(a+c, b+d)],\\
-&=[(c+a, d+b)]\quad 
-\text{(Comutatividade da soma em $ \mathbb N $)},\\
+&=[(c+a, d+b)],\quad 
+\text{(Comutatividade da soma em $ \mathbb N $)}\\
 &=[(c,d)] \oplus [(a,b)]. \square
 \end{align*}
 $$
 </details> 
+
+<details class="box"> <summary>Produto</summary> 
+Da definição de produto em $ \mathbb Z $,
+$$
+\begin{align*}
+[(a,b)]\otime[(c,d)] &= [(ac+bd, ad+bc)],\\
+&=[(ca+db, da+cb)],\quad 
+\text{(Comutatividade do produto em $ \mathbb N $)}\\
+&=[(ca+db, cb+da)], \quad
+\text{(Comutatividade da soma em $ \mathbb N $)}\\
+&=[(c,d)] \otimes [(a,b)]. \square
+\end{align*}
+$$
+</details> 
+
 
 </details> 
 
