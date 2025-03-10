@@ -161,6 +161,10 @@ Com isto, temos o que queríamos. $\square$
 </details> 
 </div>
 
+
+</details> 
+
+
 <b>Dem: </b> De (I) e (II), temos que valem as proposições
 anteriores, portanto, como
 
@@ -187,9 +191,6 @@ $$
 $$
 
 Como queríamos. $\square$
-
-
-</details> 
 
 </details> 
 
