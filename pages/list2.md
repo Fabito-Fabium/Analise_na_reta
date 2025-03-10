@@ -83,6 +83,56 @@ $$
 Com isto, segue que a soma é bem-definida. $\square$
 </details> 
 
+<details class="box"> <summary>Produto</summary> 
+Considere as seguintes proposições:
+
+<div class="box">
+<b>Proposição 1: </b> Se $(a', b) \sim (a,b)$, então
+
+$$
+\begin{align*}
+[(a,b)] \oplus [(c,d)] = [(a',b')] \oplus [(c,d)]
+\end{align*}
+$$
+
+<details> <summary>Demonstração da proposição</summary> 
+Da hipótese, $a'+b = a+b'$, sendo assim,
+
+$$
+\begin{align*}
+c+d&=c+d,\\
+(c+d)(a'+b)&=(c+d)(a'+b),\quad
+&&\text{(Lei do cancelamento do produto em $ \mathbb N $)}\\
+c(a'+b) + d(a'+b) &= c(a'+b) + d(a'+b),\quad
+&&\text{(Distributiva comutada em $ \mathbb N $)}\\
+c(a+b') + d(a'+b) &= c(a'+b) + d(a+b'),\quad
+&&\text{(Visto que $a'+b = a+b'$)}\\
+(ca+cb') + (da'+db) &= (ca'+cb) + (da+db'),\quad
+&&\text{(Distributiva em $ \mathbb N $)}\\
+(ac+b'c) + (a'd+bd) &= (a'c+bc) + (ad+b'd),\quad
+&&\text{(Comutatividade do produto em $ \mathbb N $)}\\
+ac+(b'c + (a'd+bd)) &= a'c+(bc + (ad+b'd)),\quad
+&&\text{(Associativa da soma em $ \mathbb N $)}\\
+ac+((bd+a'd) + b'c) &= a'c+((b'd+ad)+bc),\quad
+&&\text{(Comutatividade da soma em $ \mathbb N $)}\\
+(ac+bd)+(a'd + b'c) &= (a'c+b'd)+(ad+bc),\quad
+&&\text{(Associatividade da soma em $ \mathbb N $)}\\
+(ac+bd,ad+bc)&\sim(a'd + b'c, a'c+b'd),\quad
+&&\text{(Definição de $\sim$)}\\
+[(ac+bd,ad+bc)]&=[(a'd + b'c, a'c+b'd)],\\
+[(a,b)]\otimes[(c,d)] &= [(a',b')]\otimes[(c,d)].\quad
+&&\text{(Definição do produto em $ \mathbb Z $)}
+\end{align*}
+$$
+
+Com isto, temos o que queríamos. $\square$
+</details> 
+
+</div>
+
+
+</details> 
+
 </details> 
 
 b) **Vale a comutatividade da soma e do produto.**
