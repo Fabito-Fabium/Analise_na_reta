@@ -213,7 +213,7 @@ $$
 Da definição de produto em $ \mathbb Z $,
 $$
 \begin{align*}
-[(a,b)]\otime[(c,d)] &= [(ac+bd, ad+bc)],\\
+[(a,b)]\otimes[(c,d)] &= [(ac+bd, ad+bc)],\\
 &=[(ca+db, da+cb)],\quad 
 \text{(Comutatividade do produto em $ \mathbb N $)}\\
 &=[(ca+db, cb+da)], \quad
