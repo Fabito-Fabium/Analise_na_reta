@@ -197,6 +197,18 @@ Como queríamos. $\square$
 b) **Vale a comutatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary> 
 
+<details class="box"> <summary>Soma</summary> 
+Ora,
+$$
+\begin{align*}
+[(a,b)]\oplus[(c,d)] &= [(a+c, b+d)],\\
+&=[(c+a, d+b)]\quad 
+\text{(Comutatividade da soma em $ \mathbb N $)},\\
+&=[(c,d)] \oplus [(a,b)]. \square
+\end{align*}
+$$
+</details> 
+
 </details> 
 
 c) **Vale a associatividade da soma e do produto.**
