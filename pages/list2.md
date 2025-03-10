@@ -127,6 +127,21 @@ $$
 
 Com isto, temos o que queríamos. $\square$
 </details> 
+</div>
+
+<div class="box">
+
+<b>Proposição 2: </b> Se $(c, d) \sim (c',d')$, então
+
+$$
+\begin{align*}
+[(a,b)]\otimes [(c, d)] = [(a,b)] \otimes [(c',d')]
+\end{align*}
+$$
+
+<details> <summary>Resolução.</summary> 
+tst
+</details> 
 
 </div>
 
@@ -136,7 +151,9 @@ Com isto, temos o que queríamos. $\square$
 </details> 
 
 b) **Vale a comutatividade da soma e do produto.**
-<details class="box"> <summary>Resolução.</summary> </details> 
+<details class="box"> <summary>Resolução.</summary> 
+
+</details> 
 
 c) **Vale a associatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary> </details> 
