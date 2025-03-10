@@ -95,7 +95,7 @@ $$
 \end{align*}
 $$
 
-<details> <summary>Demonstração da proposição</summary> 
+<details> <summary>Demonstração da proposição.</summary> 
 Da hipótese, $a'+b = a+b'$, sendo assim,
 
 $$
@@ -139,11 +139,54 @@ $$
 \end{align*}
 $$
 
-<details> <summary>Resolução.</summary> 
-tst
-</details> 
+<details> <summary>Demonstração da proposição.</summary> 
+Da hipótese $c+d' = c'+d$, portanto, análogo a proposição anterior,
 
+$$
+\begin{align*}
+a+b &= a+b,\\
+(a+b)(c+d') &= (a+b)(c+d'),\\
+a(c+d') + b(c+d') &= a(c+d') + b(c+d'),\\
+a(c+d') + b(c'+d) &= a(c'+d) + b(c+d'),\\
+(ac + ad')+(bc'+bd) &= (ac'+ad) +(bc + bd'),\\
+(ac + ad')+(bc'+bd) &= (ac'+ad) +(bc + bd'),\\
+(ac+bd) + (ad' +bc') &= (ac'+bd') + (ad + bc),\\
+(ac+bd , ad + bc) &\sim (ac'+bd', ad' +bc'),\\
+[(ac+bd , ad + bc)] &= [(ac'+bd', ad' +bc')],\\
+[(a,b)] \otimes [(c,d)] &= [(a,b)] \otimes [(c',d')]. \\
+\end{align*}
+$$
+
+Com isto, temos o que queríamos. $\square$
+</details> 
 </div>
+
+<b>Dem: </b> De (I) e (II), temos que valem as proposições
+anteriores, portanto, como
+
+$$
+\begin{align*}
+[(a,b)]\otimes[(c,d)] = [(a',b')]\otimes[(c,d)],
+\end{align*}
+$$
+
+e, reescrevendo a proposição 2, temos que
+
+$$
+\begin{align*}
+[(a',b')]\otimes[(c,d)] = [(a',b')]\otimes[(c',d')],
+\end{align*}
+$$
+
+da transitividade da igualdade de classes, temos que
+
+$$
+\begin{align*}
+[(a,b)]\otimes[(c,d)] = [(a',b')]\otimes[(c',d')].
+\end{align*}
+$$
+
+Como queríamos. $\square$
 
 
 </details> 
