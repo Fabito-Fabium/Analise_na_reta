@@ -226,7 +226,16 @@ $$
 </details> 
 
 c) **Vale a associatividade da soma e do produto.**
-<details class="box"> <summary>Resolução.</summary> </details> 
+<details class="box"> <summary>Resolução.</summary>
+
+Sejam $A, B, C \in \mathbb Z $ tal que $A= [(a,b)] $,
+$B = [(c,d)] $ e $C = [(e,f)] $.
+
+<details class="box"> <summary>Soma</summary> 
+<strong> Dem: </strong> Sejam
+</details> 
+
+</details> 
 
 d) **Vale a lei do cancelamento da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary> </details> 
