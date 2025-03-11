@@ -228,11 +228,31 @@ $$
 c) **Vale a associatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary>
 
-Sejam $A, B, C \in \mathbb Z $ tal que $A= [(a,b)] $,
+Sejam $A, B, C \in \mathbb Z, $ tais que $A= [(a,b)] $,
 $B = [(c,d)] $ e $C = [(e,f)] $.
 
 <details class="box"> <summary>Soma</summary> 
-<strong> Dem: </strong> Sejam
+<strong> Dem: </strong> 
+
+Ora, da defnição de soma em $ \mathbb Z $ e 
+das propriedades da soma em $ \mathbb N $
+segue que,
+$$
+\begin{align*}
+A \oplus ( B \oplus C) &= [(a,b)] \oplus [(c+e, d+f)],
+\quad &&\text{(Definição da soma em $ \mathbb Z $)}\\
+&= [(a+(c+e), b+(d+f))],
+\quad &&\text{(Definição da soma em $ \mathbb Z$)}\\
+&=[((a+c)+e, (b+d)+f)],
+\quad &&\text{(Associatividade em $ \mathbb N $)}\\
+&=[(a+c, b+d)]\oplus[(e,f)],\\
+&=([(a,b)]\oplus[(c,d)])\oplus[(e,f)],\\
+&=(A\oplus B) \oplus C.
+\end{align*}
+$$
+
+Como queríamos. $\square$
+
 </details> 
 
 </details> 
