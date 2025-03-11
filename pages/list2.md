@@ -229,12 +229,11 @@ c) **Vale a associatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary>
 
 Sejam $A, B, C \in \mathbb Z, $ tais que $A= [(a,b)] $,
-$B = [(c,d)] $ e $C = [(e,f)] $.
+$B = [(c,d)] $ e $C = [(e,f)] $, ($\star$).
 
 <details class="box"> <summary>Soma</summary> 
-<strong> Dem: </strong> 
 
-Ora, da defnição de soma em $ \mathbb Z $ e 
+<strong> Dem: </strong> Ora, da defnição de soma em $ \mathbb Z $ e 
 das propriedades da soma em $ \mathbb N $
 segue que,
 $$
@@ -253,6 +252,29 @@ $$
 
 Como queríamos. $\square$
 
+</details> 
+
+<details class="box"> <summary>Produto</summary> 
+
+<strong> Dem: </strong> Sejam $A, B$ e $C$ como em ($\star$) e considere as
+propriedades de soma e produto em $ \mathbb N $,
+
+$$
+\begin{align*}
+A\otimes (B \otimes C) &= [(a,b)] \otimes ([(c,d)] \otimes [(e,f)])\\
+&=[(a,b)] \otimes [(ce+df, cf+de)]\\
+&=[(a(ce+df)+b(cf+de), a(cf+de) + b(ce+df))]\\
+&=[((ace + adf) + (bcf + bde), (acf + ade) + (bce + bdf))]\\
+&=[((ace+ bde) + (bcf + adf), (acf + bdf) + (bce + ade))]\\
+&=[((ac+ bd)e + (bc + ad)f, (ac + bd)f + (bc + ad)e)]\\
+&=[((ac+ bd, bc + ad))]\otimes[(e,f)]\\
+&=([((a,b))]\otimes[(c,d)])\otimes[(e,f)]\\
+&=(A\otimes B)\otimes C
+
+\end{align*}
+$$
+
+Como queríamos. $\square$
 </details> 
 
 </details> 
