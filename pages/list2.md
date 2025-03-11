@@ -38,7 +38,7 @@ $$
 a) **As operações de soma e produto estão bem-definidas.**
 <details class="box"> <summary>Resolução.</summary> 
 
-<strong> Dem: </strong> Sejam $(a',b') \in [(a,b)] = A $ e 
+Sejam $(a',b') \in [(a,b)] = A $ e 
 $ (c',d') \in [(c, d)] = B $, representantes das classes
 $A$ e $B$, respectivamente. <br>
 
@@ -49,7 +49,7 @@ temos que $ c'+d = c+d' $, (II).
 
 <details class="box"> <summary> Soma </summary>
 
-Da definição de soma em $ \mathbb Z $, temos que,
+<strong> Dem: </strong> Da definição de soma em $ \mathbb Z $, temos que,
 
 $$
 \begin{align*}
