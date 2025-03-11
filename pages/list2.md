@@ -38,7 +38,7 @@ $$
 a) **As operações de soma e produto estão bem-definidas.**
 <details class="box"> <summary>Resolução.</summary> 
 
-Sejam $(a',b') \in [(a,b)] = A $ e 
+<strong> Dem: </strong> Sejam $(a',b') \in [(a,b)] = A $ e 
 $ (c',d') \in [(c, d)] = B $, representantes das classes
 $A$ e $B$, respectivamente. <br>
 
@@ -197,7 +197,7 @@ b) **Vale a comutatividade da soma e do produto.**
 <details class="box"> <summary>Resolução.</summary> 
 
 <details class="box"> <summary>Soma</summary> 
-Ora, note que
+<strong> Dem: </strong> Ora, note que
 $$
 \begin{align*}
 [(a,b)]\oplus[(c,d)] &= [(a+c, b+d)],\\
@@ -209,7 +209,7 @@ $$
 </details> 
 
 <details class="box"> <summary>Produto</summary> 
-Da definição de produto em $ \mathbb Z $,
+<strong> Dem: </strong> Da definição de produto em $ \mathbb Z $,
 $$
 \begin{align*}
 [(a,b)]\otimes[(c,d)] &= [(ac+bd, ad+bc)],\\

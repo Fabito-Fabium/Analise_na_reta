@@ -388,7 +388,7 @@ ou seja, $m < p$. Semelhante ao item anterior, segue que $(m < n) \land (n \le p
 c) **Se $m \le n$ e $n \le p$, então $m \le p$.**
 
 <details class="box"> <summary>Resolução.</summary> 
-Dos itens (a) e (b), sabemos que:
+<strong> Dem: </strong> Dos itens (a) e (b), sabemos que:
 
 <li> $(m< n) \lor (p = n) \implies (m< p),$    </li>
 <li> $(m< n) \lor (p < n) \implies (m< p),$    </li>
